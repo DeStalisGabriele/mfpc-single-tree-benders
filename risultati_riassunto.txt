@@ -1,0 +1,19 @@
+RISULTATI TEST MFPC -- 4 scenari
+====================================================================================================
+Scenario (n,p,d)      Formulazione  Stato       Flusso*   Gap(%)    Tempo(s)    Nodi      
+----------------------------------------------------------------------------------------------------
+n40_p0.6_d0.3         strong        OTTIMO      42.0      0.00      6.3         869       
+n40_p0.6_d0.3         weak          OTTIMO      42.0      0.00      4.6         1399      
+n40_p0.6_d0.3         benders       OTTIMO      42.0      0.00      29.6        14445     
+n60_p0.6_d0.3         strong        OTTIMO      52.0      0.00      78.0        6568      
+n60_p0.6_d0.3         weak          OTTIMO      52.0      0.00      131.3       14997     
+n60_p0.6_d0.3         benders       OTTIMO      52.0      0.00      1058.5      206159    
+n80_p0.6_d0.3         strong        OTTIMO      63.0      0.00      1655.9      13749     
+n80_p0.6_d0.3         weak          OTTIMO      63.0      0.00      754.5       35734     
+n80_p0.6_d0.3         benders       TIME_LIMIT  63.0      20.08     3600.3      191820    
+n100_p0.6_d0.3        strong        TIME_LIMIT  53.0      143.40    3607.2      2096      
+n100_p0.6_d0.3        weak          TIME_LIMIT  53.0      66.04     3600.4      67173     
+n100_p0.6_d0.3        benders       TIME_LIMIT  21.0      434.00    3601.8      59964     
+----------------------------------------------------------------------------------------------------
+
+Completato. Log completo in: risultati_completi.txt

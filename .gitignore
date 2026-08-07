@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+istanza_*/
+t_*/
+run_istanze/
+archi.csv
+conflitti.csv
+meta.txt
+.idea/

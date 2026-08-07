@@ -1,0 +1,3167 @@
+
+##########################################################################################
+# SCENARIO n40_p0.6_d0.3 (seed=12345)
+##########################################################################################
+
+--- generatore.py (0.1s) ---
+Generazione rete in corso con N=40, p=0.6, d=0.3, seed=12345
+Generazione completata: 473 archi, 28411 coppie in conflitto
+File salvati in 'C:\Users\gabri\OneDrive\Desktop\tesi v3\run_istanze\n40_p0.6_d0.3': meta.txt, archi.csv, conflitti.csv
+
+
+
+--- strong.py (wall clock 6.8s) ---
+[DIAG] Nodi: 40  Archi attivi: 473
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto forti aggiunti: 28411
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (STRONG)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 28924 rows, 947 columns and 58716 nonzeros (Max)
+Model fingerprint: 0x2670cb79
+Model has 1 linear objective coefficients
+Variable types: 474 continuous, 473 integer (473 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 23013 rows and 40 columns
+Presolve time: 0.24s
+Presolved: 5911 rows, 907 columns, 31531 nonzeros
+Variable types: 473 continuous, 434 integer (434 binary)
+
+Extra simplex iterations after uncrush: 298
+
+Root relaxation: objective 9.393932e+01, 1915 iterations, 0.11 seconds (0.19 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0   93.93932    0   73   -0.00000   93.93932      -     -    0s
+H    0     0                       7.0000000   93.93932  1242%     -    0s
+H    0     0                      12.0000000   93.93932   683%     -    0s
+H    0     0                      26.0000000   93.93932   261%     -    0s
+H    0     0                      27.0000000   93.93932   248%     -    0s
+H    0     0                      34.0000000   75.07040   121%     -    0s
+     0     0   75.07040    0  105   34.00000   75.07040   121%     -    0s
+     0     0   74.60940    0   94   34.00000   74.60940   119%     -    0s
+     0     0   74.50540    0   95   34.00000   74.50540   119%     -    1s
+     0     0   74.50446    0   89   34.00000   74.50446   119%     -    1s
+H    0     0                      35.0000000   72.11218   106%     -    1s
+H    0     0                      36.0000000   72.11218   100%     -    1s
+H    0     0                      38.0000000   72.11218  89.8%     -    1s
+     0     0   72.11218    0  117   38.00000   72.11218  89.8%     -    1s
+     0     0   70.61088    0  128   38.00000   70.61088  85.8%     -    1s
+     0     0   70.61088    0  108   38.00000   70.61088  85.8%     -    1s
+     0     0   70.60413    0  107   38.00000   70.60413  85.8%     -    1s
+     0     0   70.58312    0  101   38.00000   70.58312  85.7%     -    1s
+     0     0   64.15940    0  126   38.00000   64.15940  68.8%     -    2s
+     0     0   63.15315    0  109   38.00000   63.15315  66.2%     -    2s
+     0     0   62.77350    0  121   38.00000   62.77350  65.2%     -    2s
+     0     0   62.77350    0  119   38.00000   62.77350  65.2%     -    2s
+     0     0   62.71164    0  114   38.00000   62.71164  65.0%     -    2s
+     0     0   62.68631    0  129   38.00000   62.68631  65.0%     -    2s
+     0     0   62.45681    0  119   38.00000   62.45681  64.4%     -    2s
+     0     0   57.96394    0  135   38.00000   57.96394  52.5%     -    3s
+H    0     0                      39.0000000   57.96394  48.6%     -    3s
+H    0     0                      42.0000000   56.24867  33.9%     -    3s
+     0     0   56.24867    0  151   42.00000   56.24867  33.9%     -    3s
+     0     0   55.66352    0  140   42.00000   55.66352  32.5%     -    3s
+     0     0   55.09176    0  148   42.00000   55.09176  31.2%     -    3s
+     0     0   53.03846    0  140   42.00000   53.03846  26.3%     -    3s
+     0     0   52.95945    0  138   42.00000   52.95945  26.1%     -    3s
+     0     0   52.95945    0  128   42.00000   52.95945  26.1%     -    3s
+     0     2   52.95945    0  128   42.00000   52.95945  26.1%     -    4s
+   223    98   45.93918   11   64   42.00000   52.95945  26.1%   256    5s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 2
+  Implied bound: 15
+  Clique: 96
+  MIR: 105
+  Flow cover: 124
+  Zero half: 9
+  Network: 2
+  RLT: 65
+  Relax-and-lift: 63
+  BQP: 172
+
+Explored 869 nodes (182444 simplex iterations) in 6.32 seconds (8.89 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 42 39 38 ... 7
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.200000000000e+01, best bound 4.200000000000e+01, gap 0.0000%
+
+--- RISULTATI STRONG FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 42.0
+Best Bound: 42.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 6.319987
+Nodi esplorati (B&B Tree): 869
+
+
+
+--- weak.py (wall clock 4.8s) ---
+[DIAG] Nodi: 40  Archi attivi: 473
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto deboli aggiunti: 434
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (WEAK)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 947 rows, 947 columns and 59150 nonzeros (Max)
+Model fingerprint: 0x59aee0f6
+Model has 1 linear objective coefficients
+Variable types: 474 continuous, 473 integer (473 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+02, 2e+02]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 40 rows and 40 columns
+Presolve time: 0.15s
+Presolved: 907 rows, 907 columns, 59070 nonzeros
+Variable types: 473 continuous, 434 integer (434 binary)
+
+Root relaxation: objective 2.040158e+02, 515 iterations, 0.02 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  204.01582    0   70   -0.00000  204.01582      -     -    0s
+H    0     0                       5.0000000  204.01582  3980%     -    0s
+H    0     0                       6.0000000  204.01582  3300%     -    0s
+H    0     0                      22.0000000  204.01582   827%     -    0s
+H    0     0                      28.0000000  204.01582   629%     -    0s
+H    0     0                      35.0000000   74.57556   113%     -    0s
+H    0     0                      36.0000000   74.57556   107%     -    0s
+     0     0   74.57556    0  114   36.00000   74.57556   107%     -    0s
+     0     0   74.00529    0   77   36.00000   74.00529   106%     -    0s
+     0     0   73.97989    0   70   36.00000   73.97989   105%     -    0s
+H    0     0                      38.0000000   73.97989  94.7%     -    0s
+H    0     0                      40.0000000   73.97989  84.9%     -    0s
+     0     0   72.42044    0   87   40.00000   72.42044  81.1%     -    0s
+     0     0   72.24809    0   73   40.00000   72.24809  80.6%     -    0s
+     0     0   72.08575    0   66   40.00000   72.08575  80.2%     -    0s
+     0     0   72.07786    0   71   40.00000   72.07786  80.2%     -    0s
+     0     0   71.74224    0   79   40.00000   71.74224  79.4%     -    1s
+     0     0   71.58393    0   89   40.00000   71.58393  79.0%     -    1s
+     0     0   71.54945    0  102   40.00000   71.54945  78.9%     -    1s
+     0     0   70.63428    0  105   40.00000   70.63428  76.6%     -    1s
+     0     0   70.46703    0   95   40.00000   70.46703  76.2%     -    1s
+     0     0   70.39173    0   94   40.00000   70.39173  76.0%     -    1s
+     0     0   70.29501    0   96   40.00000   70.29501  75.7%     -    1s
+     0     0   70.28538    0   96   40.00000   70.28538  75.7%     -    1s
+     0     0   69.98574    0   96   40.00000   69.98574  75.0%     -    1s
+     0     0   69.91266    0   98   40.00000   69.91266  74.8%     -    1s
+     0     0   69.89346    0   98   40.00000   69.89346  74.7%     -    1s
+     0     0   69.82225    0   90   40.00000   69.82225  74.6%     -    1s
+     0     0   66.19366    0  103   40.00000   66.19366  65.5%     -    2s
+     0     0   63.84652    0  108   40.00000   63.84652  59.6%     -    2s
+     0     0   62.74468    0  108   40.00000   62.74468  56.9%     -    2s
+     0     0   62.74468    0   83   40.00000   62.74468  56.9%     -    2s
+     0     2   62.74468    0   82   40.00000   62.74468  56.9%     -    3s
+*  777   211              14      42.0000000   55.89667  33.1%   169    4s
+
+Cutting planes:
+  Gomory: 3
+  Lift-and-project: 5
+  Cover: 109
+  Implied bound: 152
+  Clique: 80
+  MIR: 124
+  Knapsack: 1
+  StrongCG: 2
+  Flow cover: 171
+  Network: 8
+  RLT: 18
+  Relax-and-lift: 81
+  BQP: 407
+  PSD: 88
+
+Explored 1399 nodes (227839 simplex iterations) in 4.61 seconds (7.84 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 42 40 38 ... -0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.200000000000e+01, best bound 4.200000000000e+01, gap 0.0000%
+
+--- RISULTATI WEAK FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 42.0
+Best Bound: 42.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 4.611891
+Nodi esplorati (B&B Tree): 1399
+
+
+
+--- benders.py (wall clock 29.8s) ---
+[DIAG] Nodi: 40  Archi attivi: 473  Coppie in conflitto lette: 56822
+[DIAG] UB rilassata (rete completa, senza conflitti): 244.0
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 3600
+--- Inizio Ottimizzazione Single-Tree Benders (Gurobi/Python) ---
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+LazyConstraints  1
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 436 rows, 474 columns and 57299 nonzeros (Max)
+Model fingerprint: 0x6b681125
+Model has 1 linear objective coefficients
+Variable types: 1 continuous, 473 integer (473 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 2e+02]
+  RHS range        [1e+00, 2e+02]
+
+Presolve time: 0.03s
+Presolved: 436 rows, 474 columns, 57299 nonzeros
+Variable types: 1 continuous, 473 integer (473 binary)
+
+Root relaxation: objective 2.250000e+02, 44 iterations, 0.00 seconds (0.00 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  225.00000    0   17          -  225.00000      -     -    0s
+     0     0  225.00000    0   35          -  225.00000      -     -    0s
+     0     0  130.91578    0   56          -  130.91578      -     -    0s
+     0     0  130.90397    0   54          -  130.90397      -     -    0s
+     0     0  127.79255    0   59          -  127.79255      -     -    0s
+     0     0  127.70746    0   65          -  127.70746      -     -    0s
+     0     0  127.69286    0   64          -  127.69286      -     -    0s
+     0     0  127.25085    0  106          -  127.25085      -     -    0s
+H    0     0                       3.0000000  127.24464  4141%     -    0s
+     0     0  127.03631    0   94    3.00000  127.03631  4135%     -    0s
+     0     0  126.92936    0   92    3.00000  126.92936  4131%     -    0s
+     0     0  126.92891    0   95    3.00000  126.92891  4131%     -    0s
+     0     0  123.22460    0   90    3.00000  123.22460  4007%     -    0s
+H    0     0                       4.0000000  123.00000  2975%     -    1s
+     0     0  117.86846    0   61    4.00000  117.86846  2847%     -    1s
+     0     0  113.64832    0   51    4.00000  113.64832  2741%     -    1s
+     0     0  113.48543    0   66    4.00000  113.48543  2737%     -    1s
+     0     0  113.43959    0   55    4.00000  113.43959  2736%     -    1s
+     0     0  107.85783    0   54    4.00000  107.85783  2596%     -    1s
+     0     0  106.82037    0   55    4.00000  106.82037  2571%     -    1s
+     0     0  106.08313    0   61    4.00000  106.08313  2552%     -    1s
+     0     0  105.90615    0   58    4.00000  105.90615  2548%     -    1s
+     0     0  105.87580    0   63    4.00000  105.87580  2547%     -    1s
+     0     0  101.65006    0   64    4.00000  101.65006  2441%     -    1s
+     0     0  100.90130    0   63    4.00000  100.90130  2423%     -    1s
+     0     0  100.20697    0   63    4.00000  100.20697  2405%     -    1s
+     0     0  100.13014    0   65    4.00000  100.13014  2403%     -    1s
+     0     0  100.12912    0   70    4.00000  100.12912  2403%     -    1s
+     0     0   99.05846    0   59    4.00000   99.05846  2376%     -    1s
+     0     0   98.91008    0   59    4.00000   98.91008  2373%     -    1s
+     0     0   98.81939    0   62    4.00000   98.81939  2370%     -    1s
+     0     0   98.76021    0   63    4.00000   98.76021  2369%     -    1s
+     0     0   96.57108    0   61    4.00000   96.57108  2314%     -    1s
+     0     0   96.44515    0   60    4.00000   96.44515  2311%     -    1s
+     0     0   96.42531    0   67    4.00000   96.42531  2311%     -    1s
+     0     0   95.87137    0   60    4.00000   95.87137  2297%     -    2s
+     0     0   95.79770    0   60    4.00000   95.79770  2295%     -    2s
+     0     0   95.79770    0   54    4.00000   95.79770  2295%     -    2s
+H    0     0                      17.0000000   95.79335   463%     -    3s
+     0     2   94.52131    0   60   17.00000   94.52131   456%     -    3s
+[HEARTBEAT] t=5.0s  chiamate=179  tagli=197  nodi=1512
+  1551  1273   20.00000    8   15   17.00000   74.88764   341%  37.0    5s
+H 2225  1606                      17.0000000   71.54305   321%  33.5    7s
+[HEARTBEAT] t=10.3s  chiamate=247  tagli=265  nodi=2231
+H 2231  1529                      31.0000000   71.54305   131%  33.4   10s
+H 2231  1453                      32.0000000   71.54305   124%  33.4   10s
+H 2243  1387                      33.0000000   71.54305   117%  33.3   14s
+H 2243  1318                      33.0000000   71.54305   117%  33.3   14s
+H 2243  1251                      33.0000000   71.54305   117%  33.3   14s
+[HEARTBEAT] t=15.3s  chiamate=275  tagli=288  nodi=2243
+  2244  1251   38.00000    9  121   33.00000   71.54305   117%  33.2   15s
+  4404  1806   41.00000   25   19   33.00000   63.45751  92.3%  47.8   20s
+[HEARTBEAT] t=20.5s  chiamate=355  tagli=368  nodi=4631
+H 8128  2176                      35.0000000   55.12101  57.5%  42.9   24s
+* 8474  2285              30      35.0000000   54.74816  56.4%  42.4   24s
+  9210  2437   37.67941   31   26   35.00000   53.26889  52.2%  42.2   25s
+[HEARTBEAT] t=25.7s  chiamate=500  tagli=511  nodi=9845
+*12541  1065              25      42.0000000   48.63039  15.8%  40.4   28s
+H13956     0                      42.0000000   44.48530  5.92%  38.4   29s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 7
+  Clique: 75
+  MIR: 8
+  Flow cover: 1
+  Zero half: 14
+  Relax-and-lift: 3
+
+Explored 14445 nodes (544391 simplex iterations) in 29.64 seconds (44.52 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 42 35 35 ... 3
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 4.200000000430e+01, best bound 4.200000000430e+01, gap 0.0000%
+
+User-callback calls 36064, time in user-callback 5.88 sec
+
+--- RISULTATI FINALI ---
+Status Gurobi: 2  (2 = OPTIMAL, 9 = TIME_LIMIT)
+Flusso Ottimo v*: 42.000000004300006
+MIP Gap: 0.0
+Tempo Totale Esecuzione: 29.6455 s
+Tagli Benders iniettati: 606
+Chiamate totali alla callback (soluzioni intere candidate): 596
+Nodi B&B esplorati: 14445
+
+
+
+##########################################################################################
+# SCENARIO n60_p0.6_d0.3 (seed=12345)
+##########################################################################################
+
+--- generatore.py (0.3s) ---
+Generazione rete in corso con N=60, p=0.6, d=0.3, seed=12345
+Generazione completata: 1067 archi, 152501 coppie in conflitto
+File salvati in 'C:\Users\gabri\OneDrive\Desktop\tesi v3\run_istanze\n60_p0.6_d0.3': meta.txt, archi.csv, conflitti.csv
+
+
+
+--- strong.py (wall clock 79.8s) ---
+[DIAG] Nodi: 60  Archi attivi: 1067
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto forti aggiunti: 152501
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (STRONG)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 153628 rows, 2135 columns and 309272 nonzeros (Max)
+Model fingerprint: 0x111bb148
+Model has 1 linear objective coefficients
+Variable types: 1068 continuous, 1067 integer (1067 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 129127 rows and 61 columns
+Presolve time: 1.24s
+Presolved: 24501 rows, 2074 columns, 143709 nonzeros
+Variable types: 1066 continuous, 1008 integer (1008 binary)
+Found heuristic solution: objective 11.0000000
+Root relaxation presolved: 23494 rows, 1067 columns, 141695 nonzeros
+
+
+Extra simplex iterations after uncrush: 453
+
+Root relaxation: objective 1.475465e+02, 4259 iterations, 1.01 seconds (1.67 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  147.54653    0  143   11.00000  147.54653  1241%     -    2s
+H    0     0                      21.0000000  147.54653   603%     -    2s
+H    0     0                      29.0000000  147.54653   409%     -    2s
+H    0     0                      30.0000000  147.54653   392%     -    2s
+H    0     0                      32.0000000  147.54653   361%     -    2s
+H    0     0                      40.0000000  147.54653   269%     -    2s
+H    0     0                      43.0000000  147.54653   243%     -    2s
+H    0     0                      44.0000000  147.54653   235%     -    2s
+H    0     0                      46.0000000  147.54653   221%     -    2s
+H    0     0                      47.0000000  147.54653   214%     -    7s
+H    0     0                      49.0000000  120.50816   146%     -    7s
+     0     0  120.50816    0  190   49.00000  120.50816   146%     -    7s
+     0     0  120.49349    0  171   49.00000  120.49349   146%     -    8s
+     0     0  120.49329    0  169   49.00000  120.49329   146%     -    8s
+     0     0  115.69304    0  198   49.00000  115.69304   136%     -   10s
+     0     0  115.37242    0  209   49.00000  115.37242   135%     -   10s
+     0     0  115.29536    0  209   49.00000  115.29536   135%     -   10s
+     0     0  115.20043    0  207   49.00000  115.20043   135%     -   10s
+     0     0  115.17739    0  210   49.00000  115.17739   135%     -   10s
+     0     0  115.16845    0  208   49.00000  115.16845   135%     -   11s
+     0     0  115.16835    0  212   49.00000  115.16835   135%     -   11s
+     0     0  114.07557    0  226   49.00000  114.07557   133%     -   12s
+     0     0  113.88947    0  212   49.00000  113.88947   132%     -   12s
+     0     0  113.84120    0  216   49.00000  113.84120   132%     -   12s
+     0     0  113.81630    0  216   49.00000  113.81630   132%     -   13s
+     0     0  113.81015    0  224   49.00000  113.81015   132%     -   13s
+     0     0  113.80266    0  227   49.00000  113.80266   132%     -   13s
+     0     0  113.79928    0  226   49.00000  113.79928   132%     -   13s
+     0     0  113.14535    0  200   49.00000  113.14535   131%     -   14s
+     0     0  112.93643    0  214   49.00000  112.93643   130%     -   14s
+     0     0  112.79418    0  215   49.00000  112.79418   130%     -   14s
+     0     0  112.79150    0  214   49.00000  112.79150   130%     -   14s
+     0     0  112.69289    0  233   49.00000  112.69289   130%     -   16s
+     0     0  112.65021    0  234   49.00000  112.65021   130%     -   16s
+     0     0  112.63000    0  232   49.00000  112.63000   130%     -   16s
+     0     0  112.62680    0  237   49.00000  112.62680   130%     -   16s
+     0     0  112.44215    0  230   49.00000  112.44215   129%     -   17s
+     0     0  112.33782    0  234   49.00000  112.33782   129%     -   18s
+     0     0  112.31153    0  238   49.00000  112.31153   129%     -   18s
+     0     0  112.29736    0  244   49.00000  112.29736   129%     -   18s
+     0     0  112.28892    0  236   49.00000  112.28892   129%     -   18s
+     0     0  112.28333    0  240   49.00000  112.28333   129%     -   18s
+     0     0  112.27992    0  244   49.00000  112.27992   129%     -   18s
+     0     0  111.42255    0  256   49.00000  111.42255   127%     -   19s
+     0     0  109.94257    0  258   49.00000  109.94257   124%     -   19s
+     0     0  109.59790    0  259   49.00000  109.59790   124%     -   19s
+     0     0  109.48918    0  255   49.00000  109.48918   123%     -   19s
+     0     0  108.38099    0  267   49.00000  108.38099   121%     -   21s
+     0     0  105.25805    0  254   49.00000  105.25805   115%     -   22s
+     0     0  105.25805    0  256   49.00000  105.25805   115%     -   22s
+     0     0  102.94093    0  236   49.00000  102.94093   110%     -   23s
+     0     0  102.55017    0  240   49.00000  102.55017   109%     -   24s
+     0     0  102.27570    0  252   49.00000  102.27570   109%     -   24s
+     0     0  101.03932    0  250   49.00000  101.03932   106%     -   24s
+     0     0  101.03932    0  271   49.00000  101.03932   106%     -   24s
+     0     0  100.91905    0  274   49.00000  100.91905   106%     -   24s
+     0     0   99.58131    0  249   49.00000   99.58131   103%     -   26s
+     0     0   99.38643    0  241   49.00000   99.38643   103%     -   26s
+     0     0   99.38643    0  235   49.00000   99.38643   103%     -   27s
+     0     2   99.38643    0  233   49.00000   99.38643   103%     -   29s
+     3     8   99.38643    2  206   49.00000   99.38643   103%  1460   30s
+   343   300   78.34934   15  118   49.00000   99.38643   103%   416   35s
+   810   531   70.88881   15  101   49.00000   91.28273  86.3%   352   40s
+  1521   794   60.51166   11   48   49.00000   81.24807  65.8%   304   45s
+* 2226   866              24      51.0000000   76.62656  50.2%   289   50s
+  2964   978   61.73726   13   84   51.00000   72.75788  42.7%   280   55s
+  3681  1024   63.14652   12  102   51.00000   69.30383  35.9%   277   60s
+  4297   974   57.63323   16   70   51.00000   67.14364  31.7%   274   65s
+H 4393   916                      52.0000000   67.03088  28.9%   274   65s
+  4875   773     cutoff   17        52.00000   65.00903  25.0%   274   70s
+  5652   478     cutoff   23        52.00000   60.95339  17.2%   269   75s
+
+Cutting planes:
+  Lift-and-project: 1
+  Cover: 1
+  Implied bound: 9
+  Clique: 309
+  MIR: 285
+  Flow cover: 302
+  Zero half: 5
+  Network: 4
+  RLT: 151
+  Relax-and-lift: 134
+  BQP: 285
+
+Explored 6568 nodes (1695244 simplex iterations) in 78.03 seconds (94.98 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 52 51 49 ... 30
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+01, best bound 5.200000000000e+01, gap 0.0000%
+
+--- RISULTATI STRONG FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 52.0
+Best Bound: 52.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 78.045581
+Nodi esplorati (B&B Tree): 6568
+
+
+
+--- weak.py (wall clock 131.9s) ---
+[DIAG] Nodi: 60  Archi attivi: 1067
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto deboli aggiunti: 1008
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (WEAK)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 2135 rows, 2135 columns and 310280 nonzeros (Max)
+Model fingerprint: 0x3f89ef6c
+Model has 1 linear objective coefficients
+Variable types: 1068 continuous, 1067 integer (1067 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [3e+02, 3e+02]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 61 rows and 61 columns
+Presolve time: 0.59s
+Presolved: 2074 rows, 2074 columns, 310156 nonzeros
+Variable types: 1066 continuous, 1008 integer (1008 binary)
+Found heuristic solution: objective 11.0000000
+
+Root relaxation: objective 3.652523e+02, 1857 iterations, 0.12 seconds (0.40 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  365.25235    0  107   11.00000  365.25235  3220%     -    0s
+H    0     0                      18.0000000  365.25235  1929%     -    1s
+H    0     0                      22.0000000  365.25235  1560%     -    1s
+H    0     0                      32.0000000  365.25235  1041%     -    1s
+H    0     0                      33.0000000  365.25235  1007%     -    1s
+H    0     0                      34.0000000  365.25235   974%     -    1s
+H    0     0                      35.0000000  365.25235   944%     -    2s
+     0     0  133.78561    0  153   35.00000  133.78561   282%     -    3s
+H    0     0                      36.0000000  133.70172   271%     -    3s
+H    0     0                      38.0000000  133.70172   252%     -    3s
+H    0     0                      42.0000000  133.70172   218%     -    3s
+H    0     0                      43.0000000  133.70172   211%     -    3s
+H    0     0                      46.0000000  131.43458   186%     -    3s
+     0     0  131.43458    0  138   46.00000  131.43458   186%     -    3s
+     0     0  130.78306    0  138   46.00000  130.78306   184%     -    3s
+     0     0  130.54291    0  150   46.00000  130.54291   184%     -    3s
+     0     0  130.41518    0  139   46.00000  130.41518   184%     -    3s
+     0     0  130.35653    0  143   46.00000  130.35653   183%     -    3s
+     0     0  130.22900    0  144   46.00000  130.22900   183%     -    3s
+     0     0  130.21960    0  146   46.00000  130.21960   183%     -    4s
+     0     0  117.18473    0  190   46.00000  117.18473   155%     -    5s
+     0     0  115.27469    0  150   46.00000  115.27469   151%     -    6s
+     0     0  115.08837    0  160   46.00000  115.08837   150%     -    6s
+     0     0  115.07034    0  138   46.00000  115.07034   150%     -    6s
+     0     0  114.07013    0  148   46.00000  114.07013   148%     -    7s
+     0     0  113.96806    0  155   46.00000  113.96806   148%     -    7s
+H    0     0                      47.0000000  113.89703   142%     -    7s
+     0     0  113.89703    0  168   47.00000  113.89703   142%     -    7s
+     0     0  113.86510    0  157   47.00000  113.86510   142%     -    7s
+H    0     0                      48.0000000  113.86510   137%     -    8s
+H    0     0                      49.0000000  113.86510   132%     -    8s
+     0     0  113.44326    0  181   49.00000  113.44326   132%     -    9s
+     0     0  113.18065    0  179   49.00000  113.18065   131%     -    9s
+     0     0  113.14788    0  201   49.00000  113.14788   131%     -    9s
+     0     0  113.02315    0  184   49.00000  113.02315   131%     -   11s
+     0     0  113.01939    0  181   49.00000  113.01939   131%     -   11s
+     0     0  113.01939    0  162   49.00000  113.01939   131%     -   11s
+     0     2  113.00413    0  158   49.00000  113.00413   131%     -   12s
+   128   144  102.90863   10  106   49.00000  109.23224   123%   456   15s
+   982   697   75.45495    9   60   49.00000  101.44471   107%   341   20s
+  2456  1212   55.73520   22   63   49.00000   85.52832  74.5%   294   25s
+  3655  1446   67.90806   15  162   49.00000   80.34665  64.0%   293   37s
+  3657  1447   52.32313   13  107   49.00000   80.34665  64.0%   293   40s
+  3661  1450   70.13333   12  173   49.00000   80.34665  64.0%   293   45s
+  3662  1451   53.66630   29  178   49.00000   80.34665  64.0%   293   52s
+  3663  1451   75.07905    9  166   49.00000   80.34665  64.0%   293   62s
+  3665  1453   71.09554   17  171   49.00000   80.34665  64.0%   293   69s
+  3666  1453   64.79301    8  171   49.00000   80.34665  64.0%   293   71s
+  3671  1457   53.91904   18  177   49.00000   80.34665  64.0%   292   75s
+  3726  1507   80.34665   16  156   49.00000   80.34665  64.0%   304   80s
+  4051  1579   80.34665   20  112   49.00000   80.34665  64.0%   312   85s
+  4589  1626   71.65202   21   61   49.00000   80.34665  64.0%   312   90s
+  5416  1641   54.73379   30   34   49.00000   80.34665  64.0%   307   95s
+  6388  1577     cutoff   26        49.00000   80.34665  64.0%   302  100s
+* 7234  1426              30      50.0000000   78.56223  57.1%   294  102s
+* 7241  1345              35      51.0000000   78.56223  54.0%   294  102s
+  7640  1314   70.57791   25   81   51.00000   77.16010  51.3%   295  105s
+H 7903  1286                      52.0000000   76.04424  46.2%   293  106s
+  8851  1415   55.71616   21   35   52.00000   74.08659  42.5%   291  110s
+  9850  1456     cutoff   25        52.00000   71.09158  36.7%   285  115s
+ 10973  1399     cutoff   26        52.00000   68.90658  32.5%   281  120s
+ 12844   931     cutoff   29        52.00000   64.39707  23.8%   279  126s
+ 13971   270 infeasible   24        52.00000   60.45292  16.3%   278  130s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 11
+  Cover: 112
+  Implied bound: 109
+  Projected implied bound: 4
+  Clique: 150
+  MIR: 210
+  StrongCG: 1
+  Flow cover: 218
+  Inf proof: 1
+  Network: 3
+  RLT: 4
+  Relax-and-lift: 89
+  BQP: 317
+  PSD: 43
+
+Explored 14997 nodes (4124992 simplex iterations) in 131.27 seconds (222.08 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 52 51 50 ... 38
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000000e+01, best bound 5.200000000000e+01, gap 0.0000%
+
+--- RISULTATI WEAK FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 52.0
+Best Bound: 52.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 131.277835
+Nodi esplorati (B&B Tree): 14997
+
+
+
+--- benders.py (wall clock 1059.1s) ---
+[DIAG] Nodi: 60  Archi attivi: 1067  Coppie in conflitto lette: 305002
+[DIAG] UB rilassata (rete completa, senza conflitti): 442.0
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 3600
+--- Inizio Ottimizzazione Single-Tree Benders (Gurobi/Python) ---
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+LazyConstraints  1
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 1010 rows, 1068 columns and 306093 nonzeros (Max)
+Model fingerprint: 0x7d900805
+Model has 1 linear objective coefficients
+Variable types: 1 continuous, 1067 integer (1067 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 3e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 4e+02]
+  RHS range        [1e+00, 3e+02]
+
+Presolve time: 0.11s
+Presolved: 1010 rows, 1068 columns, 306093 nonzeros
+Variable types: 1 continuous, 1067 integer (1067 binary)
+
+Root relaxation: objective 4.206348e+02, 139 iterations, 0.01 seconds (0.03 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  420.63484    0   59          -  420.63484      -     -    0s
+     0     0  419.23640    0   66          -  419.23640      -     -    1s
+     0     0  168.58062    0  112          -  168.58062      -     -    2s
+     0     0  166.65998    0   61          -  166.65998      -     -    2s
+     0     0  164.76685    0   66          -  164.76685      -     -    2s
+     0     0  164.74906    0   65          -  164.74906      -     -    2s
+     0     0  149.93429    0  221          -  149.93429      -     -    2s
+     0     0  149.21786    0  112          -  149.21786      -     -    3s
+     0     0  148.68085    0   61          -  148.68085      -     -    3s
+     0     0  148.33629    0   55          -  148.33629      -     -    3s
+     0     0  148.30465    0   55          -  148.30465      -     -    3s
+     0     0  144.80000    0   49          -  144.80000      -     -    3s
+[HEARTBEAT] t=5.0s  chiamate=45  tagli=53  nodi=0
+     0     0  144.00000    0   49          -  144.00000      -     -    5s
+H    0     0                      13.0000000  144.00000  1008%     -    5s
+     0     0  144.00000    0   63   13.00000  144.00000  1008%     -    8s
+     0     0  144.00000    0   59   13.00000  144.00000  1008%     -    8s
+     0     0  142.28571    0   84   13.00000  142.28571   995%     -    9s
+     0     0  141.92593    0   63   13.00000  141.92593   992%     -    9s
+     0     0  141.78571    0   67   13.00000  141.78571   991%     -    9s
+     0     0  141.78571    0   72   13.00000  141.78571   991%     -    9s
+     0     0  141.69309    0   74   13.00000  141.69309   990%     -    9s
+     0     0  141.38249    0   79   13.00000  141.38249   988%     -    9s
+     0     0  141.14003    0   84   13.00000  141.14003   986%     -    9s
+     0     0  141.08245    0   85   13.00000  141.08245   985%     -    9s
+     0     0  140.23858    0   83   13.00000  140.23858   979%     -   10s
+     0     0  140.11910    0   85   13.00000  140.11910   978%     -   10s
+     0     0  139.50000    0   87   13.00000  139.50000   973%     -   10s
+     0     0  139.44031    0   85   13.00000  139.44031   973%     -   10s
+     0     0  139.26773    0   82   13.00000  139.26773   971%     -   10s
+     0     0  139.22982    0   82   13.00000  139.22982   971%     -   10s
+     0     0  139.22982    0   81   13.00000  139.22982   971%     -   10s
+     0     2  139.22982    0   81   13.00000  139.22982   971%     -   10s
+[HEARTBEAT] t=12.0s  chiamate=77  tagli=85  nodi=178
+  1079  1004   83.35055   16   38   13.00000  120.76838   829%  73.8   15s
+[HEARTBEAT] t=17.0s  chiamate=139  tagli=148  nodi=1544
+  2036  1761   20.00000   47   81   13.00000  118.16518   809%  59.8   23s
+[HEARTBEAT] t=26.2s  chiamate=168  tagli=177  nodi=2037
+H 2037  1673                      15.0000000  118.16518   688%  59.7   26s
+  2038  1673  110.50704    8  131   15.00000  118.16518   688%  59.7   30s
+[HEARTBEAT] t=33.1s  chiamate=212  tagli=220  nodi=2039
+H 2039  1591                      27.0000000  118.16518   338%  59.7   37s
+[HEARTBEAT] t=38.6s  chiamate=234  tagli=241  nodi=2039
+  2040  1592   52.00000   30  124   27.00000  118.16518   338%  59.7   42s
+[HEARTBEAT] t=45.0s  chiamate=253  tagli=260  nodi=2042
+H 2042  1513                      31.0000000  118.16518   281%  59.6   45s
+  2047  1516  106.39267   15  120   31.00000  118.16518   281%  59.5   50s
+[HEARTBEAT] t=51.3s  chiamate=260  tagli=266  nodi=2047
+  2058  1524   77.97593   17  102   31.00000  118.16518   281%  59.1   55s
+[HEARTBEAT] t=56.7s  chiamate=278  tagli=284  nodi=2061
+H 2072  1456                      33.0000000  118.16518   258%  58.7   60s
+[HEARTBEAT] t=63.1s  chiamate=295  tagli=300  nodi=2078
+[HEARTBEAT] t=68.1s  chiamate=311  tagli=316  nodi=2078
+  2079  1461   33.00000   34  120   33.00000  118.16518   258%  58.5   71s
+  2128  1511   97.13116   25   76   33.00000  115.84819   251%  80.7   75s
+[HEARTBEAT] t=76.7s  chiamate=331  tagli=336  nodi=2200
+H 2200  1482                      33.0000000  115.84819   251%  91.1   76s
+  2405  1636   79.91504   34   49   33.00000  115.84819   251%   100   80s
+[HEARTBEAT] t=81.8s  chiamate=352  tagli=356  nodi=2589
+* 2660  1666              52      45.0000000  108.85931   142%  97.8   82s
+  2861  1704   56.00000   43   39   45.00000  108.85931   142%   100   85s
+[HEARTBEAT] t=87.6s  chiamate=369  tagli=372  nodi=3072
+  3295  1842   82.30080   31   96   45.00000  101.90869   126%   101   90s
+* 3365  1785              53      46.0000000  101.90869   122%   102   91s
+[HEARTBEAT] t=92.7s  chiamate=385  tagli=387  nodi=3615
+  3939  1940   62.32000   37   19   46.00000  100.32184   118%   104   95s
+[HEARTBEAT] t=98.6s  chiamate=398  tagli=400  nodi=4258
+  4492  2212   77.71108   32   70   46.00000   97.39661   112%   106  100s
+[HEARTBEAT] t=104.8s  chiamate=412  tagli=414  nodi=5228
+  5490  2375   75.54523   30   62   46.00000   94.53411   106%   106  105s
+  6015  2675   79.18882   36   70   46.00000   94.53411   106%   106  111s
+[HEARTBEAT] t=111.1s  chiamate=429  tagli=431  nodi=6039
+  6693  3008 infeasible   57        46.00000   92.15477   100%   105  115s
+[HEARTBEAT] t=116.6s  chiamate=441  tagli=443  nodi=6898
+  7610  3599   77.20611   32   48   46.00000   90.39130  96.5%   103  120s
+[HEARTBEAT] t=122.3s  chiamate=447  tagli=449  nodi=7953
+  8665  4231   70.70680   30   64   46.00000   89.03022  93.5%   104  125s
+[HEARTBEAT] t=127.5s  chiamate=459  tagli=461  nodi=9171
+  9606  4787   78.04487   32   76   46.00000   87.94138  91.2%   102  131s
+[HEARTBEAT] t=133.9s  chiamate=482  tagli=484  nodi=10046
+ 10477  5309 infeasible   37        46.00000   87.45822  90.1%   102  136s
+[HEARTBEAT] t=140.4s  chiamate=497  tagli=499  nodi=11192
+ 11192  5464   53.00000   35   18   46.00000   86.80141  88.7%   102  140s
+ 11653  5921   76.12251   31   90   46.00000   86.27537  87.6%   102  145s
+[HEARTBEAT] t=145.5s  chiamate=511  tagli=513  nodi=11930
+ 12745  6454   77.80953   29   82   46.00000   85.44880  85.8%   101  150s
+[HEARTBEAT] t=152.9s  chiamate=534  tagli=536  nodi=13064
+ 13562  7061   73.08909   37   89   46.00000   85.16983  85.2%   100  155s
+[HEARTBEAT] t=159.1s  chiamate=553  tagli=555  nodi=14254
+ 14842  7540   68.19648   37   57   46.00000   83.55985  81.7%   100  161s
+[HEARTBEAT] t=164.5s  chiamate=567  tagli=569  nodi=15165
+ 15777  8221   52.00000   39   57   46.00000   83.00000  80.4%   100  167s
+ 16591  8262   74.73547   30  101   46.00000   82.70988  79.8%   100  172s
+[HEARTBEAT] t=172.3s  chiamate=579  tagli=581  nodi=16594
+ 16621  8649   68.46568   33   75   46.00000   82.70988  79.8%   100  176s
+ 17365  8782   79.22270   34   71   46.00000   82.28573  78.9%   100  180s
+[HEARTBEAT] t=180.1s  chiamate=596  tagli=598  nodi=17367
+[HEARTBEAT] t=185.1s  chiamate=610  tagli=612  nodi=18326
+ 18856  9988   67.83997   33   78   46.00000   81.72745  77.7%  99.0  189s
+ 19521 10003   56.87500   43   31   46.00000   81.72745  77.7%  98.3  190s
+[HEARTBEAT] t=190.2s  chiamate=622  tagli=624  nodi=19706
+[HEARTBEAT] t=195.2s  chiamate=635  tagli=637  nodi=20447
+ 21088 10629   62.69009   33   75   46.00000   80.71429  75.5%  97.2  198s
+ 21357 11134   56.00000   38   31   46.00000   80.51844  75.0%  97.5  203s
+[HEARTBEAT] t=203.4s  chiamate=645  tagli=647  nodi=21393
+ 22478 11539   50.47059   38    5   46.00000   80.19512  74.3%  97.8  207s
+ 23352 12118   63.51512   36   61   46.00000   79.67764  73.2%  97.2  213s
+[HEARTBEAT] t=213.6s  chiamate=666  tagli=668  nodi=23389
+ 24586 12684   68.99944   41  120   46.00000   79.19992  72.2%  97.5  219s
+[HEARTBEAT] t=219.4s  chiamate=672  tagli=674  nodi=24883
+ 25860 12798     cutoff   43        46.00000   78.92762  71.6%  98.0  223s
+ 26181 13414   64.18182   31   51   46.00000   78.92762  71.6%  98.1  228s
+[HEARTBEAT] t=229.0s  chiamate=680  tagli=682  nodi=26459
+ 27568 14025   67.96829   32   85   46.00000   78.31874  70.3%  98.1  235s
+[HEARTBEAT] t=235.5s  chiamate=692  tagli=694  nodi=27791
+ 29628 15111   70.40663   29   71   46.00000   77.65437  68.8%  97.0  245s
+[HEARTBEAT] t=246.0s  chiamate=709  tagli=711  nodi=30068
+ 31286 15816   46.89341   41   36   46.00000   77.15892  67.7%  96.3  252s
+[HEARTBEAT] t=252.8s  chiamate=727  tagli=729  nodi=31297
+ 33055 16477 infeasible   48        46.00000   76.79213  66.9%  95.5  259s
+[HEARTBEAT] t=259.3s  chiamate=743  tagli=745  nodi=33172
+ 34535 17211   63.38901   34   77   46.00000   76.43847  66.2%  95.1  265s
+[HEARTBEAT] t=265.8s  chiamate=755  tagli=757  nodi=34629
+ 36205 17421   64.92745   40   42   46.00000   75.91824  65.0%  94.4  270s
+ 36575 18146   62.76002   35   50   46.00000   75.81281  64.8%  94.5  276s
+[HEARTBEAT] t=276.3s  chiamate=778  tagli=780  nodi=36620
+ 38258 18712   63.40426   31   24   46.00000   75.48828  64.1%  93.9  282s
+[HEARTBEAT] t=282.4s  chiamate=789  tagli=791  nodi=38269
+ 39750 18920   64.01802   37   54   46.00000   75.21847  63.5%  93.2  286s
+ 40143 19433   59.90900   33   33   46.00000   75.04030  63.1%  93.4  292s
+[HEARTBEAT] t=292.3s  chiamate=812  tagli=814  nodi=40199
+ 41513 20062   51.00000   35   47   46.00000   74.71163  62.4%  93.2  298s
+[HEARTBEAT] t=298.2s  chiamate=819  tagli=821  nodi=41640
+ 43179 20437 infeasible   42        46.00000   74.41687  61.8%  92.7  302s
+ 44183 20978   60.09537   32   71   46.00000   74.12912  61.2%  92.4  308s
+[HEARTBEAT] t=308.6s  chiamate=836  tagli=838  nodi=44203
+[HEARTBEAT] t=314.0s  chiamate=846  tagli=848  nodi=45677
+ 45677 21190   51.00000   38   20   46.00000   73.91667  60.7%  92.1  314s
+H45941 18754                      48.0000000   73.87861  53.9%  92.0  314s
+[HEARTBEAT] t=320.2s  chiamate=851  tagli=852  nodi=46218
+ 46218 19025   51.42579   35   49   48.00000   73.80000  53.8%  92.1  320s
+H46416 19033                      48.0000000   73.80000  53.7%  92.0  320s
+ 47434 19591   54.32554   36   80   48.00000   73.47838  53.1%  92.0  329s
+[HEARTBEAT] t=329.6s  chiamate=863  tagli=863  nodi=47557
+ 48698 19964   61.95652   39   93   48.00000   73.28205  52.7%  92.3  335s
+[HEARTBEAT] t=335.3s  chiamate=869  tagli=869  nodi=48833
+[HEARTBEAT] t=346.8s  chiamate=878  tagli=878  nodi=50276
+ 50276 20087   57.88661   34   41   48.00000   72.89699  51.9%  92.6  346s
+ 50286 20504   55.65000   35   29   48.00000   72.89699  51.9%  92.6  353s
+[HEARTBEAT] t=353.3s  chiamate=888  tagli=888  nodi=50507
+ 51837 20680   49.91372   49   58   48.00000   72.63380  51.3%  92.4  357s
+ 52477 21148   67.35364   39   58   48.00000   72.57517  51.2%  92.4  364s
+[HEARTBEAT] t=364.1s  chiamate=899  tagli=899  nodi=52608
+ 54017 21524   54.00000   31   11   48.00000   72.32693  50.7%  92.2  370s
+[HEARTBEAT] t=370.4s  chiamate=905  tagli=905  nodi=54394
+ 55932 21974   51.14637   36   79   48.00000   71.96184  49.9%  92.3  379s
+[HEARTBEAT] t=379.7s  chiamate=910  tagli=910  nodi=56051
+ 56919 22439     cutoff   54        48.00000   71.77417  49.5%  92.1  385s
+[HEARTBEAT] t=385.8s  chiamate=914  tagli=914  nodi=57054
+ 58672 22655   60.89276   31   41   48.00000   71.48532  48.9%  91.6  390s
+[HEARTBEAT] t=390.8s  chiamate=930  tagli=930  nodi=59281
+ 59390 23045   58.87211   47   60   48.00000   71.40177  48.8%  91.6  396s
+[HEARTBEAT] t=396.5s  chiamate=931  tagli=931  nodi=59454
+ 60853 23527   56.00000   37   32   48.00000   71.10793  48.1%  91.3  402s
+[HEARTBEAT] t=402.3s  chiamate=940  tagli=940  nodi=61424
+ 62307 23626     cutoff   36        48.00000   70.92177  47.8%  91.1  405s
+ 62745 24048   48.73851   46   33   48.00000   70.89843  47.7%  91.1  411s
+[HEARTBEAT] t=411.8s  chiamate=943  tagli=943  nodi=63081
+ 64294 24341   61.76598   39  117   48.00000   70.64981  47.2%  90.7  418s
+[HEARTBEAT] t=418.1s  chiamate=950  tagli=950  nodi=64988
+ 65620 24457   62.86842   35   40   48.00000   70.55463  47.0%  90.8  421s
+ 66197 24882   54.08280   43   51   48.00000   70.37931  46.6%  90.6  427s
+[HEARTBEAT] t=427.6s  chiamate=957  tagli=957  nodi=66313
+ 67685 25270   50.00000   51   21   48.00000   70.16168  46.2%  90.4  433s
+[HEARTBEAT] t=434.0s  chiamate=964  tagli=964  nodi=67862
+ 69267 25417   49.36786   40   18   48.00000   69.95648  45.7%  90.1  438s
+ 69942 25707   64.06824   36   57   48.00000   69.86647  45.6%  90.1  444s
+[HEARTBEAT] t=444.1s  chiamate=976  tagli=976  nodi=70593
+ 71090 26036   49.43080   46   54   48.00000   69.73316  45.3%  90.1  450s
+[HEARTBEAT] t=450.0s  chiamate=980  tagli=980  nodi=71303
+ 72997 26460   54.44304   49   33   48.00000   69.40730  44.6%  90.0  459s
+[HEARTBEAT] t=459.3s  chiamate=985  tagli=985  nodi=73117
+ 74428 26828   54.92593   35   44   48.00000   69.24048  44.3%  89.9  465s
+[HEARTBEAT] t=465.3s  chiamate=993  tagli=993  nodi=74685
+ 75804 27045   62.09732   35   57   48.00000   69.10480  44.0%  89.8  470s
+ 76507 27449   48.11765   38   25   48.00000   69.00000  43.7%  89.9  476s
+[HEARTBEAT] t=476.0s  chiamate=1004  tagli=1004  nodi=76754
+ 78376 27755   65.65978   36   77   48.00000   68.77532  43.3%  89.8  485s
+[HEARTBEAT] t=485.4s  chiamate=1011  tagli=1011  nodi=78984
+ 79413 28141   60.41176   35   23   48.00000   68.67458  43.1%  89.9  491s
+[HEARTBEAT] t=491.3s  chiamate=1012  tagli=1012  nodi=80355
+ 81391 28655   54.00000   33   30   48.00000   68.39183  42.5%  89.7  500s
+[HEARTBEAT] t=500.6s  chiamate=1018  tagli=1018  nodi=81580
+ 82952 29011   57.87187   36   51   48.00000   68.22333  42.1%  89.5  506s
+[HEARTBEAT] t=506.9s  chiamate=1026  tagli=1026  nodi=83067
+ 84303 29201     cutoff   45        48.00000   68.10845  41.9%  89.5  511s
+ 85058 29647   50.00000   42   15   48.00000   68.03449  41.7%  89.4  517s
+[HEARTBEAT] t=517.4s  chiamate=1039  tagli=1039  nodi=85564
+ 86886 30017     cutoff   41        48.00000   68.00000  41.7%  88.8  523s
+[HEARTBEAT] t=523.7s  chiamate=1052  tagli=1052  nodi=87001
+ 88336 30098     cutoff   43        48.00000   67.76618  41.2%  88.6  527s
+ 88838 30504   56.56099   46   29   48.00000   67.68293  41.0%  88.6  533s
+[HEARTBEAT] t=533.5s  chiamate=1060  tagli=1060  nodi=89155
+ 90463 30879   49.83245   42   37   48.00000   67.52814  40.7%  88.3  539s
+[HEARTBEAT] t=540.0s  chiamate=1069  tagli=1069  nodi=90564
+ 92135 30974   55.76589   43   33   48.00000   67.29942  40.2%  88.0  543s
+ 92620 31321     cutoff   34        48.00000   67.27103  40.1%  88.0  550s
+[HEARTBEAT] t=550.4s  chiamate=1076  tagli=1076  nodi=93605
+ 94251 31581     cutoff   45        48.00000   67.05263  39.7%  87.5  555s
+ 95428 31859   58.06996   35   44   48.00000   67.00000  39.6%  87.2  561s
+[HEARTBEAT] t=561.1s  chiamate=1084  tagli=1084  nodi=96288
+ 97284 32010   54.39579   39   51   48.00000   66.82627  39.2%  86.8  565s
+ 97744 32300     cutoff   31        48.00000   66.70736  39.0%  86.7  571s
+[HEARTBEAT] t=571.2s  chiamate=1096  tagli=1096  nodi=97783
+*99024 27088              44      50.0000000   66.67347  33.3%  86.4  571s
+ 99420 27116   60.64504   44   40   50.00000   66.53247  33.1%  86.4  579s
+[HEARTBEAT] t=579.1s  chiamate=1109  tagli=1108  nodi=99574
+[HEARTBEAT] t=585.3s  chiamate=1113  tagli=1112  nodi=100570
+ 100570 27206   53.00000   34   20   50.00000   66.46602  32.9%  86.1  585s
+ 102597 27501   57.82400   40   35   50.00000   66.09091  32.2%  85.9  595s
+[HEARTBEAT] t=595.4s  chiamate=1120  tagli=1119  nodi=102601
+ 104288 27582   53.00000   47   32   50.00000   66.00000  32.0%  85.6  600s
+[HEARTBEAT] t=601.0s  chiamate=1129  tagli=1128  nodi=104626
+ 105266 27649     cutoff   35        50.00000   65.94467  31.9%  85.4  605s
+ 106030 27716   55.16667   40   49   50.00000   65.73197  31.5%  85.4  611s
+ 107551 27739   61.85397   37   65   50.00000   65.55163  31.1%  85.2  615s
+[HEARTBEAT] t=615.4s  chiamate=1133  tagli=1132  nodi=107895
+ 108105 27802   57.75601   38   60   50.00000   65.46029  30.9%  85.2  621s
+[HEARTBEAT] t=621.3s  chiamate=1134  tagli=1133  nodi=108430
+ 109722 27819   52.58601   37   16   50.00000   65.23552  30.5%  85.0  625s
+ 110314 27949   53.88849   42   56   50.00000   65.13684  30.3%  85.0  631s
+[HEARTBEAT] t=631.7s  chiamate=1142  tagli=1141  nodi=110415
+ 112066 27977     cutoff   38        50.00000   64.97403  29.9%  84.6  636s
+ 112601 28081   58.84087   41   59   50.00000   64.90518  29.8%  84.6  642s
+[HEARTBEAT] t=642.1s  chiamate=1156  tagli=1155  nodi=113056
+ 114208 28098   51.14286   36    8   50.00000   64.71238  29.4%  84.4  646s
+ 114839 28139   55.59097   34   40   50.00000   64.63508  29.3%  84.3  652s
+[HEARTBEAT] t=652.2s  chiamate=1158  tagli=1157  nodi=115256
+ 116462 28147 infeasible   39        50.00000   64.42857  28.9%  84.1  656s
+ 117189 28238   60.58031   41   57   50.00000   64.35246  28.7%  84.1  662s
+[HEARTBEAT] t=663.0s  chiamate=1170  tagli=1169  nodi=117570
+ 118691 28231   54.76088   43   23   50.00000   64.21568  28.4%  84.0  667s
+ 119349 28507   57.18797   34   49   50.00000   64.08223  28.2%  83.9  673s
+[HEARTBEAT] t=673.4s  chiamate=1174  tagli=1173  nodi=119407
+ 121452 28491   55.49764   35   48   50.00000   64.00000  28.0%  83.3  678s
+[HEARTBEAT] t=678.4s  chiamate=1189  tagli=1188  nodi=122167
+ 122267 28611   54.58413   32   28   50.00000   63.93668  27.9%  83.2  685s
+[HEARTBEAT] t=685.8s  chiamate=1190  tagli=1189  nodi=122345
+ 124381 28605     cutoff   37        50.00000   63.70308  27.4%  82.8  690s
+ 125016 28646   57.14197   40   51   50.00000   63.57356  27.1%  82.8  700s
+[HEARTBEAT] t=700.6s  chiamate=1199  tagli=1198  nodi=126517
+ 128260 28796 infeasible   45        50.00000   63.18508  26.4%  82.5  716s
+[HEARTBEAT] t=716.2s  chiamate=1205  tagli=1204  nodi=128403
+ 131807 28779   53.00000   39   21   50.00000   62.96544  25.9%  81.8  721s
+ 132415 28697     cutoff   46        50.00000   62.88427  25.8%  81.8  728s
+[HEARTBEAT] t=728.1s  chiamate=1220  tagli=1219  nodi=133266
+ 133514 28642   50.47431   44   19   50.00000   62.66114  25.3%  81.8  738s
+[HEARTBEAT] t=738.3s  chiamate=1222  tagli=1221  nodi=133604
+ 135977 28574   51.00000   42   15   50.00000   62.38826  24.8%  81.5  742s
+ 136581 28580     cutoff   46        50.00000   62.30089  24.6%  81.5  749s
+[HEARTBEAT] t=749.5s  chiamate=1230  tagli=1229  nodi=136679
+ 138353 28589   53.37313   40   32   50.00000   62.04049  24.1%  81.2  750s
+ 139330 28611   55.00000   40   25   50.00000   62.00000  24.0%  81.0  760s
+[HEARTBEAT] t=760.1s  chiamate=1246  tagli=1245  nodi=140309
+ 140774 28549   60.61093   36   43   50.00000   61.95638  23.9%  80.9  766s
+[HEARTBEAT] t=766.4s  chiamate=1247  tagli=1246  nodi=140894
+ 142780 28497     cutoff   39        50.00000   61.62529  23.3%  80.7  772s
+ 143235 28436     cutoff   36        50.00000   61.58958  23.2%  80.7  777s
+[HEARTBEAT] t=777.9s  chiamate=1250  tagli=1249  nodi=143407
+ 144646 28418   52.00000   48   12   50.00000   61.35135  22.7%  80.5  782s
+ 145169 28380   52.00000   47   27   50.00000   61.32308  22.6%  80.4  787s
+[HEARTBEAT] t=787.8s  chiamate=1255  tagli=1254  nodi=145522
+ 146735 28341   58.66667   39   12   50.00000   61.10000  22.2%  80.2  791s
+ 147620 28446   53.00000   39   18   50.00000   61.00000  22.0%  80.0  798s
+[HEARTBEAT] t=798.0s  chiamate=1274  tagli=1273  nodi=147733
+ 149319 28410   53.16059   39   52   50.00000   61.00000  22.0%  79.6  805s
+[HEARTBEAT] t=805.1s  chiamate=1284  tagli=1283  nodi=149749
+ 151401 28268     cutoff   39        50.00000   60.72717  21.5%  79.4  810s
+[HEARTBEAT] t=810.9s  chiamate=1289  tagli=1288  nodi=151663
+ 151887 28197   52.43292   33   69   50.00000   60.66453  21.3%  79.4  816s
+[HEARTBEAT] t=816.4s  chiamate=1290  tagli=1289  nodi=152517
+ 153919 28000     cutoff   41        50.00000   60.43056  20.9%  79.1  825s
+[HEARTBEAT] t=825.2s  chiamate=1296  tagli=1295  nodi=154489
+ 155700 27772   52.53636   35   13   50.00000   60.16211  20.3%  79.0  832s
+[HEARTBEAT] t=832.6s  chiamate=1299  tagli=1298  nodi=156003
+ 156236 27886   54.69668   37   45   50.00000   60.07096  20.1%  79.0  839s
+[HEARTBEAT] t=839.3s  chiamate=1301  tagli=1300  nodi=156258
+ 158395 27842     cutoff   36        50.00000   60.00000  20.0%  78.4  843s
+ 159020 27717     cutoff   34        50.00000   60.00000  20.0%  78.4  850s
+[HEARTBEAT] t=850.8s  chiamate=1316  tagli=1315  nodi=159283
+ 160456 27442     cutoff   41        50.00000   59.87833  19.8%  78.3  859s
+[HEARTBEAT] t=859.4s  chiamate=1318  tagli=1317  nodi=160748
+ 162611 27328     cutoff   41        50.00000   59.57221  19.1%  78.0  863s
+ 163191 27165     cutoff   43        50.00000   59.49773  19.0%  78.0  869s
+[HEARTBEAT] t=869.9s  chiamate=1325  tagli=1324  nodi=163501
+ 164847 26994   50.83871   46   22   50.00000   59.33462  18.7%  77.8  873s
+ 165468 26890   50.19778   36   20   50.00000   59.22591  18.5%  77.8  877s
+[HEARTBEAT] t=877.7s  chiamate=1328  tagli=1327  nodi=165680
+*165783 23027              38      51.0000000   59.21951  16.1%  77.7  877s
+ 166167 22941 infeasible   50        51.00000   59.09091  15.9%  77.7  884s
+[HEARTBEAT] t=884.9s  chiamate=1331  tagli=1329  nodi=166172
+ 166281 22945   51.12821   42   18   51.00000   59.09091  15.9%  77.7  885s
+H166694 22949                      51.0000000   59.09091  15.9%  77.6  885s
+ 167554 22875   54.00000   33    2   51.00000   59.02857  15.7%  77.4  890s
+[HEARTBEAT] t=890.3s  chiamate=1353  tagli=1350  nodi=167556
+ 168375 22649   57.00000   31   22   51.00000   59.00000  15.7%  77.3  896s
+[HEARTBEAT] t=896.9s  chiamate=1360  tagli=1357  nodi=168727
+ 169793 22459     cutoff   39        51.00000   58.92729  15.5%  77.1  900s
+ 170389 22189   53.53124   44   63   51.00000   58.77229  15.2%  77.2  905s
+[HEARTBEAT] t=905.6s  chiamate=1365  tagli=1362  nodi=170445
+ 171358 21812   53.19000   36   19   51.00000   58.60000  14.9%  77.0  912s
+ 172850 21482     cutoff   34        51.00000   58.32309  14.4%  76.9  916s
+[HEARTBEAT] t=916.5s  chiamate=1370  tagli=1367  nodi=173004
+ 173686 21386     cutoff   41        51.00000   58.19355  14.1%  76.8  922s
+[HEARTBEAT] t=922.1s  chiamate=1373  tagli=1370  nodi=173689
+H173689 17918                      52.0000000   58.19355  11.9%  76.8  922s
+ 174079 17533     cutoff   45        52.00000   58.18243  11.9%  76.8  927s
+[HEARTBEAT] t=927.6s  chiamate=1375  tagli=1371  nodi=174097
+[HEARTBEAT] t=934.7s  chiamate=1387  tagli=1383  nodi=175374
+H175374 17195                      52.0000000   58.00000  11.5%  76.5  934s
+ 176833 16769 infeasible   42        52.00000   58.00000  11.5%  76.3  939s
+ 177718 16305   53.85582   40   37   52.00000   57.72888  11.0%  76.2  943s
+ 178549 15695   52.79134   35   31   52.00000   57.52941  10.6%  76.2  948s
+[HEARTBEAT] t=948.5s  chiamate=1391  tagli=1386  nodi=178875
+ 179557 15179 infeasible   38        52.00000   57.19877  10.0%  76.1  953s
+[HEARTBEAT] t=953.8s  chiamate=1394  tagli=1389  nodi=179590
+ 180899 14875   54.27653   33   27   52.00000   57.00000  9.62%  75.8  958s
+ 181681 14344   53.94203   40   38   52.00000   57.00000  9.62%  75.7  963s
+ 182587 13577   54.67026   41   25   52.00000   56.86106  9.35%  75.7  967s
+ 183649 12838 infeasible   40        52.00000   56.38738  8.44%  75.5  972s
+[HEARTBEAT] t=972.5s  chiamate=1406  tagli=1401  nodi=183818
+ 185002 12401   54.07943   38   29   52.00000   56.04605  7.78%  75.2  977s
+[HEARTBEAT] t=977.9s  chiamate=1416  tagli=1411  nodi=185018
+ 186098 11916     cutoff   41        52.00000   56.00000  7.69%  75.1  982s
+ 187085 11028 infeasible   45        52.00000   56.00000  7.69%  75.0  987s
+ 188298 10009 infeasible   46        52.00000   55.55110  6.83%  74.8  991s
+[HEARTBEAT] t=991.9s  chiamate=1422  tagli=1417  nodi=188577
+ 189888  9950 infeasible   54        52.00000   55.00000  5.77%  74.4  998s
+[HEARTBEAT] t=998.2s  chiamate=1433  tagli=1428  nodi=189922
+ 190052  9463   54.00000   38   24   52.00000   55.00000  5.77%  74.4 1003s
+ 191101  8990 infeasible   45        52.00000   55.00000  5.77%  74.2 1008s
+[HEARTBEAT] t=1008.7s  chiamate=1434  tagli=1429  nodi=192049
+ 192111  7992 infeasible   50        52.00000   55.00000  5.77%  74.1 1013s
+ 193445  6728   55.00000   47    4   52.00000   55.00000  5.77%  73.9 1018s
+[HEARTBEAT] t=1018.2s  chiamate=1438  tagli=1433  nodi=193447
+ 195354  5797   53.22034   45   15   52.00000   54.00000  3.85%  73.3 1025s
+[HEARTBEAT] t=1025.6s  chiamate=1463  tagli=1458  nodi=195692
+ 197744  4087     cutoff   54        52.00000   54.00000  3.85%  73.0 1033s
+ 199205  3146     cutoff   43        52.00000   53.59615  3.07%  72.7 1038s
+[HEARTBEAT] t=1038.4s  chiamate=1469  tagli=1464  nodi=199238
+ 200983  2341 infeasible   40        52.00000   53.00000  1.92%  72.2 1046s
+[HEARTBEAT] t=1046.1s  chiamate=1491  tagli=1486  nodi=200992
+ 202814  1900 infeasible   34        52.00000   53.00000  1.92%  71.8 1050s
+[HEARTBEAT] t=1051.1s  chiamate=1515  tagli=1510  nodi=203688
+ 204590   224 infeasible   43        52.00000   53.00000  1.92%  71.6 1057s
+
+Cutting planes:
+  Gomory: 5
+  Lift-and-project: 4
+  Cover: 1
+  Clique: 666
+  MIR: 33
+  Flow cover: 12
+  Zero half: 26
+  Relax-and-lift: 3
+
+Explored 206159 nodes (14679271 simplex iterations) in 1058.45 seconds (1308.56 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 52 52 51 ... 33
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 5.200000000530e+01, best bound 5.200000000530e+01, gap 0.0000%
+
+User-callback calls 488140, time in user-callback 68.86 sec
+
+--- RISULTATI FINALI ---
+Status Gurobi: 2  (2 = OPTIMAL, 9 = TIME_LIMIT)
+Flusso Ottimo v*: 52.00000000530002
+MIP Gap: 0.0
+Tempo Totale Esecuzione: 1058.4532 s
+Tagli Benders iniettati: 1513
+Chiamate totali alla callback (soluzioni intere candidate): 1517
+Nodi B&B esplorati: 206159
+
+
+
+##########################################################################################
+# SCENARIO n80_p0.6_d0.3 (seed=12345)
+##########################################################################################
+
+--- generatore.py (0.7s) ---
+Generazione rete in corso con N=80, p=0.6, d=0.3, seed=12345
+Generazione completata: 1895 archi, 493805 coppie in conflitto
+File salvati in 'C:\Users\gabri\OneDrive\Desktop\tesi v3\run_istanze\n80_p0.6_d0.3': meta.txt, archi.csv, conflitti.csv
+
+
+
+--- strong.py (wall clock 1661.5s) ---
+[DIAG] Nodi: 80  Archi attivi: 1895
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto forti aggiunti: 493805
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (STRONG)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 495780 rows, 3791 columns and 995192 nonzeros (Max)
+Model fingerprint: 0xc0da0aa5
+Model has 1 linear objective coefficients
+Variable types: 1896 continuous, 1895 integer (1895 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 428697 rows and 81 columns
+Presolve time: 0.88s
+Presolved: 67083 rows, 3710 columns, 330164 nonzeros
+Variable types: 1893 continuous, 1817 integer (1817 binary)
+Performing another presolve...
+Presolve removed 85 rows and 1 columns
+Presolve time: 1.50s
+Root relaxation presolved: 1894 rows, 67077 columns, 375327 nonzeros
+
+
+Root relaxation: objective 1.788102e+02, 1189 iterations, 0.75 seconds (1.13 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  178.81017    0  169   -0.00000  178.81017      -     -    4s
+H    0     0                      13.0000000  178.81017  1275%     -    4s
+H    0     0                      26.0000000  178.81017   588%     -    4s
+H    0     0                      41.0000000  178.81017   336%     -    4s
+H    0     0                      42.0000000  178.81017   326%     -    4s
+H    0     0                      44.0000000  178.81017   306%     -    5s
+     0     0  145.40013    0  345   44.00000  145.40013   230%     -   35s
+H    0     0                      46.0000000  145.37658   216%     -   35s
+H    0     0                      54.0000000  145.37658   169%     -   35s
+H    0     0                      55.0000000  145.37658   164%     -   35s
+H    0     0                      56.0000000  145.37658   160%     -   35s
+H    0     0                      57.0000000  145.37658   155%     -   35s
+     0     0  145.34071    0  232   57.00000  145.34071   155%     -   38s
+     0     0  145.29410    0  200   57.00000  145.29410   155%     -   38s
+     0     0  145.29265    0  195   57.00000  145.29265   155%     -   38s
+     0     0  141.61656    0  244   57.00000  141.61656   148%     -   42s
+     0     0  140.49082    0  219   57.00000  140.49082   146%     -   42s
+     0     0  140.23664    0  204   57.00000  140.23664   146%     -   43s
+     0     0  140.21474    0  189   57.00000  140.21474   146%     -   43s
+     0     0  140.20413    0  175   57.00000  140.20413   146%     -   43s
+     0     0  140.19940    0  175   57.00000  140.19940   146%     -   43s
+     0     0  140.19880    0  175   57.00000  140.19880   146%     -   44s
+     0     0  137.82575    0  203   57.00000  137.82575   142%     -   45s
+H    0     0                      58.0000000  137.82482   138%     -   46s
+H    0     0                      62.0000000  137.82482   122%     -   47s
+     0     0  137.06883    0  222   62.00000  137.06883   121%     -   51s
+     0     0  136.90482    0  207   62.00000  136.90482   121%     -   51s
+     0     0  136.84869    0  199   62.00000  136.84869   121%     -   52s
+     0     0  136.83760    0  188   62.00000  136.83760   121%     -   52s
+     0     0  136.83189    0  184   62.00000  136.83189   121%     -   52s
+     0     0  136.82760    0  182   62.00000  136.82760   121%     -   52s
+     0     0  135.00389    0  214   62.00000  135.00389   118%     -   57s
+     0     0  134.75327    0  204   62.00000  134.75327   117%     -   59s
+     0     0  134.59486    0  196   62.00000  134.59486   117%     -   59s
+     0     0  134.57326    0  193   62.00000  134.57326   117%     -   59s
+     0     0  134.57022    0  199   62.00000  134.57022   117%     -   60s
+     0     0  133.03506    0  223   62.00000  133.03506   115%     -   61s
+     0     0  132.56471    0  224   62.00000  132.56471   114%     -   62s
+     0     0  132.35365    0  201   62.00000  132.35365   113%     -   62s
+     0     0  132.20835    0  214   62.00000  132.20835   113%     -   62s
+     0     0  132.20003    0  214   62.00000  132.20003   113%     -   62s
+     0     0  132.19855    0  213   62.00000  132.19855   113%     -   63s
+     0     0  131.66764    0  216   62.00000  131.66764   112%     -   64s
+     0     0  131.53236    0  214   62.00000  131.53236   112%     -   64s
+     0     0  131.52115    0  214   62.00000  131.52115   112%     -   64s
+     0     0  131.51251    0  209   62.00000  131.51251   112%     -   64s
+     0     0  131.51137    0  206   62.00000  131.51137   112%     -   65s
+     0     0  131.16670    0  209   62.00000  131.16670   112%     -   66s
+     0     0  130.82759    0  229   62.00000  130.82759   111%     -   66s
+     0     0  130.80701    0  214   62.00000  130.80701   111%     -   67s
+     0     0  130.79700    0  212   62.00000  130.79700   111%     -   67s
+     0     0  130.79298    0  210   62.00000  130.79298   111%     -   67s
+     0     0  130.75010    0  223   62.00000  130.75010   111%     -   70s
+     0     0  130.65405    0  229   62.00000  130.65405   111%     -   72s
+     0     0  130.61996    0  219   62.00000  130.61996   111%     -   72s
+     0     0  130.61996    0  227   62.00000  130.61996   111%     -   73s
+     0     0  129.51154    0  224   62.00000  129.51154   109%     -   77s
+     0     0  129.50562    0  232   62.00000  129.50562   109%     -   78s
+     0     0  129.50562    0  236   62.00000  129.50562   109%     -   79s
+     0     0  129.23976    0  234   62.00000  129.23976   108%     -   80s
+     0     0  129.23976    0  229   62.00000  129.23976   108%     -   84s
+     0     0  128.83127    0  219   62.00000  128.83127   108%     -   86s
+     0     0  128.83127    0  219   62.00000  128.83127   108%     -   87s
+     0     0  128.82658    0  217   62.00000  128.82658   108%     -   88s
+     0     0  128.73987    0  229   62.00000  128.73987   108%     -   92s
+     0     0  128.65922    0  228   62.00000  128.65922   108%     -   94s
+     0     0  128.65922    0  185   62.00000  128.65922   108%     -   94s
+     0     2  128.65922    0  184   62.00000  128.65922   108%     -   99s
+     1     4  128.65922    1  170   62.00000  128.65922   108%  1278  100s
+H    7    16                      63.0000000  128.61004   104%  1741  102s
+    68    82  125.36232    9  152   63.00000  127.80017   103%  1011  105s
+   112   121  117.96002   15  145   63.00000  127.80017   103%   898  111s
+   133   140  113.84592   17  138   63.00000  127.80017   103%   848  115s
+   167   161  110.60553   19  133   63.00000  127.80017   103%   781  121s
+   193   182  108.64580   20  137   63.00000  126.95830   102%   788  125s
+   244   226   64.58516   22  102   63.00000  126.95830   102%   765  132s
+   286   249   92.05802   23  101   63.00000  126.95830   102%   759  136s
+   329   275   92.32308   24  101   63.00000  125.82926   100%   747  141s
+   371   310   92.12411   27  115   63.00000  125.82926   100%   744  145s
+   419   329   79.33995   30  124   63.00000  125.82926   100%   747  152s
+   451   350   78.19076   31   89   63.00000  125.82926   100%   750  156s
+   466   365   77.82854   32   93   63.00000  125.82926   100%   749  160s
+   533   405     cutoff   39        63.00000  122.74803  94.8%   745  167s
+   565   427     cutoff   44        63.00000  120.49583  91.3%   732  170s
+   636   488   86.96106   18   81   63.00000  119.46848  89.6%   734  175s
+   739   542   73.52588   23   84   63.00000  113.59446  80.3%   712  180s
+   925   631   66.02046   11   49   63.00000  112.91202  79.2%   663  187s
+  1155   731   88.70464   16  109   63.00000  108.40283  72.1%   641  193s
+  1286   759     cutoff   23        63.00000  107.59956  70.8%   628  196s
+  1513   867   73.39228   23   84   63.00000  106.07818  68.4%   630  202s
+  1649   909   78.98970   24   94   63.00000  102.82097  63.2%   623  205s
+  1920   949   66.68765   17   88   63.00000  101.99456  61.9%   611  212s
+  2082  1000   71.00271   25   89   63.00000  100.07482  58.8%   601  216s
+  2255  1061   74.42842   14   91   63.00000   99.09898  57.3%   585  220s
+  2455  1074   66.50897   14   73   63.00000   97.83084  55.3%   576  227s
+  2521  1112   86.35852   17  126   63.00000   97.83084  55.3%   576  230s
+  2761  1155   71.71488   22   86   63.00000   96.14563  52.6%   569  238s
+  2961  1204   77.94759   21   82   63.00000   94.81717  50.5%   566  243s
+  3155  1253   69.01429   19  105   63.00000   94.81717  50.5%   565  247s
+  3341  1295   79.34017   19   91   63.00000   93.39823  48.3%   563  252s
+  3572  1372   67.30769   22   65   63.00000   93.00037  47.6%   558  257s
+  3791  1373   71.22663   12  908   63.00000   92.30438  46.5%   552  286s
+  3793  1374   67.38997   19  164   63.00000   92.30438  46.5%   552  588s
+  3794  1375   68.67379    9  427   63.00000   92.30438  46.5%   552  643s
+  3795  1376   70.66116   19  308   63.00000   92.30438  46.5%   552  651s
+  3799  1378   72.47255   15  259   63.00000   92.30438  46.5%   551  655s
+  3803  1381   90.48197   18  258   63.00000   92.30438  46.5%   551 1072s
+  3806  1383   77.61422   21  283   63.00000   92.30438  46.5%   550 1077s
+  3808  1384   71.36830   19  272   63.00000   92.30438  46.5%   550 1080s
+  3813  1388   70.96093   21  268   63.00000   92.30438  46.5%   549 1085s
+  3817  1390   90.08128   10  264   63.00000   92.30438  46.5%   549 1090s
+  3821  1393   86.50406   20  248   63.00000   92.30438  46.5%   548 1099s
+  3822  1394   79.79529   10  281   63.00000   92.30438  46.5%   548 1100s
+  3826  1396   70.83324   18  265   63.00000   92.30438  46.5%   547 1106s
+  3828  1398   80.02332   16  272   63.00000   92.30438  46.5%   547 1110s
+  3831  1400   68.12246   20  261   63.00000   92.30438  46.5%   547 1116s
+  3834  1402   70.53978   16  206   63.00000   92.30438  46.5%   546 1122s
+  3835  1402   79.62893   11  206   63.00000   92.30438  46.5%   546 1134s
+  3836  1406   92.30438   14  190   63.00000   92.30438  46.5%   569 1175s
+  3850  1423   92.30438   17  200   63.00000   92.30438  46.5%   575 1180s
+  3885  1451   92.30438   19  141   63.00000   92.30438  46.5%   579 1186s
+  3929  1463   92.30438   21  183   63.00000   92.30438  46.5%   585 1192s
+  3966  1471   92.30438   22  189   63.00000   92.30438  46.5%   587 1196s
+  4001  1469   92.30438   23  185   63.00000   92.30438  46.5%   591 1201s
+  4046  1471   92.30438   24  176   63.00000   92.30438  46.5%   593 1205s
+  4078  1470   92.30438   25  185   63.00000   92.30438  46.5%   595 1210s
+  4116  1467   92.30438   26  188   63.00000   92.30438  46.5%   598 1216s
+  4134  1469   92.30438   26  148   63.00000   92.30438  46.5%   602 1220s
+  4172  1480   92.30438   27  178   63.00000   92.30438  46.5%   608 1226s
+  4212  1486   92.30438   28  151   63.00000   92.30438  46.5%   612 1232s
+  4231  1491   92.30438   29  190   63.00000   92.30438  46.5%   612 1235s
+  4285  1486   92.30438   30  199   63.00000   92.30438  46.5%   615 1241s
+  4310  1490   89.82918   30  171   63.00000   92.30438  46.5%   616 1246s
+  4339  1490   92.30438   31  204   63.00000   92.30438  46.5%   617 1250s
+  4394  1488   92.30438   32  199   63.00000   92.30438  46.5%   622 1259s
+  4420  1497   91.10290   32  157   63.00000   92.30438  46.5%   625 1263s
+  4460  1498   80.86138   33  181   63.00000   92.30438  46.5%   626 1268s
+  4492  1505   92.30438   34  186   63.00000   92.30438  46.5%   628 1272s
+  4541  1505   75.81014   35  125   63.00000   92.30438  46.5%   627 1276s
+  4595  1490   68.01203   37   97   63.00000   92.30438  46.5%   625 1280s
+  4609  1499     cutoff   39        63.00000   92.30438  46.5%   624 1285s
+  4777  1481   75.22547   22   59   63.00000   92.30438  46.5%   614 1294s
+  4886  1469   84.16166   21   94   63.00000   92.30438  46.5%   608 1299s
+  4972  1471   84.01359   26  144   63.00000   92.30438  46.5%   606 1304s
+  5038  1470   74.69173   29  135   63.00000   92.30438  46.5%   607 1310s
+  5127  1466   64.43509   36   86   63.00000   92.30438  46.5%   606 1315s
+  5196  1476   82.27409   27  107   63.00000   92.30438  46.5%   608 1320s
+  5295  1486   70.20849   35   88   63.00000   92.30438  46.5%   606 1327s
+  5407  1477   82.68823   38  167   63.00000   92.30438  46.5%   607 1333s
+  5512  1474   73.61722   40  124   63.00000   92.30438  46.5%   609 1340s
+  5652  1459   73.97634   24  113   63.00000   92.30438  46.5%   607 1347s
+  5796  1428   83.02409   30  130   63.00000   92.30438  46.5%   606 1352s
+  5839  1455   78.68030   32  130   63.00000   92.30438  46.5%   607 1360s
+  6014  1415   80.79327   22   91   63.00000   92.30438  46.5%   605 1367s
+  6158  1404   72.48355   33  108   63.00000   91.84980  45.8%   608 1374s
+  6305  1381   77.79788   21   72   63.00000   90.21121  43.2%   612 1382s
+  6502  1351   73.05718   35   83   63.00000   89.93912  42.8%   611 1390s
+  6704  1307   66.42703   28  103   63.00000   89.24762  41.7%   610 1398s
+  6871  1289     cutoff   29        63.00000   88.13502  39.9%   609 1406s
+  7057  1236     cutoff   36        63.00000   87.50213  38.9%   611 1415s
+  7209  1212   69.63968   30   69   63.00000   86.98376  38.1%   609 1424s
+  7478  1133   65.06064   28   84   63.00000   86.29729  37.0%   607 1433s
+  7664  1098   65.22544   27   76   63.00000   85.43483  35.6%   605 1442s
+  7879  1027   66.77369   24   80   63.00000   84.80780  34.6%   605 1451s
+  7970  1001   67.85828   33  112   63.00000   84.56089  34.2%   605 1461s
+  8250   993   64.93329   33   79   63.00000   83.33929  32.3%   603 1472s
+  8541  1002   72.38147   27  112   63.00000   82.74549  31.3%   602 1482s
+  8857  1004   66.13209   36  130   63.00000   82.02492  30.2%   602 1493s
+  9206   977   64.53360   27  103   63.00000   80.94944  28.5%   601 1505s
+  9609   970   72.57793   34   89   63.00000   79.74114  26.6%   598 1517s
+ 10060   914   67.06291   30  141   63.00000   78.74041  25.0%   593 1530s
+ 10490   891   65.06544   28   94   63.00000   77.63146  23.2%   592 1543s
+ 10672   835     cutoff   30        63.00000   77.08897  22.4%   590 1557s
+ 11163   733     cutoff   25        63.00000   76.18983  20.9%   589 1571s
+ 11632   687   65.04274   40  102   63.00000   74.73617  18.6%   589 1586s
+ 11894   544   68.81708   42  133   63.00000   74.13124  17.7%   587 1601s
+ 12423   458   67.26334   38  144   63.00000   73.07253  16.0%   587 1617s
+ 12812   425     cutoff   25        63.00000   71.83939  14.0%   585 1631s
+ 12911   231 infeasible   28        63.00000   71.60246  13.7%   584 1646s
+ 13373     0     cutoff   46        63.00000   69.90243  11.0%   581 1655s
+
+Cutting planes:
+  Lift-and-project: 1
+  Implied bound: 9
+  Projected implied bound: 7
+  Clique: 403
+  MIR: 364
+  Mixing: 1
+  Flow cover: 476
+  Zero half: 3
+  Network: 8
+  RLT: 148
+  Relax-and-lift: 222
+  BQP: 290
+
+Explored 13749 nodes (7950800 simplex iterations) in 1655.83 seconds (1361.39 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 63 62 58 ... 42
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.300000000000e+01, best bound 6.300000000000e+01, gap 0.0000%
+
+--- RISULTATI STRONG FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 63.0
+Best Bound: 63.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 1655.898798
+Nodi esplorati (B&B Tree): 13749
+
+
+
+--- weak.py (wall clock 756.1s) ---
+[DIAG] Nodi: 80  Archi attivi: 1895
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto deboli aggiunti: 1816
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (WEAK)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 3791 rows, 3791 columns and 997008 nonzeros (Max)
+Model fingerprint: 0xa943d295
+Model has 1 linear objective coefficients
+Variable types: 1896 continuous, 1895 integer (1895 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 6e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [5e+02, 6e+02]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 82 rows and 82 columns
+Presolve time: 1.77s
+Presolved: 3709 rows, 3709 columns, 996842 nonzeros
+Variable types: 1893 continuous, 1816 integer (1816 binary)
+Found heuristic solution: objective 13.0000000
+
+Root relaxation: objective 5.109711e+02, 2267 iterations, 0.26 seconds (0.84 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  510.97114    0  139   13.00000  510.97114  3831%     -    2s
+H    0     0                      33.0000000  510.97114  1448%     -    2s
+H    0     0                      35.0000000  510.97114  1360%     -    2s
+H    0     0                      38.0000000  510.97114  1245%     -    3s
+H    0     0                      51.0000000  510.97114   902%     -    3s
+H    0     0                      53.0000000  510.97114   864%     -    3s
+H    0     0                      54.0000000  510.97114   846%     -    3s
+H    0     0                      55.0000000  510.97114   829%     -    3s
+H    0     0                      56.0000000  510.97114   812%     -    3s
+     0     0  175.10887    0  201   56.00000  175.10887   213%     -   10s
+     0     0  172.10596    0  173   56.00000  172.10596   207%     -   11s
+     0     0  170.89155    0  165   56.00000  170.89155   205%     -   12s
+     0     0  170.21296    0  166   56.00000  170.21296   204%     -   12s
+     0     0  169.85337    0  177   56.00000  169.85337   203%     -   13s
+     0     0  169.81426    0  167   56.00000  169.81426   203%     -   13s
+     0     0  145.03139    0  254   56.00000  145.03139   159%     -   18s
+     0     0  141.39589    0  212   56.00000  141.39589   152%     -   20s
+     0     0  140.19192    0  344   56.00000  140.19192   150%     -   21s
+     0     0  139.89330    0  156   56.00000  139.89330   150%     -   22s
+     0     0  139.81309    0  167   56.00000  139.81309   150%     -   22s
+     0     0  139.77238    0  168   56.00000  139.77238   150%     -   22s
+H    0     0                      62.0000000  139.77238   125%     -   25s
+     0     0  137.45927    0  225   62.00000  137.45927   122%     -   26s
+     0     0  136.42967    0  170   62.00000  136.42967   120%     -   26s
+     0     0  136.19730    0  189   62.00000  136.19730   120%     -   27s
+     0     0  136.13965    0  277   62.00000  136.13965   120%     -   29s
+     0     0  135.26418    0  246   62.00000  135.26418   118%     -   34s
+     0     0  134.67037    0  218   62.00000  134.67037   117%     -   34s
+     0     0  134.47180    0  204   62.00000  134.47180   117%     -   35s
+     0     0  134.35415    0  182   62.00000  134.35415   117%     -   35s
+     0     0  134.29086    0  192   62.00000  134.29086   117%     -   35s
+     0     0  133.47501    0  187   62.00000  133.47501   115%     -   39s
+     0     0  133.27644    0  194   62.00000  133.27644   115%     -   40s
+     0     0  133.23107    0  199   62.00000  133.23107   115%     -   41s
+     0     0  132.87727    0  187   62.00000  132.87727   114%     -   44s
+     0     0  132.72422    0  186   62.00000  132.72422   114%     -   45s
+     0     0  132.69712    0  176   62.00000  132.69712   114%     -   45s
+     0     0  132.61271    0  189   62.00000  132.61271   114%     -   48s
+     0     0  132.58448    0  180   62.00000  132.58448   114%     -   48s
+     0     0  130.62874    0  194   62.00000  130.62874   111%     -   52s
+     0     0  130.62874    0  194   62.00000  130.62874   111%     -   53s
+     0     0  130.62874    0  167   62.00000  130.62874   111%     -   53s
+     0     2  130.62874    0  161   62.00000  130.62874   111%     -   57s
+     7    16  130.62874    3  133   62.00000  130.62874   111%   824   60s
+H   19    26                      63.0000000  130.62874   107%  1024   61s
+    62    72  130.10003    8  127   63.00000  130.62874   107%  1124   65s
+   182   170  124.53633   18  111   63.00000  130.00293   106%   795   70s
+   358   314  117.49289   30  105   63.00000  129.96811   106%   749   75s
+   547   478   99.94414   41  168   63.00000  128.85962   105%   759   80s
+   832   705   95.06732   49  142   63.00000  127.32584   102%   700   85s
+  1164   948  105.02325    7   61   63.00000  123.31701  95.7%   676   90s
+  1572  1228   99.83820   13  131   63.00000  119.69047  90.0%   642   95s
+  2060  1525   92.47719   16  125   63.00000  117.98734  87.3%   610  100s
+  2199  1526   87.50905   43  167   63.00000  117.98734  87.3%   605  142s
+  2201  1527   70.69295   19  146   63.00000  117.98734  87.3%   604  151s
+  2202  1528   96.74239   20  172   63.00000  117.98734  87.3%   604  162s
+  2207  1531   97.88539   35  164   63.00000  117.98734  87.3%   602  184s
+  2208  1532   93.17699   18  177   63.00000  117.98734  87.3%   602  208s
+  2211  1534   94.21936   51  211   63.00000  117.98734  87.3%   601  210s
+  2212  1535   77.76006   22  199   63.00000  117.98734  87.3%   601  240s
+  2213  1535  107.31591    8  195   63.00000  117.98734  87.3%   601  261s
+  2215  1537   80.66766   27  197   63.00000  117.98734  87.3%   600  265s
+  2217  1538   84.64789   23  208   63.00000  117.98734  87.3%   600  271s
+  2218  1539   72.34970   58  213   63.00000  117.98734  87.3%   599  275s
+  2220  1540   91.25708   19  214   63.00000  117.98734  87.3%   599  282s
+  2221  1541   70.01712   30  219   63.00000  117.98734  87.3%   599  285s
+  2222  1541   95.65073   12  233   63.00000  117.98734  87.3%   598  290s
+  2225  1543  109.42786   17  212   63.00000  117.98734  87.3%   598  298s
+  2227  1545   75.56572   26  231   63.00000  117.98734  87.3%   597  301s
+  2228  1545   80.95905   29  246   63.00000  117.98734  87.3%   597  307s
+  2229  1546   78.90236   28  254   63.00000  117.98734  87.3%   596  312s
+  2230  1547   68.64857   35  233   63.00000  117.98734  87.3%   596  315s
+  2232  1548   66.91147   20  232   63.00000  117.98734  87.3%   596  322s
+  2235  1555  117.98734   11  204   63.00000  117.98734  87.3%   623  326s
+  2257  1606  117.98734   14  190   63.00000  117.98734  87.3%   633  330s
+  2449  1636  117.98734   19  166   63.00000  117.98734  87.3%   637  335s
+  2526  1672  117.98734   22  127   63.00000  117.98734  87.3%   647  340s
+  2601  1722  117.98734   25  154   63.00000  117.98734  87.3%   652  345s
+  2717  1760  117.98734   27  346   63.00000  117.98734  87.3%   647  350s
+  2844  1766  106.24047   28  210   63.00000  116.39240  84.7%   651  355s
+  2916  1780  108.03070   30  169   63.00000  116.01235  84.1%   659  360s
+  3011  1825   98.25584   35  132   63.00000  114.46019  81.7%   662  365s
+  3184  1898   92.68651   39  138   63.00000  114.45877  81.7%   660  370s
+  3484  1970   67.91654   49   54   63.00000  112.73156  78.9%   657  376s
+  3638  2027   94.02108   28  104   63.00000  112.44465  78.5%   654  380s
+  3986  2078     cutoff   50        63.00000  107.48691  70.6%   643  386s
+  4173  2158   76.15767   33   56   63.00000  107.48691  70.6%   642  390s
+  4485  2172   91.63561   26   81   63.00000  105.11442  66.8%   633  395s
+  4717  2244   82.14596   27   88   63.00000  104.50556  65.9%   631  400s
+  5081  2272   68.95977   28   78   63.00000  103.76631  64.7%   622  405s
+  5379  2294   74.80237   35   84   63.00000  103.01144  63.5%   615  410s
+  5748  2353   81.14862   31   63   63.00000  101.74219  61.5%   612  416s
+  6156  2356     cutoff   29        63.00000  100.17788  59.0%   609  422s
+  6351  2421   81.21395   34   80   63.00000  100.11305  58.9%   609  426s
+  6621  2354     cutoff   41        63.00000  100.11305  58.9%   606  430s
+  6925  2373     cutoff   27        63.00000   99.50585  57.9%   603  437s
+  7032  2489   80.03495   33   96   63.00000   99.46257  57.9%   604  441s
+  7369  2603   70.65043   30   55   63.00000   99.02868  57.2%   601  445s
+  7701  2723   72.02736   44   62   63.00000   97.69254  55.1%   597  450s
+  8544  2947   83.30748   31   93   63.00000   95.89956  52.2%   590  458s
+  8834  3095   82.04535   25   94   63.00000   94.93758  50.7%   589  463s
+  9308  3179     cutoff   44        63.00000   94.04508  49.3%   583  469s
+  9791  3286     cutoff   34        63.00000   93.38767  48.2%   581  474s
+ 10322  3288     cutoff   22        63.00000   92.52790  46.9%   574  479s
+ 10561  3375   78.26946   18   60   63.00000   92.48938  46.8%   573  484s
+ 10941  3545   66.72780   44   77   63.00000   91.62072  45.4%   570  490s
+ 11724  3690   70.27917   37  123   63.00000   90.64863  43.9%   562  496s
+ 12415  3826   79.33049   19   60   63.00000   90.16497  43.1%   561  502s
+ 13233  3836   69.09720   33   58   63.00000   88.99098  41.3%   556  509s
+ 13368  3901   69.93284   24   69   63.00000   88.85467  41.0%   555  515s
+ 13856  4019   76.81003   20  105   63.00000   88.21754  40.0%   554  522s
+ 14898  4139   67.43002   31   68   63.00000   87.30272  38.6%   549  529s
+ 15904  4202   79.42356   28   64   63.00000   86.28083  37.0%   545  536s
+ 16635  4260     cutoff   49        63.00000   85.79607  36.2%   543  579s
+ 17807  4287   66.08981   23   60   63.00000   84.88228  34.7%   539  583s
+ 18216  4342   75.81932   26   54   63.00000   84.27782  33.8%   539  587s
+ 18857  4375   70.01441   33   74   63.00000   83.79004  33.0%   538  592s
+ 19407  4376   67.58556   24   55   63.00000   83.21746  32.1%   537  598s
+ 20353  4359     cutoff   29        63.00000   82.50961  31.0%   534  605s
+ 21334  4342   70.76590   26   56   63.00000   81.86720  29.9%   531  611s
+ 21881  4353     cutoff   43        63.00000   81.28959  29.0%   530  619s
+ 22799  4303     cutoff   46        63.00000   80.79316  28.2%   528  626s
+ 23450  4278   77.22342   38   74   63.00000   80.09497  27.1%   527  634s
+ 24487  4194     cutoff   27        63.00000   79.41040  26.0%   525  642s
+ 25214  4060     cutoff   31        63.00000   78.74674  25.0%   525  650s
+ 26098  3881     cutoff   33        63.00000   77.97182  23.8%   523  659s
+ 26942  3678     cutoff   37        63.00000   77.31988  22.7%   524  668s
+ 27802  3508   65.39535   27  101   63.00000   76.47819  21.4%   524  678s
+ 28643  3261 infeasible   29        63.00000   75.87536  20.4%   525  687s
+ 29564  2970   70.95670   31   66   63.00000   74.95787  19.0%   526  697s
+ 30497  2583     cutoff   26        63.00000   74.26232  17.9%   527  707s
+ 31463  2226     cutoff   36        63.00000   73.01012  15.9%   527  717s
+ 32414  1755     cutoff   26        63.00000   72.35378  14.8%   526  727s
+ 33310  1198     cutoff   27        63.00000   70.90032  12.5%   527  737s
+ 34214   517     cutoff   25        63.00000   69.50433  10.3%   528  747s
+ 35129     0     cutoff   29        63.00000   67.35645  6.92%   528  754s
+
+Cutting planes:
+  Gomory: 1
+  Lift-and-project: 29
+  Cover: 139
+  Implied bound: 97
+  Projected implied bound: 7
+  Clique: 299
+  MIR: 302
+  Mixing: 1
+  Knapsack: 1
+  StrongCG: 1
+  Flow cover: 317
+  Network: 1
+  RLT: 2
+  Relax-and-lift: 93
+  BQP: 296
+  PSD: 29
+
+Explored 35734 nodes (18904137 simplex iterations) in 754.45 seconds (1285.60 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 63 63 62 ... 35
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 6.300000000000e+01, best bound 6.300000000000e+01, gap 0.0000%
+
+--- RISULTATI WEAK FORMULATION ---
+Stato del solver: 2  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 63.0
+Best Bound: 63.0
+MIP Gap: 0.0
+Tempo di calcolo (sec): 754.456250
+Nodi esplorati (B&B Tree): 35734
+
+
+
+--- benders.py (wall clock 3602.3s) ---
+[DIAG] Nodi: 80  Archi attivi: 1895  Coppie in conflitto lette: 987610
+[DIAG] UB rilassata (rete completa, senza conflitti): 597.0
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 3600
+--- Inizio Ottimizzazione Single-Tree Benders (Gurobi/Python) ---
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+LazyConstraints  1
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 1818 rows, 1896 columns and 989533 nonzeros (Max)
+Model fingerprint: 0xf7f498bf
+Model has 1 linear objective coefficients
+Variable types: 1 continuous, 1895 integer (1895 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 6e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 6e+02]
+  RHS range        [1e+00, 6e+02]
+
+Presolve time: 0.39s
+Presolved: 1818 rows, 1896 columns, 989533 nonzeros
+Variable types: 1 continuous, 1895 integer (1895 binary)
+
+Root relaxation: objective 5.808811e+02, 109 iterations, 0.04 seconds (0.04 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  580.88112    0   51          -  580.88112      -     -    1s
+     0     0  577.00000    0   52          -  577.00000      -     -    1s
+     0     0  577.00000    0   52          -  577.00000      -     -    5s
+[HEARTBEAT] t=5.1s  chiamate=37  tagli=58  nodi=0
+     0     0  568.52948    0   98          -  568.52948      -     -    6s
+     0     0  223.52909    0   77          -  223.52909      -     -    7s
+     0     0  215.35025    0   77          -  215.35025      -     -    7s
+     0     0  214.81186    0   74          -  214.81186      -     -    7s
+     0     0  214.67376    0   76          -  214.67376      -     -    8s
+     0     0  214.66355    0   77          -  214.66355      -     -    8s
+     0     0  193.67072    0  184          -  193.67072      -     -    9s
+     0     0  190.46201    0  271          -  190.46201      -     -   10s
+     0     0  189.59952    0  292          -  189.59952      -     -   11s
+     0     0  189.11130    0  374          -  189.11130      -     -   12s
+     0     0  188.85526    0  316          -  188.85526      -     -   13s
+     0     0  188.54706    0  320          -  188.54706      -     -   13s
+     0     0  188.47859    0  323          -  188.47859      -     -   13s
+     0     0  177.19779    0  237          -  177.19779      -     -   15s
+[HEARTBEAT] t=15.3s  chiamate=41  tagli=63  nodi=0
+H    0     0                       2.0000000  177.09470  8755%     -   15s
+     0     0  176.07427    0   90    2.00000  176.07427  8704%     -   15s
+     0     0  175.46015    0   90    2.00000  175.46015  8673%     -   15s
+     0     0  175.39956    0   92    2.00000  175.39956  8670%     -   15s
+     0     0  168.04142    0   87    2.00000  168.04142  8302%     -   16s
+H    0     0                       3.0000000  167.97411  5499%     -   16s
+     0     0  167.97411    0   87    3.00000  167.97411  5499%     -   20s
+[HEARTBEAT] t=20.3s  chiamate=70  tagli=94  nodi=0
+H    0     0                      50.0000000  167.97411   236%     -   21s
+H    0     0                      51.0000000  167.97411   229%     -   21s
+     0     0  167.76075    0   88   51.00000  167.76075   229%     -   22s
+     0     0  167.46211    0   95   51.00000  167.46211   228%     -   22s
+     0     0  167.31337    0   97   51.00000  167.31337   228%     -   22s
+     0     0  167.30390    0   95   51.00000  167.30390   228%     -   22s
+     0     0  166.00873    0   94   51.00000  166.00873   226%     -   23s
+     0     0  165.33758    0   94   51.00000  165.33758   224%     -   24s
+     0     0  165.08262    0   99   51.00000  165.08262   224%     -   24s
+     0     0  164.91596    0   95   51.00000  164.91596   223%     -   24s
+     0     0  164.88131    0   96   51.00000  164.88131   223%     -   24s
+     0     0  163.72803    0  100   51.00000  163.72803   221%     -   25s
+     0     0  163.35779    0  109   51.00000  163.35779   220%     -   25s
+     0     0  163.30552    0  100   51.00000  163.30552   220%     -   25s
+     0     0  162.96594    0  102   51.00000  162.96594   220%     -   26s
+     0     0  162.71340    0  102   51.00000  162.71340   219%     -   26s
+     0     0  162.69557    0  102   51.00000  162.69557   219%     -   26s
+     0     0  160.28538    0  101   51.00000  160.28538   214%     -   27s
+     0     0  159.77190    0   98   51.00000  159.77190   213%     -   27s
+     0     0  159.66375    0   96   51.00000  159.66375   213%     -   27s
+     0     0  159.35524    0  104   51.00000  159.35524   212%     -   27s
+     0     0  159.12063    0  107   51.00000  159.12063   212%     -   27s
+     0     0  159.01880    0  102   51.00000  159.01880   212%     -   27s
+     0     0  158.91632    0  106   51.00000  158.91632   212%     -   27s
+     0     0  158.89710    0  108   51.00000  158.89710   212%     -   27s
+     0     0  155.99714    0  101   51.00000  155.99714   206%     -   28s
+[HEARTBEAT] t=28.4s  chiamate=84  tagli=107  nodi=0
+     0     0  155.95429    0  101   51.00000  155.95429   206%     -   31s
+[HEARTBEAT] t=33.4s  chiamate=97  tagli=120  nodi=0
+     0     0  155.43746    0  106   51.00000  155.43746   205%     -   34s
+     0     0  155.10773    0  115   51.00000  155.10773   204%     -   34s
+     0     0  154.94719    0  116   51.00000  154.94719   204%     -   35s
+     0     0  154.90791    0  119   51.00000  154.90791   204%     -   35s
+     0     0  152.88119    0  103   51.00000  152.88119   200%     -   35s
+     0     0  152.71494    0  109   51.00000  152.71494   199%     -   36s
+     0     0  152.55592    0  120   51.00000  152.55592   199%     -   36s
+     0     0  152.27401    0  104   51.00000  152.27401   199%     -   36s
+     0     0  152.23279    0  106   51.00000  152.23279   198%     -   36s
+     0     0  151.97237    0  108   51.00000  151.97237   198%     -   37s
+     0     0  151.88039    0  114   51.00000  151.88039   198%     -   37s
+     0     0  151.75725    0  115   51.00000  151.75725   198%     -   38s
+     0     0  151.71469    0  115   51.00000  151.71469   197%     -   38s
+     0     0  151.71469    0  101   51.00000  151.71469   197%     -   38s
+     0     2  151.70465    0   98   51.00000  151.70465   197%     -   38s
+[HEARTBEAT] t=39.7s  chiamate=100  tagli=123  nodi=8
+H    8    16                      51.0000000  150.46971   195%   193   39s
+    15    26  146.65968    4  102   51.00000  149.89745   194%   189   40s
+   441   437  102.40362   45   49   51.00000  139.55344   174%   132   45s
+[HEARTBEAT] t=45.7s  chiamate=104  tagli=126  nodi=507
+H  507   480                      53.0000000  137.47711   159%   129   45s
+H  662   616                      53.0000000  136.21561   157%   129   47s
+   896   849   56.85324   67   29   53.00000  135.50000   156%   120   50s
+[HEARTBEAT] t=50.9s  chiamate=114  tagli=134  nodi=1136
+  1895  1488   54.00000   28    -   53.00000  129.12126   144%  91.9   55s
+[HEARTBEAT] t=57.8s  chiamate=126  tagli=146  nodi=2085
+  2086  1586   87.95176   13  101   53.00000  129.12126   144%  92.8   81s
+[HEARTBEAT] t=84.6s  chiamate=127  tagli=147  nodi=2087
+H 2087  1507                      54.0000000  129.12126   139%  92.8   88s
+H 2087  1432                      55.0000000  129.12126   135%  92.8   88s
+[HEARTBEAT] t=90.6s  chiamate=138  tagli=156  nodi=2087
+  2088  1432   90.06316   19  161   55.00000  129.12126   135%  92.7   91s
+  2089  1433   63.99464   33  167   55.00000  129.12126   135%  92.7   96s
+[HEARTBEAT] t=99.8s  chiamate=141  tagli=159  nodi=2089
+[HEARTBEAT] t=105.0s  chiamate=148  tagli=166  nodi=2089
+[HEARTBEAT] t=110.0s  chiamate=153  tagli=171  nodi=2089
+  2090  1434   56.00000   52  163   55.00000  129.12126   135%  92.7  116s
+[HEARTBEAT] t=123.3s  chiamate=159  tagli=177  nodi=2091
+  2092  1435   55.00000   42  171   55.00000  129.12126   135%  92.6  123s
+  2094  1436   79.96070   22  193   55.00000  129.12126   135%  92.5  127s
+  2095  1437   77.00000   22  172   55.00000  129.12126   135%  92.4  130s
+  2097  1438   60.78947   38  203   55.00000  129.12126   135%  92.3  135s
+[HEARTBEAT] t=138.9s  chiamate=160  tagli=178  nodi=2097
+  2099  1440   60.00000   50  160   55.00000  129.12126   135%  92.3  141s
+[HEARTBEAT] t=144.0s  chiamate=163  tagli=181  nodi=2099
+  2102  1442   85.95192   51  206   55.00000  129.12126   135%  92.1  147s
+  2105  1444   58.00000   49  189   55.00000  129.12126   135%  92.0  151s
+  2108  1446  103.06101   14  187   55.00000  129.12126   135%  91.9  155s
+  2112  1448   71.65810   31  176   55.00000  129.12126   135%  91.7  160s
+  2116  1451   87.36957   49  149   55.00000  129.12126   135%  91.5  165s
+  2120  1454  107.80246   16  150   55.00000  129.12126   135%  91.3  170s
+[HEARTBEAT] t=171.8s  chiamate=165  tagli=183  nodi=2120
+[HEARTBEAT] t=176.9s  chiamate=169  tagli=187  nodi=2120
+  2121  1454  110.84057   16  150   55.00000  129.12126   135%  91.3  181s
+  2124  1461  129.12126   28  151   55.00000  129.12126   135%   108  185s
+  2146  1502  129.12126   31  113   55.00000  129.12126   135%   117  191s
+  2218  1538  129.12126   35  123   55.00000  129.12126   135%   123  195s
+  2290  1584  118.78687   38  102   55.00000  129.12126   135%   130  200s
+[HEARTBEAT] t=203.5s  chiamate=175  tagli=193  nodi=2370
+  2401  1628  110.61379   42   61   55.00000  129.12126   135%   134  205s
+[HEARTBEAT] t=209.4s  chiamate=179  tagli=197  nodi=2464
+  2477  1658  105.83012   44   60   55.00000  129.12126   135%   137  210s
+  2594  1724   77.96802   48   40   55.00000  127.62118   132%   141  215s
+[HEARTBEAT] t=216.0s  chiamate=182  tagli=200  nodi=2604
+  2711  1779  109.89764   35   68   55.00000  126.52305   130%   144  221s
+[HEARTBEAT] t=223.5s  chiamate=184  tagli=202  nodi=2764
+  2793  1821   92.45070   41   57   55.00000  126.52305   130%   147  226s
+  2947  1864   62.00000   50   27   55.00000  126.38295   130%   147  230s
+[HEARTBEAT] t=230.5s  chiamate=191  tagli=209  nodi=2965
+[HEARTBEAT] t=235.9s  chiamate=193  tagli=211  nodi=3097
+  3097  1962   90.28571   41   66   55.00000  125.92955   129%   147  235s
+  3251  1962  113.95089   37   88   55.00000  125.55628   128%   147  241s
+[HEARTBEAT] t=241.9s  chiamate=201  tagli=219  nodi=3277
+  3383  2062   70.68830   53   33   55.00000  125.25684   128%   149  247s
+[HEARTBEAT] t=249.4s  chiamate=203  tagli=221  nodi=3546
+  3588  2115  115.66861   36  103   55.00000  120.45495   119%   150  252s
+  3723  2166   98.66119   40   79   55.00000  120.45495   119%   148  255s
+[HEARTBEAT] t=255.8s  chiamate=206  tagli=224  nodi=3862
+  3894  2183  109.90795   40   91   55.00000  118.92523   116%   150  262s
+[HEARTBEAT] t=262.1s  chiamate=212  tagli=230  nodi=3933
+[HEARTBEAT] t=268.2s  chiamate=213  tagli=231  nodi=4054
+  4054  2177  102.69841   42   77   55.00000  118.92523   116%   151  268s
+  4064  2256   97.54335   43   67   55.00000  118.92523   116%   152  273s
+  4196  2292   60.47224   47   58   55.00000  118.92523   116%   152  277s
+[HEARTBEAT] t=277.1s  chiamate=222  tagli=240  nodi=4280
+  4389  2375   96.17241   41   72   55.00000  117.20678   113%   155  283s
+[HEARTBEAT] t=283.6s  chiamate=223  tagli=241  nodi=4423
+  4567  2420   63.13912   56   75   55.00000  116.26318   111%   155  288s
+  4740  2504   84.11589   38   55   55.00000  116.26318   111%   157  293s
+[HEARTBEAT] t=293.1s  chiamate=227  tagli=245  nodi=4769
+  4978  2459   92.35946   41   64   55.00000  114.72117   109%   157  296s
+H 5021  2308                      56.0000000  114.43871   104%   158  297s
+  5022  2476   90.00000   42   52   56.00000  114.43871   104%   158  301s
+[HEARTBEAT] t=304.2s  chiamate=235  tagli=252  nodi=5283
+  5367  2553   95.36410   41  133   56.00000  114.43871   104%   159  309s
+  5582  2617   68.96114   49   97   56.00000  114.28571   104%   161  313s
+[HEARTBEAT] t=314.0s  chiamate=237  tagli=254  nodi=5655
+  5855  2677   89.19489   37   81   56.00000  114.28571   104%   161  319s
+[HEARTBEAT] t=319.3s  chiamate=238  tagli=255  nodi=5900
+  6092  2656   81.05714   43   63   56.00000  110.77316  97.8%   160  322s
+H 6117  2552                      57.0000000  110.77316  94.3%   160  322s
+  6180  2742   71.00000   48   60   57.00000  110.59111  94.0%   160  328s
+[HEARTBEAT] t=328.3s  chiamate=247  tagli=263  nodi=6443
+  6488  2905   75.90909   49   46   57.00000  109.85714  92.7%   161  334s
+[HEARTBEAT] t=334.6s  chiamate=250  tagli=266  nodi=6507
+  6751  3080   75.04762   51  111   57.00000  108.96137  91.2%   163  340s
+[HEARTBEAT] t=340.5s  chiamate=251  tagli=267  nodi=7056
+  7070  3149   88.27673   40   99   57.00000  107.80982  89.1%   163  346s
+[HEARTBEAT] t=346.2s  chiamate=252  tagli=268  nodi=7190
+  7336  3289   69.19237   48   75   57.00000  107.71642  89.0%   164  354s
+[HEARTBEAT] t=354.6s  chiamate=254  tagli=270  nodi=7371
+  7478  3475   68.85714   42   64   57.00000  107.53047  88.6%   164  362s
+[HEARTBEAT] t=362.1s  chiamate=259  tagli=275  nodi=7555
+  7815  3508   89.31746   40   74   57.00000  107.43296  88.5%   165  366s
+  7865  3693   73.32378   44   64   57.00000  107.43296  88.5%   167  373s
+[HEARTBEAT] t=373.6s  chiamate=262  tagli=278  nodi=8139
+  8318  3804   75.42077   44   68   57.00000  105.45975  85.0%   166  380s
+[HEARTBEAT] t=380.7s  chiamate=263  tagli=279  nodi=8397
+  8732  4107 infeasible   53        57.00000  105.24545  84.6%   165  392s
+[HEARTBEAT] t=392.6s  chiamate=265  tagli=281  nodi=9015
+  9145  4271   69.29113   50  102   57.00000  104.35121  83.1%   167  400s
+[HEARTBEAT] t=400.4s  chiamate=267  tagli=283  nodi=9337
+[HEARTBEAT] t=412.5s  chiamate=269  tagli=285  nodi=9590
+  9590  4510   67.17405   44   68   57.00000  103.99791  82.5%   167  412s
+  9924  4754 infeasible   42        57.00000  103.68000  81.9%   168  422s
+[HEARTBEAT] t=422.1s  chiamate=275  tagli=291  nodi=10060
+ 10417  4921   70.00000   48   60   57.00000  103.68000  81.9%   167  428s
+[HEARTBEAT] t=428.6s  chiamate=277  tagli=293  nodi=10478
+ 10752  5171   88.16478   45   74   57.00000  102.93333  80.6%   167  438s
+[HEARTBEAT] t=438.7s  chiamate=281  tagli=297  nodi=10931
+ 11365  5583   91.19532   39   87   57.00000  101.80176  78.6%   166  449s
+[HEARTBEAT] t=449.6s  chiamate=284  tagli=300  nodi=11446
+ 11683  5598   70.54808   48  111   57.00000  101.75385  78.5%   164  450s
+ 12106  5676     cutoff   52        57.00000  101.37049  77.8%   165  455s
+ 12256  6021   68.09306   44   60   57.00000  101.37049  77.8%   166  465s
+[HEARTBEAT] t=465.9s  chiamate=292  tagli=308  nodi=12504
+ 13003  6342   78.79487   49   58   57.00000  100.59815  76.5%   165  477s
+[HEARTBEAT] t=477.4s  chiamate=296  tagli=312  nodi=13264
+ 13606  6416   68.11749   52   83   57.00000   99.84416  75.2%   166  486s
+[HEARTBEAT] t=486.2s  chiamate=299  tagli=315  nodi=13654
+[HEARTBEAT] t=497.3s  chiamate=300  tagli=316  nodi=13800
+ 13800  6461   66.80747   54   71   57.00000   99.83072  75.1%   166  497s
+ 13853  6537   60.93644   56   66   57.00000   99.75817  75.0%   167  504s
+ 14048  6827   82.55462   45  123   57.00000   99.75817  75.0%   168  517s
+[HEARTBEAT] t=517.3s  chiamate=309  tagli=325  nodi=14230
+ 14687  7016   73.93671   51   47   57.00000   99.10161  73.9%   169  530s
+[HEARTBEAT] t=530.7s  chiamate=312  tagli=328  nodi=14750
+ 15080  7156   73.99119   46   67   57.00000   98.57143  72.9%   169  539s
+[HEARTBEAT] t=539.6s  chiamate=313  tagli=329  nodi=15251
+ 15347  7523   59.26402   45   42   57.00000   98.27126  72.4%   169  554s
+[HEARTBEAT] t=554.2s  chiamate=315  tagli=331  nodi=15947
+ 16115  7787   79.74333   48  203   57.00000   98.04040  72.0%   169  567s
+ 16647  7908   81.93993   42   98   57.00000   97.49329  71.0%   170  577s
+[HEARTBEAT] t=577.5s  chiamate=317  tagli=333  nodi=16692
+ 16955  8382   76.06127   39  139   57.00000   97.11905  70.4%   171  595s
+[HEARTBEAT] t=595.4s  chiamate=318  tagli=334  nodi=17365
+ 17888  8603   73.15032   50   93   57.00000   97.11905  70.4%   171  609s
+[HEARTBEAT] t=609.7s  chiamate=322  tagli=338  nodi=18209
+ 18339  9172   64.47818   40   35   57.00000   96.90740  70.0%   171  629s
+[HEARTBEAT] t=629.7s  chiamate=324  tagli=340  nodi=18401
+ 19568  9341   80.96196   46   91   57.00000   95.46667  67.5%   172  640s
+[HEARTBEAT] t=640.2s  chiamate=326  tagli=342  nodi=19750
+ 19907  9405   67.00000   37   25   57.00000   95.45283  67.5%   173  660s
+[HEARTBEAT] t=660.1s  chiamate=327  tagli=343  nodi=19913
+ 20034  9936   65.59387   39   57   57.00000   95.25000  67.1%   173  681s
+[HEARTBEAT] t=681.1s  chiamate=338  tagli=354  nodi=20108
+ 21447 10067   75.05927   48   74   57.00000   94.90623  66.5%   171  695s
+[HEARTBEAT] t=695.1s  chiamate=342  tagli=358  nodi=21700
+ 21787 10802   66.21436   43   51   57.00000   94.52260  65.8%   171  717s
+[HEARTBEAT] t=717.9s  chiamate=343  tagli=359  nodi=21947
+ 23479 11148     cutoff   45        57.00000   93.76471  64.5%   170  732s
+[HEARTBEAT] t=732.8s  chiamate=351  tagli=367  nodi=23645
+ 24218 11638   75.06756   41  123   57.00000   93.15493  63.4%   170  757s
+[HEARTBEAT] t=757.6s  chiamate=354  tagli=370  nodi=24875
+ 25520 12533   77.91892   40   69   57.00000   92.67016  62.6%   169  782s
+[HEARTBEAT] t=783.0s  chiamate=358  tagli=374  nodi=26047
+ 27464 12837   82.78588   49  129   57.00000   91.89884  61.2%   168  798s
+[HEARTBEAT] t=798.5s  chiamate=367  tagli=383  nodi=27636
+ 28058 13572   59.18987   43   52   57.00000   91.78571  61.0%   168  826s
+[HEARTBEAT] t=826.1s  chiamate=370  tagli=386  nodi=28168
+ 29938 14357   58.00000   47   22   57.00000   91.28000  60.1%   167  854s
+[HEARTBEAT] t=854.0s  chiamate=378  tagli=394  nodi=29973
+ 31821 14636   82.28982   46  159   57.00000   90.62295  59.0%   167  868s
+[HEARTBEAT] t=868.2s  chiamate=386  tagli=402  nodi=31977
+ 32366 15301   75.28811   46   86   57.00000   90.52632  58.8%   167  893s
+[HEARTBEAT] t=893.8s  chiamate=392  tagli=408  nodi=32570
+ 34099 15738   59.45455   50   47   57.00000   90.11321  58.1%   167  918s
+[HEARTBEAT] t=918.9s  chiamate=394  tagli=410  nodi=34211
+ 35320 15870   59.00000   62   19   57.00000   89.72414  57.4%   165  931s
+[HEARTBEAT] t=931.2s  chiamate=398  tagli=414  nodi=35565
+ 35628 16531   71.74386   47   57   57.00000   89.67918  57.3%   166  956s
+[HEARTBEAT] t=956.6s  chiamate=399  tagli=415  nodi=36358
+ 37514 17160   79.53800   45  113   57.00000   89.32353  56.7%   166  981s
+[HEARTBEAT] t=981.5s  chiamate=404  tagli=420  nodi=37812
+ 39253 17300   77.60631   40   87   57.00000   88.93878  56.0%   165  995s
+[HEARTBEAT] t=995.2s  chiamate=409  tagli=425  nodi=39273
+ 39731 17968   73.83704   49   90   57.00000   88.64282  55.5%   166 1020s
+[HEARTBEAT] t=1020.0s  chiamate=410  tagli=426  nodi=39813
+ 41424 18116 infeasible   59        57.00000   88.36842  55.0%   165 1033s
+[HEARTBEAT] t=1033.8s  chiamate=414  tagli=430  nodi=41470
+ 41874 18675     cutoff   48        57.00000   88.14955  54.6%   166 1058s
+[HEARTBEAT] t=1058.3s  chiamate=416  tagli=432  nodi=42222
+ 43441 18883   64.84615   48   33   57.00000   87.85714  54.1%   166 1072s
+[HEARTBEAT] t=1072.8s  chiamate=424  tagli=440  nodi=43905
+ 44076 19442   74.94444   44   70   57.00000   87.81231  54.1%   166 1098s
+[HEARTBEAT] t=1098.2s  chiamate=425  tagli=441  nodi=44543
+ 45706 19807   77.16064   45   69   57.00000   87.44384  53.4%   166 1116s
+[HEARTBEAT] t=1116.8s  chiamate=430  tagli=446  nodi=45949
+[HEARTBEAT] t=1135.2s  chiamate=433  tagli=449  nodi=46674
+ 46674 20154   71.15626   42   43   57.00000   87.22806  53.0%   166 1135s
+H47327 20160                      57.0000000   87.18182  53.0%   166 1136s
+[HEARTBEAT] t=1151.9s  chiamate=442  tagli=457  nodi=47529
+ 47529 20260   66.47333   49   51   57.00000   87.02222  52.7%   166 1152s
+ 47810 20914   76.03917   51   62   57.00000   87.00000  52.6%   166 1177s
+[HEARTBEAT] t=1177.4s  chiamate=445  tagli=460  nodi=47922
+ 49702 21058     cutoff   56        57.00000   86.66667  52.0%   165 1192s
+[HEARTBEAT] t=1192.5s  chiamate=456  tagli=471  nodi=49774
+ 50121 21649   67.31897   49   77   57.00000   86.52891  51.8%   166 1216s
+[HEARTBEAT] t=1216.9s  chiamate=457  tagli=472  nodi=50156
+ 52018 22241   64.98993   53   52   57.00000   86.21002  51.2%   165 1240s
+[HEARTBEAT] t=1240.0s  chiamate=464  tagli=479  nodi=52320
+ 53640 22378   71.50543   49  107   57.00000   85.92045  50.7%   164 1252s
+[HEARTBEAT] t=1252.9s  chiamate=467  tagli=482  nodi=54051
+ 54104 22985   65.00000   53   46   57.00000   85.89346  50.7%   164 1277s
+[HEARTBEAT] t=1277.7s  chiamate=468  tagli=483  nodi=55888
+ 56039 23146     cutoff   44        57.00000   85.58537  50.1%   164 1290s
+ 56621 23706   62.64865   46   65   57.00000   85.45688  49.9%   164 1314s
+[HEARTBEAT] t=1314.8s  chiamate=469  tagli=484  nodi=57023
+ 58420 23877   71.52294   46   48   57.00000   85.24000  49.5%   164 1331s
+[HEARTBEAT] t=1331.3s  chiamate=472  tagli=487  nodi=58477
+ 59007 24577   72.51383   45   50   57.00000   85.13539  49.4%   164 1355s
+[HEARTBEAT] t=1355.4s  chiamate=476  tagli=491  nodi=59075
+ 60796 24750   64.00000   50   25   57.00000   84.98140  49.1%   163 1369s
+[HEARTBEAT] t=1369.7s  chiamate=483  tagli=498  nodi=61167
+ 61256 25304   62.91155   49   65   57.00000   84.90323  49.0%   164 1392s
+[HEARTBEAT] t=1392.3s  chiamate=484  tagli=499  nodi=61985
+ 62963 25441   61.36842   47   33   57.00000   84.68623  48.6%   163 1404s
+[HEARTBEAT] t=1404.5s  chiamate=485  tagli=500  nodi=63400
+ 63442 25972   80.38112   49   89   57.00000   84.67453  48.6%   163 1428s
+[HEARTBEAT] t=1428.6s  chiamate=486  tagli=501  nodi=64721
+ 65116 26474     cutoff   54        57.00000   84.54146  48.3%   163 1452s
+[HEARTBEAT] t=1452.5s  chiamate=489  tagli=504  nodi=65393
+ 66768 26637   79.00000   47   88   57.00000   84.30522  47.9%   163 1465s
+[HEARTBEAT] t=1466.0s  chiamate=494  tagli=509  nodi=66853
+ 67291 27160   82.40817   48  110   57.00000   84.16667  47.7%   163 1488s
+[HEARTBEAT] t=1488.7s  chiamate=495  tagli=510  nodi=67421
+ 68944 27304   58.97978   49   72   57.00000   84.00000  47.4%   163 1501s
+[HEARTBEAT] t=1501.8s  chiamate=498  tagli=513  nodi=69440
+ 69455 27948   79.01064   47   51   57.00000   83.94230  47.3%   163 1525s
+[HEARTBEAT] t=1525.4s  chiamate=499  tagli=514  nodi=69807
+ 71372 28099     cutoff   40        57.00000   83.69466  46.8%   163 1540s
+[HEARTBEAT] t=1540.7s  chiamate=504  tagli=519  nodi=71437
+ 71875 28807   58.00000   59    7   57.00000   83.57345  46.6%   162 1564s
+[HEARTBEAT] t=1564.2s  chiamate=507  tagli=522  nodi=71937
+ 73894 28893   57.47517   50   47   57.00000   83.40964  46.3%   162 1576s
+ 74286 29492   74.14130   43   40   57.00000   83.35294  46.2%   162 1599s
+[HEARTBEAT] t=1600.0s  chiamate=513  tagli=528  nodi=74646
+ 74967 29508   59.36945   49   51   57.00000   83.34538  46.2%   161 1600s
+ 76259 29616     cutoff   40        57.00000   83.17931  45.9%   161 1613s
+[HEARTBEAT] t=1614.0s  chiamate=523  tagli=538  nodi=76559
+ 76780 30220   73.73507   50  112   57.00000   83.12048  45.8%   161 1637s
+[HEARTBEAT] t=1637.3s  chiamate=524  tagli=539  nodi=77048
+ 78504 30407   72.50813   47   53   57.00000   82.95310  45.5%   161 1650s
+ 79074 30978   57.73980   50   49   57.00000   82.81579  45.3%   161 1672s
+[HEARTBEAT] t=1672.3s  chiamate=528  tagli=543  nodi=79138
+ 80876 31548   77.03461   43   60   57.00000   82.68354  45.1%   160 1695s
+[HEARTBEAT] t=1695.2s  chiamate=532  tagli=547  nodi=80995
+ 82607 31615     cutoff   50        57.00000   82.48304  44.7%   160 1708s
+ 83050 31935   73.61139   47   67   57.00000   82.44348  44.6%   160 1725s
+[HEARTBEAT] t=1725.8s  chiamate=539  tagli=554  nodi=83508
+ 84178 32131     cutoff   42        57.00000   82.31530  44.4%   160 1738s
+[HEARTBEAT] t=1738.3s  chiamate=542  tagli=557  nodi=84289
+ 84695 32641   58.89873   50   47   57.00000   82.25862  44.3%   160 1760s
+[HEARTBEAT] t=1761.0s  chiamate=545  tagli=560  nodi=85212
+ 86312 33152   65.00000   50   19   57.00000   82.13247  44.1%   160 1784s
+[HEARTBEAT] t=1784.9s  chiamate=551  tagli=566  nodi=87014
+ 88193 33229     cutoff   49        57.00000   81.98662  43.8%   159 1798s
+[HEARTBEAT] t=1798.4s  chiamate=554  tagli=569  nodi=88252
+ 88536 33721   68.75949   48  103   57.00000   81.93333  43.7%   159 1821s
+[HEARTBEAT] t=1821.3s  chiamate=557  tagli=572  nodi=88945
+ 90262 33889 infeasible   52        57.00000   81.81818  43.5%   159 1834s
+[HEARTBEAT] t=1834.1s  chiamate=563  tagli=578  nodi=90337
+ 90898 34364   71.82471   41   99   57.00000   81.72549  43.4%   159 1856s
+[HEARTBEAT] t=1856.8s  chiamate=564  tagli=579  nodi=91062
+ 92848 34456   71.95859   56   74   57.00000   81.58000  43.1%   159 1880s
+[HEARTBEAT] t=1880.3s  chiamate=568  tagli=583  nodi=92849
+ 93039 34528   71.00000   57   59   57.00000   81.58000  43.1%   158 1893s
+ 93478 35016   69.00993   45   72   57.00000   81.51613  43.0%   159 1916s
+[HEARTBEAT] t=1916.4s  chiamate=576  tagli=591  nodi=94265
+ 95188 35089   74.89939   48   61   57.00000   81.37866  42.8%   158 1929s
+[HEARTBEAT] t=1929.2s  chiamate=578  tagli=593  nodi=95235
+ 95652 35551     cutoff   47        57.00000   81.31767  42.7%   158 1952s
+[HEARTBEAT] t=1952.7s  chiamate=581  tagli=596  nodi=96088
+ 97487 35726   77.11904   51   86   57.00000   81.19160  42.4%   158 1964s
+[HEARTBEAT] t=1964.9s  chiamate=584  tagli=599  nodi=97773
+ 98000 36247   70.04114   45   99   57.00000   81.15789  42.4%   158 1987s
+[HEARTBEAT] t=1987.9s  chiamate=586  tagli=601  nodi=98146
+ 99680 36362 infeasible   57        57.00000   81.02830  42.2%   158 2001s
+[HEARTBEAT] t=2001.2s  chiamate=591  tagli=606  nodi=99825
+ 100184 36645 infeasible   52        57.00000   80.99366  42.1%   158 2021s
+[HEARTBEAT] t=2021.6s  chiamate=595  tagli=610  nodi=100282
+ 101159 36801 infeasible   52        57.00000   80.95696  42.0%   158 2036s
+[HEARTBEAT] t=2036.1s  chiamate=601  tagli=616  nodi=101340
+ 101752 37243   60.00000   55   52   57.00000   80.88307  41.9%   158 2059s
+[HEARTBEAT] t=2059.2s  chiamate=602  tagli=617  nodi=102538
+ 103586 37446     cutoff   51        57.00000   80.77018  41.7%   158 2074s
+ 104314 37866   74.97770   52   84   57.00000   80.68445  41.6%   158 2097s
+[HEARTBEAT] t=2097.4s  chiamate=606  tagli=621  nodi=104833
+ 106004 38009   67.00000   44   30   57.00000   80.56364  41.3%   158 2109s
+[HEARTBEAT] t=2109.5s  chiamate=608  tagli=623  nodi=106048
+ 106549 38454   65.19770   58   49   57.00000   80.51860  41.3%   158 2131s
+[HEARTBEAT] t=2131.7s  chiamate=610  tagli=625  nodi=107645
+ 108172 38829   71.18769   52   78   57.00000   80.39665  41.0%   158 2150s
+[HEARTBEAT] t=2150.1s  chiamate=612  tagli=627  nodi=108835
+ 109383 38947   58.22222   60   17   57.00000   80.31485  40.9%   157 2163s
+[HEARTBEAT] t=2163.3s  chiamate=618  tagli=633  nodi=109591
+ 109906 39414   61.00000   59   29   57.00000   80.26103  40.8%   158 2185s
+[HEARTBEAT] t=2186.1s  chiamate=621  tagli=636  nodi=111052
+ 111437 39545 infeasible   47        57.00000   80.15082  40.6%   158 2198s
+ 111970 39988   72.44867   44   75   57.00000   80.10832  40.5%   158 2219s
+[HEARTBEAT] t=2219.8s  chiamate=622  tagli=637  nodi=112232
+ 113061 39989   80.00000   46   40   57.00000   80.09633  40.5%   158 2220s
+ 113643 40488   57.74540   53   32   57.00000   80.00000  40.4%   158 2243s
+[HEARTBEAT] t=2243.1s  chiamate=626  tagli=641  nodi=113706
+ 115251 40597   57.46620   51   70   57.00000   79.97280  40.3%   158 2255s
+ 115766 41098   68.65451   50   42   57.00000   79.89451  40.2%   158 2278s
+[HEARTBEAT] t=2278.5s  chiamate=630  tagli=645  nodi=117199
+ 117549 41219   63.79076   55   44   57.00000   79.78571  40.0%   157 2291s
+[HEARTBEAT] t=2291.1s  chiamate=632  tagli=647  nodi=118054
+ 118141 41666   75.34725   46   43   57.00000   79.70968  39.8%   157 2312s
+[HEARTBEAT] t=2312.9s  chiamate=634  tagli=649  nodi=118153
+ 119833 41776 infeasible   42        57.00000   79.64668  39.7%   157 2324s
+ 120097 41776 infeasible   57        57.00000   79.62500  39.7%   157 2325s
+[HEARTBEAT] t=2325.0s  chiamate=637  tagli=652  nodi=120137
+ 120315 42249   72.09936   43  112   57.00000   79.59176  39.6%   157 2347s
+[HEARTBEAT] t=2347.2s  chiamate=638  tagli=653  nodi=120916
+ 122142 42387 infeasible   52        57.00000   79.48800  39.5%   157 2360s
+[HEARTBEAT] t=2360.0s  chiamate=643  tagli=658  nodi=122166
+ 122691 42792   62.53988   50   50   57.00000   79.43478  39.4%   157 2382s
+[HEARTBEAT] t=2383.1s  chiamate=646  tagli=661  nodi=124006
+ 124354 43286   69.00000   48   34   57.00000   79.36207  39.2%   157 2405s
+[HEARTBEAT] t=2405.9s  chiamate=650  tagli=665  nodi=124358
+ 126202 43374 infeasible   51        57.00000   79.25062  39.0%   156 2419s
+[HEARTBEAT] t=2419.7s  chiamate=656  tagli=671  nodi=126266
+ 126445 43378 infeasible   53        57.00000   79.24379  39.0%   156 2420s
+ 126545 43715     cutoff   55        57.00000   79.20930  39.0%   156 2441s
+[HEARTBEAT] t=2441.5s  chiamate=659  tagli=674  nodi=127050
+ 128121 43827 infeasible   60        57.00000   79.12957  38.8%   156 2453s
+[HEARTBEAT] t=2453.9s  chiamate=661  tagli=676  nodi=128510
+ 128699 44356   75.03108   41   73   57.00000   79.07175  38.7%   156 2476s
+[HEARTBEAT] t=2476.4s  chiamate=662  tagli=677  nodi=128984
+ 130527 44481   71.85077   48   74   57.00000   79.00000  38.6%   156 2490s
+[HEARTBEAT] t=2490.1s  chiamate=673  tagli=688  nodi=130742
+ 130962 44914   71.89636   45   67   57.00000   78.99862  38.6%   156 2512s
+[HEARTBEAT] t=2512.6s  chiamate=674  tagli=689  nodi=130986
+ 132590 45044   73.10580   50   73   57.00000   78.88934  38.4%   156 2525s
+[HEARTBEAT] t=2526.0s  chiamate=676  tagli=691  nodi=132730
+ 133148 45464   71.17959   47   74   57.00000   78.85714  38.3%   156 2548s
+[HEARTBEAT] t=2548.3s  chiamate=678  tagli=693  nodi=133516
+ 134819 45668     cutoff   55        57.00000   78.74537  38.1%   156 2567s
+[HEARTBEAT] t=2567.8s  chiamate=681  tagli=696  nodi=134822
+ 135557 45770 infeasible   46        57.00000   78.71808  38.1%   156 2580s
+[HEARTBEAT] t=2580.5s  chiamate=685  tagli=700  nodi=135840
+ 136048 46156   60.00000   45   34   57.00000   78.65417  38.0%   156 2602s
+[HEARTBEAT] t=2602.2s  chiamate=687  tagli=702  nodi=136354
+ 137820 46333   68.52562   55   68   57.00000   78.56140  37.8%   156 2615s
+[HEARTBEAT] t=2615.1s  chiamate=691  tagli=706  nodi=138014
+ 138455 46807   66.79281   55   48   57.00000   78.50979  37.7%   156 2638s
+[HEARTBEAT] t=2638.6s  chiamate=693  tagli=708  nodi=138485
+ 140229 47042   71.27087   50   76   57.00000   78.43063  37.6%   155 2656s
+[HEARTBEAT] t=2656.8s  chiamate=699  tagli=714  nodi=140919
+ 141347 47213   74.76087   52   89   57.00000   78.36832  37.5%   155 2670s
+[HEARTBEAT] t=2670.7s  chiamate=701  tagli=716  nodi=141407
+ 141976 47603   69.32787   55   68   57.00000   78.33862  37.4%   155 2692s
+[HEARTBEAT] t=2692.5s  chiamate=702  tagli=717  nodi=142530
+ 143744 47778   70.57143   54   69   57.00000   78.23340  37.3%   155 2707s
+[HEARTBEAT] t=2707.9s  chiamate=706  tagli=721  nodi=144198
+ 144700 48191   71.27480   44   59   57.00000   78.17647  37.2%   155 2730s
+[HEARTBEAT] t=2730.1s  chiamate=707  tagli=722  nodi=144823
+ 146320 48339   65.57472   56   48   57.00000   78.06825  37.0%   155 2743s
+[HEARTBEAT] t=2743.3s  chiamate=709  tagli=724  nodi=146339
+ 147062 48754   65.81056   43   57   57.00000   78.00650  36.9%   155 2766s
+[HEARTBEAT] t=2766.7s  chiamate=715  tagli=730  nodi=147618
+ 148530 49084   59.00000   50   22   57.00000   78.00000  36.8%   155 2786s
+[HEARTBEAT] t=2787.0s  chiamate=718  tagli=733  nodi=148556
+ 149869 49182   61.00000   46   49   57.00000   77.93393  36.7%   155 2800s
+[HEARTBEAT] t=2800.4s  chiamate=723  tagli=738  nodi=149898
+ 150385 49535     cutoff   49        57.00000   77.89592  36.7%   155 2823s
+[HEARTBEAT] t=2823.6s  chiamate=725  tagli=740  nodi=150949
+ 152092 49600 infeasible   53        57.00000   77.82645  36.5%   155 2835s
+[HEARTBEAT] t=2835.8s  chiamate=727  tagli=742  nodi=152355
+ 152490 50005   72.52632   56   24   57.00000   77.79741  36.5%   155 2857s
+[HEARTBEAT] t=2858.0s  chiamate=729  tagli=744  nodi=152691
+ 154032 50049   69.17777   53   87   57.00000   77.70588  36.3%   155 2870s
+ 154502 50471   66.19704   53   60   57.00000   77.68750  36.3%   155 2893s
+[HEARTBEAT] t=2893.6s  chiamate=730  tagli=745  nodi=155230
+ 156189 50581   73.84350   47   80   57.00000   77.60114  36.1%   155 2905s
+ 156675 50981   67.47728   45   51   57.00000   77.57227  36.1%   155 2927s
+[HEARTBEAT] t=2927.4s  chiamate=732  tagli=747  nodi=156738
+ 158458 51294   64.24952   51   64   57.00000   77.48649  35.9%   154 2949s
+ 160114 51385   64.08876   49   51   57.00000   77.41582  35.8%   154 2961s
+ 160628 51711   67.00000   52   57   57.00000   77.38697  35.8%   154 2983s
+[HEARTBEAT] t=2984.0s  chiamate=735  tagli=750  nodi=160890
+ 162280 51754     cutoff   59        57.00000   77.29167  35.6%   154 2996s
+[HEARTBEAT] t=2997.0s  chiamate=740  tagli=755  nodi=162721
+ 162773 52077   72.55345   50   60   57.00000   77.29167  35.6%   154 3019s
+[HEARTBEAT] t=3019.3s  chiamate=741  tagli=756  nodi=163020
+ 164541 52142   66.00000   52   25   57.00000   77.18085  35.4%   154 3032s
+[HEARTBEAT] t=3032.7s  chiamate=744  tagli=759  nodi=164554
+ 164995 52555 infeasible   57        57.00000   77.14403  35.3%   154 3055s
+[HEARTBEAT] t=3055.4s  chiamate=747  tagli=762  nodi=165258
+ 166837 52600   69.60169   51   73   57.00000   77.08099  35.2%   154 3068s
+ 167273 53111   59.74853   61   90   57.00000   77.05352  35.2%   154 3091s
+[HEARTBEAT] t=3091.2s  chiamate=750  tagli=765  nodi=167336
+ 168913 53190   58.00000   60   15   57.00000   77.00000  35.1%   154 3105s
+ 169441 53518     cutoff   53        57.00000   77.00000  35.1%   154 3126s
+ 170797 53597 infeasible   51        57.00000   76.94536  35.0%   154 3139s
+[HEARTBEAT] t=3139.7s  chiamate=756  tagli=771  nodi=171243
+ 171253 53910   66.56000   51   75   57.00000   76.91954  34.9%   154 3162s
+ 172828 53995   70.11627   43   46   57.00000   76.85088  34.8%   154 3174s
+ 173318 54330   69.31580   49   52   57.00000   76.82891  34.8%   154 3196s
+ 174944 54358   70.43614   43   57   57.00000   76.74376  34.6%   154 3208s
+ 175402 54645     cutoff   56        57.00000   76.72677  34.6%   154 3229s
+[HEARTBEAT] t=3230.1s  chiamate=757  tagli=772  nodi=176581
+H176581 40748                      62.0000000   76.72212  23.7%   154 3230s
+[HEARTBEAT] t=3246.4s  chiamate=758  tagli=772  nodi=176997
+H176997 40605                      62.0000000   76.66265  23.6%   154 3246s
+ 177255 40586   67.20919   45   46   62.00000   76.63461  23.6%   154 3260s
+[HEARTBEAT] t=3260.3s  chiamate=760  tagli=773  nodi=177688
+ 177704 40522   62.20000   48   70   62.00000   76.60000  23.5%   154 3275s
+ 178261 40521   66.29880   52   94   62.00000   76.53952  23.5%   154 3306s
+[HEARTBEAT] t=3306.7s  chiamate=761  tagli=774  nodi=178409
+ 179859 40509     cutoff   47        62.00000   76.43366  23.3%   155 3321s
+ 180336 40564   65.00000   40   55   62.00000   76.36842  23.2%   155 3370s
+[HEARTBEAT] t=3370.6s  chiamate=763  tagli=776  nodi=181792
+ 183465 40556   70.46860   48   36   62.00000   76.15897  22.8%   155 3396s
+[HEARTBEAT] t=3396.1s  chiamate=764  tagli=777  nodi=183484
+H183484 37652                      63.0000000   76.15897  20.9%   155 3396s
+ 183537 37206   66.50000   59   47   63.00000   76.15086  20.9%   155 3518s
+[HEARTBEAT] t=3518.4s  chiamate=765  tagli=777  nodi=185112
+H186277 37207                      63.0000000   76.14286  20.9%   156 3518s
+ 187975 37176   71.50000   45   52   63.00000   75.93271  20.5%   156 3564s
+[HEARTBEAT] t=3564.4s  chiamate=768  tagli=779  nodi=188087
+ 190781 37057   72.05924   47  127   63.00000   75.78455  20.3%   156 3584s
+ 191379 37004   68.95745   50   55   63.00000   75.71698  20.2%   156 3600s
+
+Cutting planes:
+  Gomory: 2
+  Lift-and-project: 5
+  Clique: 981
+  MIR: 80
+  Flow cover: 19
+  Zero half: 35
+  Relax-and-lift: 4
+
+Explored 191820 nodes (30052333 simplex iterations) in 3600.32 seconds (4567.18 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 63 63 62 ... 51
+
+Time limit reached
+Best objective 6.300000000640e+01, best bound 7.564813144738e+01, gap 20.0764%
+
+User-callback calls 626479, time in user-callback 103.77 sec
+
+--- RISULTATI FINALI ---
+Status Gurobi: 9  (2 = OPTIMAL, 9 = TIME_LIMIT)
+Flusso Ottimo v*: 63.00000000640039
+MIP Gap: 0.2007639911063085
+Tempo Totale Esecuzione: 3600.3327 s
+Tagli Benders iniettati: 780
+Chiamate totali alla callback (soluzioni intere candidate): 768
+Nodi B&B esplorati: 191820
+
+
+
+##########################################################################################
+# SCENARIO n100_p0.6_d0.3 (seed=12345)
+##########################################################################################
+
+--- generatore.py (1.7s) ---
+Generazione rete in corso con N=100, p=0.6, d=0.3, seed=12345
+Generazione completata: 2969 archi, 1233357 coppie in conflitto
+File salvati in 'C:\Users\gabri\OneDrive\Desktop\tesi v3\run_istanze\n100_p0.6_d0.3': meta.txt, archi.csv, conflitti.csv
+
+
+
+--- strong.py (wall clock 3621.5s) ---
+[DIAG] Nodi: 100  Archi attivi: 2969
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto forti aggiunti: 1233357
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (STRONG)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 1236426 rows, 5939 columns and 2478592 nonzeros (Max)
+Model fingerprint: 0x16d0f62b
+Model has 1 linear objective coefficients
+Variable types: 2970 continuous, 2969 integer (2969 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+01]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 1089435 rows and 101 columns
+Presolve time: 2.60s
+Presolved: 146991 rows, 5838 columns, 770370 nonzeros
+Variable types: 2968 continuous, 2870 integer (2870 binary)
+Performing another presolve...
+Presolve removed 128 rows and 2 columns
+Presolve time: 4.93s
+Root relaxation presolved: 2967 rows, 146961 columns, 859207 nonzeros
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    8.6600000e+02   0.000000e+00   9.159000e+03      9s
+   10402    2.6558868e+02   0.000000e+00   1.028875e+06     10s
+   54651    2.1192272e+02   0.000000e+00   2.354166e+05     15s
+   80093    2.0683619e+02   0.000000e+00   0.000000e+00     18s
+   80093    2.0683619e+02   0.000000e+00   0.000000e+00     18s
+   80093    2.0683619e+02   0.000000e+00   0.000000e+00     18s
+
+Root relaxation: objective 2.068362e+02, 80093 iterations, 9.72 seconds (13.29 work units)
+Total elapsed time = 17.68s (DegenMoves)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  206.83619    0  186   -0.00000  206.83619      -     -   19s
+H    0     0                       1.0000000  206.83619      -     -   19s
+H    0     0                       4.0000000  206.83619  5071%     -   19s
+H    0     0                       5.0000000  206.83619  4037%     -   19s
+H    0     0                       6.0000000  206.83619  3347%     -   19s
+H    0     0                       9.0000000  206.83619  2198%     -   19s
+H    0     0                      12.0000000  206.83619  1624%     -   19s
+H    0     0                      15.0000000  206.83619  1279%     -   21s
+H    0     0                      17.0000000  206.83619  1117%     -   22s
+H    0     0                      20.0000000  206.83619   934%     -   23s
+H    0     0                      26.0000000  206.83619   696%     -   23s
+H    0     0                      27.0000000  206.83619   666%     -   23s
+H    0     0                      30.0000000  206.83619   589%     -   24s
+H    0     0                      33.0000000  206.83619   527%     -   25s
+H    0     0                      46.0000000  206.83619   350%     -   25s
+H    0     0                      47.0000000  206.83619   340%     -   25s
+     0     0  174.95090    0  470   47.00000  174.95090   272%     -  231s
+H    0     0                      48.0000000  174.94245   264%     -  232s
+     0     0  174.94245    0  405   48.00000  174.94245   264%     -  236s
+     0     0  173.24391    0  385   48.00000  173.24391   261%     -  237s
+     0     0  163.83950    0  349   48.00000  163.83950   241%     -  257s
+     0     0  162.30090    0  274   48.00000  162.30090   238%     -  261s
+     0     0  161.94385    0  280   48.00000  161.94385   237%     -  263s
+     0     0  161.78195    0  260   48.00000  161.78195   237%     -  265s
+     0     0  161.74093    0  260   48.00000  161.74093   237%     -  267s
+     0     0  161.73858    0  237   48.00000  161.73858   237%     -  271s
+     0     0  159.88002    0  272   48.00000  159.88002   233%     -  294s
+     0     0  158.82744    0  262   48.00000  158.82744   231%     -  346s
+     0     0  158.66593    0  248   48.00000  158.66593   231%     -  348s
+     0     0  158.65915    0  251   48.00000  158.65915   231%     -  350s
+     0     0  158.64427    0  252   48.00000  158.64427   231%     -  351s
+     0     0  158.63774    0  253   48.00000  158.63774   230%     -  353s
+     0     0  158.63723    0  256   48.00000  158.63723   230%     -  354s
+     0     0  156.36634    0  267   48.00000  156.36634   226%     -  360s
+     0     0  155.67630    0  261   48.00000  155.67630   224%     -  362s
+     0     0  155.29384    0  268   48.00000  155.29384   224%     -  364s
+     0     0  155.14930    0  257   48.00000  155.14930   223%     -  365s
+     0     0  155.09156    0  256   48.00000  155.09156   223%     -  366s
+H    0     0                      50.0000000  155.07598   210%     -  368s
+     0     0  155.07598    0  248   50.00000  155.07598   210%     -  368s
+     0     0  155.07332    0  247   50.00000  155.07332   210%     -  373s
+     0     0  154.33077    0  257   50.00000  154.33077   209%     -  395s
+H    0     0                      51.0000000  154.28555   203%     -  396s
+     0     0  153.88287    0  256   51.00000  153.88287   202%     -  431s
+     0     0  153.79422    0  260   51.00000  153.79422   202%     -  433s
+     0     0  153.74676    0  270   51.00000  153.74676   201%     -  434s
+     0     0  153.68914    0  272   51.00000  153.68914   201%     -  436s
+     0     0  153.68914    0  273   51.00000  153.68914   201%     -  438s
+     0     0  153.41190    0  251   51.00000  153.41190   201%     -  439s
+     0     0  153.15620    0  259   51.00000  153.15620   200%     -  442s
+     0     0  152.86273    0  277   51.00000  152.86273   200%     -  447s
+     0     0  152.86273    0  277   51.00000  152.86273   200%     -  453s
+     0     0  152.63677    0  270   51.00000  152.63677   199%     -  458s
+     0     0  152.38343    0  270   51.00000  152.38343   199%     -  463s
+     0     0  151.87167    0  280   51.00000  151.87167   198%     -  493s
+     0     0  149.99111    0  292   51.00000  149.99111   194%     -  566s
+     0     0  149.78247    0  293   51.00000  149.78247   194%     -  577s
+     0     0  149.75395    0  282   51.00000  149.75395   194%     -  586s
+     0     0  149.73413    0  288   51.00000  149.73413   194%     -  597s
+     0     0  148.94624    0  297   51.00000  148.94624   192%     -  616s
+     0     0  148.93984    0  291   51.00000  148.93984   192%     -  618s
+     0     0  148.92580    0  269   51.00000  148.92580   192%     -  619s
+     0     0  148.92580    0  283   51.00000  148.92580   192%     -  620s
+     0     0  148.40460    0  288   51.00000  148.40460   191%     -  626s
+     0     0  146.51710    0  297   51.00000  146.51710   187%     -  634s
+     0     0  146.50789    0  290   51.00000  146.50789   187%     -  635s
+     0     0  146.38581    0  295   51.00000  146.38581   187%     -  636s
+     0     0  146.38581    0  283   51.00000  146.38581   187%     -  637s
+     0     0  146.33526    0  285   51.00000  146.33526   187%     -  637s
+     0     0  146.33526    0  278   51.00000  146.33526   187%     -  638s
+     0     0  146.08566    0  299   51.00000  146.08566   186%     -  640s
+     0     0  145.96942    0  296   51.00000  145.96942   186%     -  645s
+     0     0  145.96942    0  230   51.00000  145.96942   186%     -  646s
+     0     2  145.96942    0  225   51.00000  145.96942   186%     -  654s
+     1     4  145.96942    1  221   51.00000  145.96942   186%  1394  656s
+     7    16  145.96942    3  256   51.00000  145.96942   186%  4389  664s
+    15    26  145.96942    4  266   51.00000  145.96942   186%  4157  667s
+    25    31  120.78902    5  234   51.00000  145.96942   186%  3658  684s
+    30    67  100.42283    6  152   51.00000  145.96942   186%  4044  691s
+    66    87   93.50356    8  108   51.00000  145.96942   186%  2764  697s
+    86   118   94.31738    9  127   51.00000  145.96942   186%  2497  700s
+   141   168   85.13219   14   86   51.00000  145.96942   186%  1963  706s
+   191   215   78.86310   19   73   51.00000  145.96942   186%  1712  711s
+   250   264   72.88107   24   78   51.00000  145.96942   186%  1490  715s
+   321   338   61.68254   30   66   51.00000  145.96942   186%  1334  721s
+   381   384   62.68612   38   59   51.00000  145.96942   186%  1235  726s
+   465   445   59.85859   47   56   51.00000  145.96942   186%  1103  730s
+   517   466     cutoff   51        51.00000  145.96942   186%  1032  740s
+   604   516  125.61619    8  199   51.00000  145.96942   186%   959  750s
+   642   531  122.60340    9  229   51.00000  143.52534   181%   964  756s
+   697   548  120.03293   10  230   51.00000  143.45001   181%   941  760s
+   747   585  105.35557   15  165   51.00000  140.44199   175%   958  767s
+H  749   577                      52.0000000  140.44199   170%   956  767s
+   757   605  101.82482   16  158   52.00000  140.44199   170%   957  770s
+H  759   591                      53.0000000  140.44199   165%   957  770s
+   798   599   88.18572   18  141   53.00000  140.44199   165%   937  775s
+   812   608   85.27185   19  136   53.00000  140.44199   165%   940  780s
+   825   618   79.89165   20  125   53.00000  140.44199   165%   941  785s
+   835   628   78.59641   21  107   53.00000  140.44199   165%   941  790s
+   845   638   76.17037   22  126   53.00000  140.44199   165%   941  795s
+   855   648   76.12105   23  136   53.00000  140.44199   165%   941  800s
+   865   658   75.88119   24  131   53.00000  140.44199   165%   940  805s
+   877   673   75.86495   25  116   53.00000  140.44199   165%   935  811s
+   898   685   73.39983   26  111   53.00000  138.59925   162%   933  816s
+   923   695   61.99416   27  112   53.00000  138.59925   162%   926  821s
+   939   705   61.95259   28  105   53.00000  138.59925   162%   922  826s
+   955   720   60.49780   29  102   53.00000  138.04394   160%   926  832s
+   976   738     cutoff   30        53.00000  138.04394   160%   935  838s
+   996   760     cutoff   31        53.00000  138.04394   160%   941  845s
+  1020   792   55.61001   32   89   53.00000  138.04394   160%   939  852s
+  1054   793   55.05311   33   83   53.00000  138.04394   160%   933  858s
+  1083   813     cutoff   34        53.00000  138.04394   160%   941  864s
+  1115   826  109.83926   16  171   53.00000  138.04394   160%   951  870s
+  1136   839  108.61282   17  179   53.00000  138.04394   160%   950  876s
+  1149   853  107.03982   18  175   53.00000  138.04394   160%   959  883s
+  1163   871  105.99582   19  158   53.00000  138.04394   160%   967  889s
+  1181   897  104.41796   20  149   53.00000  138.04394   160%   972  895s
+  1207   950  100.93000   22  147   53.00000  138.04394   160%   979  901s
+  1263   987   92.75706   28  121   53.00000  138.04394   160%   968  910s
+  1306  1039   75.46617   33   91   53.00000  135.42435   156%   980  917s
+  1368  1084  108.29773   17  167   53.00000  135.42435   156%   976  925s
+  1427  1128   92.96892   19  106   53.00000  135.42435   156%   976  933s
+  1518  1174   74.54658   22   93   53.00000  132.51670   150%   960  942s
+  1614  1216     cutoff   29        53.00000  132.51670   150%   948  952s
+  1690  1274  103.82478   22  160   53.00000  132.51670   150%   959  962s
+  1767  1337   77.87979   28  103   53.00000  132.51670   150%   959  973s
+  1866  1389  107.61785   21  162   53.00000  132.51670   150%   952  983s
+  1944  1447   95.49684   29  136   53.00000  130.22197   146%   959  995s
+  2039  1480   72.46868   39  129   53.00000  129.55254   144%   963 1003s
+  2086  1481   92.77613   20 1435   53.00000  129.55254   144%   964 1193s
+  2088  1482   79.14286   15  193   53.00000  129.55254   144%   963 2320s
+  2089  1483   68.71429   24  533   53.00000  129.55254   144%   962 2499s
+  2090  1484  107.47681   22  436   53.00000  129.55254   144%   962 2579s
+  2091  1484   61.40700   34  361   53.00000  129.55254   144%   961 2588s
+  2092  1485   66.31351   51  337   53.00000  129.55254   144%   961 2591s
+  2093  1486   65.17647   40  336   53.00000  129.55254   144%   960 2596s
+  2095  1487   70.23964   31  344   53.00000  129.55254   144%   960 2600s
+
+Cutting planes:
+  Cover: 3
+  Implied bound: 11
+  Projected implied bound: 5
+  Clique: 394
+  MIR: 391
+  Flow cover: 249
+  Zero half: 2
+  Network: 1
+  RLT: 154
+  Relax-and-lift: 244
+  BQP: 1304
+
+Explored 2096 nodes (2384466 simplex iterations) in 3606.94 seconds (1590.02 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 53 52 51 ... 27
+
+Time limit reached
+Best objective 5.300000000000e+01, best bound 1.290000000000e+02, gap 143.3962%
+
+--- RISULTATI STRONG FORMULATION ---
+Stato del solver: 9  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 53.0
+Best Bound: 129.0
+MIP Gap: 1.4339622641509433
+Tempo di calcolo (sec): 3607.156611
+Nodi esplorati (B&B Tree): 2096
+
+
+
+--- weak.py (wall clock 3604.3s) ---
+[DIAG] Nodi: 100  Archi attivi: 2969
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+[DIAG] Vincoli di conflitto deboli aggiunti: 2870
+Set parameter TimeLimit to value 3600
+Risoluzione in corso con Gurobi MILP (WEAK)...
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 5939 rows, 5939 columns and 2481462 nonzeros (Max)
+Model fingerprint: 0x43d4f149
+Model has 1 linear objective coefficients
+Variable types: 2970 continuous, 2969 integer (2969 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [8e+02, 9e+02]
+
+Found heuristic solution: objective -0.0000000
+Presolve removed 103 rows and 103 columns (presolve time = 5s)...
+Presolve removed 103 rows and 103 columns
+Presolve time: 8.18s
+Presolved: 5836 rows, 5836 columns, 2479583 nonzeros
+Variable types: 2967 continuous, 2869 integer (2869 binary)
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0    6.9700000e+02   1.847125e+03   0.000000e+00      8s
+    4861    6.0474605e+02   0.000000e+00   0.000000e+00      9s
+
+Root relaxation: objective 6.047460e+02, 4861 iterations, 0.96 seconds (3.27 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  604.74605    0  169   -0.00000  604.74605      -     -    9s
+H    0     0                      21.0000000  604.74605  2780%     -    9s
+H    0     0                      25.0000000  604.74605  2319%     -    9s
+H    0     0                      26.0000000  604.74605  2226%     -    9s
+H    0     0                      33.0000000  604.74605  1733%     -   10s
+H    0     0                      44.0000000  604.74605  1274%     -   10s
+H    0     0                      45.0000000  604.74605  1244%     -   10s
+H    0     0                      46.0000000  604.74605  1215%     -   10s
+H    0     0                      50.0000000  604.74605  1109%     -   13s
+     0     0  214.03866    0  209   50.00000  214.03866   328%     -   20s
+     0     0  212.83854    0  202   50.00000  212.83854   326%     -   27s
+     0     0  211.95806    0  203   50.00000  211.95806   324%     -   28s
+     0     0  211.44261    0  197   50.00000  211.44261   323%     -   28s
+     0     0  211.28434    0  200   50.00000  211.28434   323%     -   29s
+     0     0  211.27619    0  214   50.00000  211.27619   323%     -   29s
+     0     0  177.49778    0  299   50.00000  177.49778   255%     -   36s
+     0     0  174.25639    0  196   50.00000  174.25639   249%     -   37s
+     0     0  173.33117    0  203   50.00000  173.33117   247%     -   38s
+     0     0  173.25240    0  195   50.00000  173.25240   247%     -   38s
+     0     0  173.17569    0  195   50.00000  173.17569   246%     -   39s
+     0     0  173.13608    0  192   50.00000  173.13608   246%     -   39s
+     0     0  167.25201    0  260   50.00000  167.25201   235%     -   45s
+     0     0  166.77944    0  240   50.00000  166.77944   234%     -   46s
+     0     0  166.58121    0  237   50.00000  166.58121   233%     -   47s
+     0     0  166.51057    0  215   50.00000  166.51057   233%     -   48s
+     0     0  166.50344    0  218   50.00000  166.50344   233%     -   49s
+     0     0  165.40912    0  220   50.00000  165.40912   231%     -   54s
+     0     0  165.19852    0  223   50.00000  165.19852   230%     -   55s
+     0     0  165.08956    0  229   50.00000  165.08956   230%     -   56s
+     0     0  165.07763    0  231   50.00000  165.07763   230%     -   56s
+     0     0  164.47715    0  243   50.00000  164.47715   229%     -   63s
+     0     0  164.07655    0  238   50.00000  164.07655   228%     -   63s
+     0     0  163.99721    0  248   50.00000  163.99721   228%     -   64s
+     0     0  163.96697    0  237   50.00000  163.96697   228%     -   65s
+     0     0  163.24844    0  234   50.00000  163.24844   226%     -   70s
+     0     0  163.00980    0  242   50.00000  163.00980   226%     -   71s
+     0     0  162.81423    0  230   50.00000  162.81423   226%     -   72s
+     0     0  162.71714    0  235   50.00000  162.71714   225%     -   72s
+     0     0  162.69656    0  242   50.00000  162.69656   225%     -   73s
+     0     0  161.47447    0  243   50.00000  161.47447   223%     -   78s
+     0     0  161.31555    0  247   50.00000  161.31555   223%     -   79s
+     0     0  161.27419    0  247   50.00000  161.27419   223%     -   80s
+     0     0  160.84301    0  249   50.00000  160.84301   222%     -   86s
+     0     0  160.71462    0  245   50.00000  160.71462   221%     -   87s
+     0     0  160.63893    0  500   50.00000  160.63893   221%     -   90s
+     0     0  160.53185    0  390   50.00000  160.53185   221%     -   91s
+     0     0  160.50340    0  230   50.00000  160.50340   221%     -   91s
+     0     0  160.24405    0  231   50.00000  160.24405   220%     -   97s
+     0     0  159.80339    0  254   50.00000  159.80339   220%     -   98s
+     0     0  159.78327    0  236   50.00000  159.78327   220%     -   99s
+     0     0  159.63098    0  238   50.00000  159.63098   219%     -  104s
+     0     0  159.62032    0  234   50.00000  159.62032   219%     -  107s
+     0     0  159.62032    0  202   50.00000  159.62032   219%     -  108s
+     0     2  159.54819    0  192   50.00000  159.54819   219%     -  113s
+     3     8  158.39767    2  195   50.00000  159.34361   219%  1323  115s
+    25    39  154.65951    5  260   50.00000  155.24773   210%  2208  122s
+H   31    39                      51.0000000  155.24773   204%  1964  122s
+    38    59  153.64960    6  245   51.00000  155.24773   204%  1955  125s
+H   39    59                      52.0000000  155.24773   199%  1905  125s
+H   44    59                      53.0000000  155.24773   193%  1923  125s
+    91   102  142.88034    9  189   53.00000  155.24773   193%  1595  130s
+   121   132  147.25503   11  186   53.00000  155.24773   193%  1587  136s
+   141   152  146.08574   13  173   53.00000  155.24773   193%  1534  141s
+   161   172  143.78494   15  164   53.00000  155.24773   193%  1471  147s
+   181   192  142.76545   16  174   53.00000  155.24773   193%  1439  152s
+   191   202  125.58394   16  318   53.00000  155.24773   193%  1421  157s
+   212   223  140.29395   18  198   53.00000  155.24773   193%  1412  162s
+   222   233  139.51278   19  190   53.00000  155.24773   193%  1394  165s
+   242   253  136.89944   21  181   53.00000  155.24773   193%  1358  171s
+   264   282  136.07778   23  188   53.00000  155.24773   193%  1327  177s
+   281   299  135.93264   24  181   53.00000  155.24773   193%  1284  180s
+   318   334  110.56527   25  133   53.00000  155.24773   193%  1213  187s
+   345   343  128.32686   26  205   53.00000  154.58383   192%  1173  190s
+   393   391  123.30979   28  179   53.00000  154.58383   192%  1148  197s
+   415   409  122.48060   29  156   53.00000  154.58383   192%  1130  200s
+   451   449  120.40403   31  177   53.00000  154.58383   192%  1113  207s
+   475   466  119.84708   32  169   53.00000  154.58383   192%  1104  210s
+   535   536  116.76075   34  161   53.00000  154.58383   192%  1085  217s
+   570   580  114.57162   35  141   53.00000  154.58383   192%  1077  221s
+   616   611  113.90591   36  148   53.00000  154.58383   192%  1064  225s
+   720   728  101.46139   42  149   53.00000  154.58383   192%  1019  231s
+   928   911   61.90114   61   68   53.00000  147.33916   178%   975  238s
+  1055   983   82.64300   17   81   53.00000  147.33916   178%   966  241s
+  1156  1045   72.49025   30   79   53.00000  142.86921   170%   975  245s
+  1265  1165  105.33366   13  248   53.00000  142.65899   169%   962  251s
+  1403  1279   88.15609   26  100   53.00000  142.65899   169%   955  256s
+  1580  1399  103.15319   21  167   53.00000  142.65899   169%   944  260s
+  1934  1632   54.14184   47   58   53.00000  138.59391   161%   924  268s
+  2092  1633   79.68961   33  202   53.00000  136.77100   158%   922  533s
+  2094  1634   91.85342   39  174   53.00000  136.77100   158%   921  551s
+  2095  1635   69.70934   41  211   53.00000  136.77100   158%   921  586s
+  2096  1636   87.58075   20  294   53.00000  136.77100   158%   921  590s
+  2098  1637   82.27730   15  224   53.00000  136.77100   158%   920  596s
+  2099  1638   66.27322   37  226   53.00000  136.77100   158%   919  627s
+  2100  1638  105.66120   38  237   53.00000  136.77100   158%   919  657s
+  2101  1639   83.92406   31  300   53.00000  136.77100   158%   918  660s
+  2104  1641  105.66987   25  244   53.00000  136.77100   158%   917  666s
+  2105  1642   90.61890   22  253   53.00000  136.77100   158%   917  710s
+  2106  1642   67.77899   54  233   53.00000  136.77100   158%   916  755s
+  2109  1644   99.94153   28  264   53.00000  136.77100   158%   915  808s
+  2110  1645  102.80275   15  253   53.00000  136.77100   158%   914  858s
+  2111  1646  121.49944   21  261   53.00000  136.77100   158%   914  906s
+  2112  1646  108.91554   13  245   53.00000  136.77100   158%   914  954s
+  2113  1647  130.00725   15  249   53.00000  136.77100   158%   913 1001s
+  2114  1648   58.45085   53  224   53.00000  136.77100   158%   913 1058s
+  2115  1648   83.90660   20  281   53.00000  136.77100   158%   912 1060s
+  2116  1649  119.97826   16  271   53.00000  136.77100   158%   912 1068s
+  2117  1650   94.10620   33  261   53.00000  136.77100   158%   911 1076s
+  2119  1651   70.09236   39  253   53.00000  136.77100   158%   911 1084s
+  2120  1652   84.25603   32  263   53.00000  136.77100   158%   910 1092s
+  2121  1652   85.05394   32  278   53.00000  136.77100   158%   910 1100s
+  2122  1653  125.59728   20  253   53.00000  136.77100   158%   909 1112s
+  2123  1654  106.24384   21  272   53.00000  136.77100   158%   909 1120s
+  2124  1654   71.55022   25  248   53.00000  136.77100   158%   908 1128s
+  2125  1655   63.34345   39  235   53.00000  136.77100   158%   908 1135s
+  2126  1656   55.99782   54  235   53.00000  136.77100   158%   908 1141s
+  2127  1659  136.77100   11  232   53.00000  136.77100   158%   956 1147s
+  2129  1663  136.77100   12  257   53.00000  136.77100   158%   957 1152s
+  2133  1669  136.77100   13  224   53.00000  136.77100   158%   961 1161s
+  2151  1699  136.77100   15  224   53.00000  136.77100   158%   976 1169s
+  2178  1716  136.77100   16  210   53.00000  136.77100   158%   978 1174s
+  2209  1718  136.77100   17  212   53.00000  136.77100   158%   984 1177s
+  2222  1726  134.77344   17  173   53.00000  136.77100   158%   986 1180s
+  2257  1749  136.77100   18  263   53.00000  136.77100   158%   991 1186s
+  2310  1776  111.29664   19  129   53.00000  136.77100   158%   991 1191s
+  2372  1793  128.24216   20  210   53.00000  136.77100   158%   984 1195s
+  2405  1791  136.77100   21  179   53.00000  136.77100   158%   982 1200s
+  2459  1806  136.77100   22  217   53.00000  136.77100   158%   986 1206s
+  2486  1818  116.79206   22  462   53.00000  136.77100   158%   990 1211s
+  2534  1840  136.77100   24  208   53.00000  136.77100   158%   997 1215s
+  2582  1881  123.15710   25  247   53.00000  136.27007   157%  1003 1221s
+  2647  1922  133.04627   27  217   53.00000  136.23306   157%  1004 1226s
+  2735  1939  114.89573   28  203   53.00000  136.23306   157%   997 1234s
+  2777  1945  114.89463   29  245   53.00000  135.39560   155%   997 1237s
+  2797  1969  130.72579   30  213   53.00000  135.39560   155%  1000 1240s
+  2883  2031  127.93777   32  216   53.00000  135.39560   155%   998 1248s
+  2942  2039  115.24575   33  164   53.00000  135.39560   155%   994 1252s
+  2984  2061  106.03935   34  215   53.00000  134.76808   154%   992 1257s
+  3061  2046  121.60704   36  182   53.00000  134.76808   154%   984 1261s
+  3081  2077  107.15136   36  167   53.00000  134.76808   154%   986 1265s
+  3177  2151  112.04931   38  367   53.00000  134.76808   154%   986 1273s
+  3278  2179   99.83884   39  145   53.00000  132.12651   149%   976 1277s
+  3398  2185  106.36605   42  167   53.00000  130.42722   146%   964 1282s
+  3510  2198   95.25067   43  103   53.00000  130.42722   146%   954 1286s
+  3562  2243   91.79372   45  120   53.00000  130.42722   146%   953 1291s
+  3669  2284   73.79014   50   75   53.00000  128.72021   143%   945 1296s
+  3794  2289   55.75704   59   55   53.00000  128.72021   143%   937 1303s
+  3884  2329  117.83863   18  181   53.00000  128.72021   143%   936 1310s
+  3988  2320  103.07676   21  133   53.00000  127.79036   141%   932 1315s
+  4055  2328  101.17686   22  297   53.00000  127.79036   141%   930 1320s
+  4095  2418   92.22174   24  125   53.00000  127.79036   141%   928 1326s
+  4222  2470   80.22124   30  101   53.00000  127.79036   141%   920 1333s
+  4355  2449   63.97693   39   65   53.00000  127.79036   141%   917 1340s
+  4405  2462   89.74981   24   92   53.00000  125.35097   137%   917 1347s
+  4464  2474   86.05244   17   85   53.00000  125.04003   136%   916 1354s
+  4512  2491   87.97922   24  107   53.00000  125.04003   136%   916 1360s
+  4552  2531   70.43144   38   85   53.00000  125.04003   136%   916 1367s
+  4632  2546   54.98503   39   44   53.00000  123.07053   132%   914 1376s
+  4708  2612   92.96329   19  205   53.00000  122.10666   130%   916 1385s
+  4803  2666   77.58533   34   99   53.00000  122.10666   130%   918 1393s
+  4973  2688   88.75369   35   95   53.00000  121.78986   130%   913 1405s
+  5092  2791   89.49974   28  104   53.00000  121.78986   130%   912 1414s
+  5304  2894   71.63578   40   96   53.00000  121.78986   130%   913 1425s
+  5560  2998  105.01170   33  215   53.00000  118.43926   123%   910 1436s
+  5884  2985   75.57217   43  174   53.00000  118.35583   123%   901 1445s
+  6026  3216   56.77437   49   67   53.00000  117.79443   122%   900 1457s
+  6508  3183   98.30560   32  131   53.00000  117.79443   122%   888 1469s
+  6710  3401   87.84601   30  128   53.00000  116.36507   120%   886 1482s
+  7163  3448   80.51629   23   96   53.00000  114.83996   117%   877 1493s
+  7449  3776   74.70648   35   76   53.00000  114.78453   117%   870 1505s
+  8091  3951   67.98614   23   81   53.00000  113.86921   115%   857 1515s
+  8405  4199   83.15349   27  116   53.00000  113.64207   114%   850 1527s
+  8834  4479   84.82143   29  112   53.00000  112.38714   112%   841 1539s
+  9309  4703   54.75185   29   66   53.00000  111.69886   111%   836 1551s
+  9707  5060     cutoff   50        53.00000  111.69886   111%   834 1565s
+ 10427  5510   80.58536   23   94   53.00000  110.47449   108%   824 1579s
+ 11282  5720   78.38700   40   90   53.00000  109.50084   107%   810 1591s
+ 11636  6183   95.21459   28   91   53.00000  109.00778   106%   807 1606s
+ 12676  6339   65.93718   39   94   53.00000  108.16570   104%   790 1617s
+ 12972  6397   64.58760   37   91   53.00000  107.74514   103%   788 1631s
+ 13081  6863   80.61568   39  131   53.00000  107.74514   103%   788 1647s
+ 13918  7197   88.80147   38  116   53.00000  106.97942   102%   779 1663s
+ 14610  7752   58.87409   26   50   53.00000  106.49096   101%   772 1680s
+ 15549  7984 infeasible   50        53.00000  105.99715   100%   762 1694s
+ 16024  8488   63.95611   29   65   53.00000  105.19425  98.5%   760 1713s
+ 17186  9163   73.13593   43   79   53.00000  104.46894  97.1%   749 1967s
+ 18697  9353   68.15556   26  139   53.00000  103.56693  95.4%   739 1974s
+ 19033  9588   89.83111   32  107   53.00000  103.24815  94.8%   737 1984s
+ 19438 10101     cutoff   47        53.00000  103.05721  94.4%   734 1999s
+ 20382 10320   77.06306   41  112   53.00000  102.53096  93.5%   729 2012s
+ 20777 10767   80.75802   28   95   53.00000  102.16481  92.8%   728 2028s
+ 21664 11270   76.36196   30   74   53.00000  101.59795  91.7%   723 2043s
+ 22657 11539   83.59101   38   86   53.00000  100.93965  90.5%   718 2056s
+ 23216 12101   79.57670   26  102   53.00000  100.56876  89.8%   715 2074s
+ 24343 12637   85.41865   41  135   53.00000  100.02232  88.7%   711 2091s
+ 25337 12898   66.92081   41   85   53.00000   99.49152  87.7%   711 2109s
+ 25935 13520   72.38045   31   95   53.00000   99.21731  87.2%   708 2128s
+ 27285 13847     cutoff   39        53.00000   98.40180  85.7%   703 2144s
+ 27940 14212   69.00666   35   70   53.00000   98.10859  85.1%   700 2162s
+ 28722 14938   78.27269   34  137   53.00000   97.76772  84.5%   698 2182s
+ 30238 15502   60.99929   42   88   53.00000   97.12058  83.2%   692 2201s
+ 31396 15924   77.08842   29  104   53.00000   96.81557  82.7%   688 2220s
+ 32500 16504     cutoff   61        53.00000   96.53393  82.1%   685 2239s
+ 33977 17318   80.07650   29  108   53.00000   96.14461  81.4%   679 2835s
+ 35955 17406 infeasible   40        53.00000   95.66251  80.5%   673 2845s
+ 36348 17551   59.99124   38   44   53.00000   95.38429  80.0%   671 2860s
+ 36861 17887   70.67632   32  102   53.00000   95.19805  79.6%   669 2879s
+ 37647 18095   70.95609   36   68   53.00000   95.10504  79.4%   668 2897s
+ 38256 18702   78.30786   34  145   53.00000   94.88333  79.0%   667 2920s
+ 39800 19297   69.56687   43   86   53.00000   94.56307  78.4%   664 2943s
+ 41235 19847   85.24695   39  132   53.00000   94.17242  77.7%   660 2962s
+ 42437 20073   82.43403   33  123   53.00000   93.86956  77.1%   660 2977s
+ 42989 20693   79.91469   20  100   53.00000   93.64347  76.7%   660 2997s
+ 44408 21100     cutoff   44        53.00000   93.25539  76.0%   657 3016s
+ 45464 21674   71.38737   35  110   53.00000   93.03153  75.5%   654 3036s
+ 46882 22055   66.75111   35   61   53.00000   92.63814  74.8%   651 3054s
+ 47818 22461   62.12823   47  137   53.00000   92.44229  74.4%   649 3073s
+ 48995 22960   77.06959   31   90   53.00000   92.23964  74.0%   646 3091s
+ 50211 23202   71.47368   35  102   53.00000   91.96041  73.5%   644 3337s
+ 50910 24249   66.08526   30   51   53.00000   91.74767  73.1%   643 3371s
+ 53834 24693     cutoff   40        53.00000   91.32613  72.3%   637 3389s
+ 55036 25112   68.63987   42   94   53.00000   91.07357  71.8%   634 3407s
+ 56265 25295   59.30973   37   75   53.00000   90.74575  71.2%   632 3421s
+ 56805 25750   63.84743   44   90   53.00000   90.64721  71.0%   631 3437s
+ 57963 25900   55.22623   58   95   53.00000   90.46787  70.7%   630 3447s
+ 58372 26379   65.23656   39   88   53.00000   90.31384  70.4%   630 3465s
+ 59676 26710   73.86116   37  111   53.00000   90.08562  70.0%   628 3480s
+ 60596 27127   75.53883   37   90   53.00000   89.96166  69.7%   626 3497s
+ 61856 27513     cutoff   46        53.00000   89.78321  69.4%   625 3513s
+ 62859 27953   60.94382   30  100   53.00000   89.60054  69.1%   624 3529s
+ 64031 28157   58.79214   48  105   53.00000   89.37260  68.6%   622 3543s
+ 64555 28576   66.52113   38  154   53.00000   89.26731  68.4%   621 3561s
+ 65940 29080     cutoff   62        53.00000   89.08245  68.1%   619 3577s
+
+Cutting planes:
+  Gomory: 2
+  Lift-and-project: 24
+  Cover: 419
+  Implied bound: 171
+  Projected implied bound: 18
+  Clique: 652
+  MIR: 623
+  Knapsack: 3
+  Flow cover: 626
+  Inf proof: 2
+  Network: 4
+  RLT: 13
+  Relax-and-lift: 166
+  BQP: 994
+  PSD: 76
+
+Explored 67173 nodes (41521637 simplex iterations) in 3600.23 seconds (5370.49 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 10: 53 52 51 ... 21
+
+Time limit reached
+Best objective 5.300000000000e+01, best bound 8.800000000000e+01, gap 66.0377%
+
+--- RISULTATI WEAK FORMULATION ---
+Stato del solver: 9  (2=OPTIMAL, 9=TIME_LIMIT)
+Flusso Ottimo Trovato: 53.0
+Best Bound: 88.0
+MIP Gap: 0.660377358490566
+Tempo di calcolo (sec): 3600.357193
+Nodi esplorati (B&B Tree): 67173
+
+
+
+--- benders.py (wall clock 3622.2s) ---
+[DIAG] Nodi: 100  Archi attivi: 2969  Coppie in conflitto lette: 2466714
+[DIAG] UB rilassata (rete completa, senza conflitti): 697.0
+Set parameter WLSAccessID
+Set parameter WLSSecret
+Set parameter LicenseID to value 2851392
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Set parameter LazyConstraints to value 1
+Set parameter TimeLimit to value 3600
+--- Inizio Ottimizzazione Single-Tree Benders (Gurobi/Python) ---
+Gurobi Optimizer version 13.0.2 build v13.0.2rc1 (win64 - Windows 11+.0 (26200.2))
+
+CPU model: 13th Gen Intel(R) Core(TM) i7-13620H, instruction set [SSE2|AVX|AVX2]
+Thread count: 10 physical cores, 16 logical processors, using up to 16 threads
+
+Non-default parameters:
+TimeLimit  3600
+LazyConstraints  1
+
+Academic license 2851392 - for non-commercial use only - registered to s3___@studenti.polito.it
+Optimize a model with 2872 rows, 2970 columns and 2469709 nonzeros (Max)
+Model fingerprint: 0xa5febd30
+Model has 1 linear objective coefficients
+Variable types: 1 continuous, 2969 integer (2969 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+02]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 7e+02]
+  RHS range        [1e+00, 9e+02]
+
+Presolve time: 1.49s
+Presolved: 2872 rows, 2970 columns, 2469709 nonzeros
+Variable types: 1 continuous, 2969 integer (2969 binary)
+
+Root relaxation: objective 6.792613e+02, 159 iterations, 0.10 seconds (0.12 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  679.26131    0   80          -  679.26131      -     -    4s
+[HEARTBEAT] t=5.0s  chiamate=8  tagli=12  nodi=0
+     0     0  679.26131    0   80          -  679.26131      -     -    5s
+     0     0  679.26131    0   80          -  679.26131      -     -   10s
+[HEARTBEAT] t=10.7s  chiamate=33  tagli=48  nodi=0
+     0     0  679.26131    0   80          -  679.26131      -     -   15s
+[HEARTBEAT] t=15.9s  chiamate=43  tagli=60  nodi=0
+     0     0  672.20591    0  122          -  672.20591      -     -   18s
+     0     0  263.11640    0  258          -  263.11640      -     -   20s
+     0     0  252.27361    0  109          -  252.27361      -     -   21s
+     0     0  251.56328    0  208          -  251.56328      -     -   22s
+     0     0  251.34632    0   96          -  251.34632      -     -   23s
+     0     0  251.22720    0   93          -  251.22720      -     -   23s
+     0     0  251.20188    0   92          -  251.20188      -     -   24s
+     0     0  235.82422    0  106          -  235.82422      -     -   26s
+[HEARTBEAT] t=26.7s  chiamate=46  tagli=63  nodi=0
+     0     0  235.74710    0  106          -  235.74710      -     -   30s
+     0     0  232.40684    0  111          -  232.40684      -     -   30s
+     0     0  232.09244    0  122          -  232.09244      -     -   31s
+     0     0  231.85175    0  115          -  231.85175      -     -   31s
+     0     0  231.82505    0  121          -  231.82505      -     -   31s
+     0     0  219.13095    0   89          -  219.13095      -     -   34s
+[HEARTBEAT] t=34.4s  chiamate=56  tagli=74  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   36s
+     0     0  218.03571    0   89          -  218.03571      -     -   40s
+[HEARTBEAT] t=40.1s  chiamate=68  tagli=87  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   45s
+[HEARTBEAT] t=45.5s  chiamate=80  tagli=102  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   51s
+[HEARTBEAT] t=51.1s  chiamate=93  tagli=115  nodi=0
+[HEARTBEAT] t=56.5s  chiamate=105  tagli=127  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   59s
+[HEARTBEAT] t=61.6s  chiamate=115  tagli=137  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   63s
+[HEARTBEAT] t=67.3s  chiamate=125  tagli=148  nodi=0
+     0     0  218.03571    0   89          -  218.03571      -     -   68s
+     0     0  218.03571    0  134          -  218.03571      -     -   68s
+     0     0  218.03571    0  138          -  218.03571      -     -   69s
+     0     0  218.03571    0  146          -  218.03571      -     -   69s
+     0     0  213.19048    0  132          -  213.19048      -     -   72s
+     0     0  212.12062    0  136          -  212.12062      -     -   73s
+     0     0  211.58336    0  136          -  211.58336      -     -   73s
+     0     0  211.48837    0  126          -  211.48837      -     -   74s
+     0     0  209.89041    0  130          -  209.89041      -     -   80s
+     0     0  208.94286    0  129          -  208.94286      -     -   80s
+     0     0  208.84259    0  139          -  208.84259      -     -   81s
+     0     0  207.38031    0  149          -  207.38031      -     -   84s
+     0     0  207.25000    0  158          -  207.25000      -     -   84s
+     0     0  205.76415    0  127          -  205.76415      -     -   86s
+     0     0  205.54581    0  124          -  205.54581      -     -   86s
+     0     0  205.33558    0  126          -  205.33558      -     -   86s
+     0     0  205.24855    0  130          -  205.24855      -     -   87s
+     0     0  204.72000    0  121          -  204.72000      -     -   89s
+     0     0  204.13043    0  136          -  204.13043      -     -   89s
+     0     0  203.95833    0  146          -  203.95833      -     -   90s
+     0     0  203.93333    0  139          -  203.93333      -     -   90s
+     0     0  202.33333    0  133          -  202.33333      -     -   92s
+     0     0  202.00000    0  150          -  202.00000      -     -   92s
+     0     0  202.00000    0  152          -  202.00000      -     -   93s
+     0     0  201.35393    0  149          -  201.35393      -     -   96s
+[HEARTBEAT] t=96.4s  chiamate=126  tagli=149  nodi=0
+H    0     0                       1.0000000  201.23969      -     -   97s
+     0     0  201.23483    0  152    1.00000  201.23483      -     -   97s
+     0     0  201.23483    0  146    1.00000  201.23483      -     -   97s
+     0     0  201.10870    0  169    1.00000  201.10870      -     -   99s
+     0     0  200.88889    0  169    1.00000  200.88889      -     -   99s
+     0     0  200.88889    0  137    1.00000  200.88889      -     -  100s
+     0     2  200.84483    0  130    1.00000  200.84483      -     -  102s
+     3     8  193.25000    2  130    1.00000  197.64706      -   377  106s
+[HEARTBEAT] t=110.5s  chiamate=128  tagli=150  nodi=7
+     7    16  190.36585    3  126    1.00000  193.21429      -   646  110s
+    55    86  154.68750    7  109    1.00000  183.31481      -   524  116s
+   210   241  151.00000   19   95    1.00000  183.31481      -   364  120s
+[HEARTBEAT] t=120.7s  chiamate=131  tagli=153  nodi=287
+   363   383  134.32620   30  135    1.00000  183.31481      -   280  125s
+[HEARTBEAT] t=126.7s  chiamate=135  tagli=157  nodi=395
+   465   496  116.00000   33  312    1.00000  181.09503      -   258  130s
+[HEARTBEAT] t=131.7s  chiamate=143  tagli=165  nodi=492
+   569   600  105.39367   38   70    1.00000  178.48004      -   237  138s
+[HEARTBEAT] t=138.8s  chiamate=146  tagli=168  nodi=613
+   625   641  100.73575   43   55    1.00000  178.48004      -   229  140s
+[HEARTBEAT] t=144.3s  chiamate=152  tagli=174  nodi=852
+   908   959   73.99945   58   91    1.00000  172.75140      -   210  145s
+  1295  1320   30.00000   85    3    1.00000  169.48529      -   172  150s
+[HEARTBEAT] t=150.3s  chiamate=158  tagli=180  nodi=1297
+  1592  1598  137.24612   17   91    1.00000  169.48529      -   155  155s
+[HEARTBEAT] t=155.4s  chiamate=167  tagli=190  nodi=1663
+* 1663  1598              75       6.0000000  169.48529  2725%   153  155s
+  1807  1692   28.00000   54  137    6.00000  169.48529  2725%   148  307s
+[HEARTBEAT] t=318.9s  chiamate=173  tagli=195  nodi=1808
+H 1808  1608                      15.0000000  169.48529  1030%   148  319s
+[HEARTBEAT] t=324.1s  chiamate=187  tagli=208  nodi=1808
+[HEARTBEAT] t=330.0s  chiamate=190  tagli=211  nodi=1808
+[HEARTBEAT] t=338.0s  chiamate=197  tagli=218  nodi=1808
+[HEARTBEAT] t=343.6s  chiamate=200  tagli=221  nodi=1808
+[HEARTBEAT] t=349.1s  chiamate=207  tagli=228  nodi=1808
+[HEARTBEAT] t=355.7s  chiamate=209  tagli=230  nodi=1808
+  1809  1608  147.80472   14  197   15.00000  169.48529  1030%   147  363s
+  1810  1609  111.97721   25  189   15.00000  169.48529  1030%   147  377s
+[HEARTBEAT] t=391.6s  chiamate=216  tagli=237  nodi=1810
+H 1810  1528                      19.0000000  169.48529   792%   147  394s
+[HEARTBEAT] t=396.9s  chiamate=228  tagli=251  nodi=1810
+[HEARTBEAT] t=402.1s  chiamate=232  tagli=255  nodi=1810
+[HEARTBEAT] t=407.7s  chiamate=235  tagli=258  nodi=1810
+[HEARTBEAT] t=417.9s  chiamate=239  tagli=262  nodi=1810
+[HEARTBEAT] t=429.7s  chiamate=247  tagli=270  nodi=1810
+[HEARTBEAT] t=435.8s  chiamate=255  tagli=278  nodi=1810
+[HEARTBEAT] t=443.9s  chiamate=257  tagli=280  nodi=1810
+[HEARTBEAT] t=449.7s  chiamate=263  tagli=286  nodi=1810
+  1811  1529   88.99998   44  191   19.00000  169.48529   792%   147  455s
+  1813  1530  148.49564    9  239   19.00000  169.48529   792%   147  467s
+[HEARTBEAT] t=481.3s  chiamate=265  tagli=288  nodi=1813
+  1814  1531   19.00000   57  215   19.00000  169.48529   792%   147  482s
+  1816  1532  157.16644    4  233   19.00000  169.48529   792%   147  496s
+[HEARTBEAT] t=510.6s  chiamate=268  tagli=292  nodi=1816
+  1817  1533   24.00000   58  185   19.00000  169.48529   792%   147  511s
+  1819  1534   33.00000   51  206   19.00000  169.48529   792%   147  524s
+[HEARTBEAT] t=530.0s  chiamate=274  tagli=298  nodi=1819
+  1820  1535   67.18269   43  184   19.00000  169.48529   792%   147  533s
+  1821  1535  151.00000   20  207   19.00000  169.48529   792%   146  536s
+[HEARTBEAT] t=541.8s  chiamate=283  tagli=307  nodi=1821
+  1822  1536  127.80124   21  194   19.00000  169.48529   792%   146  546s
+  1824  1537  145.50000   13  237   19.00000  169.48529   792%   146  551s
+[HEARTBEAT] t=556.3s  chiamate=294  tagli=318  nodi=1824
+[HEARTBEAT] t=561.5s  chiamate=305  tagli=329  nodi=1824
+  1825  1538   22.00000   74  186   19.00000  169.48529   792%   146  562s
+  1827  1539  132.96277   19  227   19.00000  169.48529   792%   146  566s
+[HEARTBEAT] t=571.3s  chiamate=307  tagli=331  nodi=1827
+[HEARTBEAT] t=576.4s  chiamate=317  tagli=341  nodi=1827
+  1828  1540   29.59505   51  185   19.00000  169.48529   792%   146  578s
+  1830  1541   82.00000   36  220   19.00000  169.48529   792%   146  581s
+[HEARTBEAT] t=586.0s  chiamate=320  tagli=344  nodi=1830
+H 1830  1464                      21.0000000  169.48529   707%   146  588s
+  1833  1466   49.00000   29  213   21.00000  169.48529   707%   146  591s
+[HEARTBEAT] t=595.9s  chiamate=328  tagli=351  nodi=1833
+  1834  1467   34.00707   63  188   21.00000  169.48529   707%   145  599s
+  1836  1468   49.00000   36  229   21.00000  169.48529   707%   145  602s
+[HEARTBEAT] t=606.7s  chiamate=338  tagli=362  nodi=1836
+  1837  1469   74.99773   38  181   21.00000  169.48529   707%   145  608s
+  1839  1470   23.00000   43  223   21.00000  169.48529   707%   145  611s
+  1840  1471   31.00000   69  204   21.00000  169.48529   707%   145  616s
+[HEARTBEAT] t=624.7s  chiamate=344  tagli=368  nodi=1841
+[HEARTBEAT] t=629.8s  chiamate=349  tagli=373  nodi=1841
+[HEARTBEAT] t=638.1s  chiamate=352  tagli=376  nodi=1841
+[HEARTBEAT] t=643.6s  chiamate=359  tagli=383  nodi=1841
+[HEARTBEAT] t=650.3s  chiamate=361  tagli=385  nodi=1841
+[HEARTBEAT] t=655.3s  chiamate=367  tagli=391  nodi=1841
+[HEARTBEAT] t=660.4s  chiamate=369  tagli=393  nodi=1841
+[HEARTBEAT] t=672.0s  chiamate=376  tagli=400  nodi=1841
+[HEARTBEAT] t=680.6s  chiamate=380  tagli=404  nodi=1841
+  1842  1472   21.00000   42  204   21.00000  169.48529   707%   145  681s
+  1843  1476  169.48529   28  255   21.00000  169.48529   707%   175  686s
+  1845  1479  168.28222   29  232   21.00000  169.48529   707%   176  691s
+  1849  1486  164.91063   30  205   21.00000  168.25459   701%   181  702s
+  1857  1493  163.94176   31  225   21.00000  164.86013   685%   189  707s
+  1867  1513  163.22208   32  223   21.00000  163.86091   680%   194  719s
+  1890  1525  143.48801   33  157   21.00000  163.86091   680%   203  728s
+  1910  1539  161.10899   34  235   21.00000  163.86091   680%   213  735s
+  1930  1550  159.25548   35  245   21.00000  163.86091   680%   221  743s
+  1948  1564  141.95512   35  219   21.00000  163.86091   680%   229  751s
+  1968  1577  158.28195   36  236   21.00000  163.86091   680%   238  759s
+  1988  1591  156.36104   37  229   21.00000  163.86091   680%   247  767s
+  2008  1603  139.24214   37  198   21.00000  163.86091   680%   254  772s
+  2027  1615  153.87373   38  211   21.00000  163.86091   680%   261  779s
+  2045  1626  138.76704   38  160   21.00000  163.86091   680%   265  785s
+  2062  1638  149.57930   39  229   21.00000  163.86091   680%   273  791s
+  2080  1651  140.98107   39  218   21.00000  163.86091   680%   279  797s
+  2099  1664  148.62476   40  218   21.00000  163.86091   680%   284  804s
+  2118  1674  147.01698   41  241   21.00000  163.86091   680%   290  810s
+  2135  1686  128.97489   41  157   21.00000  163.86091   680%   295  815s
+  2152  1700  146.36892   42  226   21.00000  163.86091   680%   298  823s
+  2172  1715  144.76276   43  234   21.00000  163.86091   680%   304  834s
+  2194  1730  142.26694   44  223   21.00000  163.86091   680%   311  842s
+  2216  1747  126.40402   44  165   21.00000  163.86091   680%   318  850s
+  2240  1767  139.79267   45  205   21.00000  163.86091   680%   321  857s
+  2268  1787  133.03163   46  172   21.00000  163.86091   680%   324  865s
+  2298  1807  130.37191   47  176   21.00000  163.86091   680%   327  873s
+[HEARTBEAT] t=873.7s  chiamate=381  tagli=405  nodi=2320
+  2332  1822  126.02219   48  164   21.00000  163.86091   680%   331  883s
+[HEARTBEAT] t=883.6s  chiamate=382  tagli=406  nodi=2352
+  2366  1843  122.00000   49  126   21.00000  158.45710   655%   336  896s
+  2393  1868  114.91899   50   97   21.00000  158.45710   655%   342  905s
+  2427  1895  103.50000   51  113   21.00000  158.45710   655%   346  914s
+  2466  1927  103.19885   52   97   21.00000  158.45710   655%   349  923s
+  2511  1960  108.49153   53  147   21.00000  158.45710   655%   352  931s
+[HEARTBEAT] t=931.8s  chiamate=383  tagli=407  nodi=2540
+  2563  1994  108.00000   55  103   21.00000  158.45710   655%   352  942s
+  2616  2046   99.32234   56  111   21.00000  155.54270   641%   354  953s
+  2686  2111   83.74959   58   83   21.00000  155.54270   641%   354  962s
+  2777  2176   89.18056   62   65   21.00000  155.54270   641%   350  970s
+[HEARTBEAT] t=970.8s  chiamate=384  tagli=408  nodi=2850
+[HEARTBEAT] t=980.3s  chiamate=386  tagli=410  nodi=2881
+  2881  2230   81.50000   67   62   21.00000  155.54270   641%   345  980s
+  3000  2278   60.00000   76   11   21.00000  155.54270   641%   340  991s
+[HEARTBEAT] t=991.6s  chiamate=393  tagli=417  nodi=3018
+  3097  2400   43.00000   88   12   21.00000  155.54270   641%   338  999s
+[HEARTBEAT] t=999.8s  chiamate=394  tagli=418  nodi=3103
+  3123  2393   66.80591   73   75   21.00000  155.54270   641%   335 1000s
+  3261  2479   44.00000  101    5   21.00000  153.51160   631%   326 1010s
+[HEARTBEAT] t=1010.1s  chiamate=398  tagli=422  nodi=3275
+  3425  2555  127.11217   34  141   21.00000  152.93521   628%   319 1020s
+[HEARTBEAT] t=1020.8s  chiamate=404  tagli=428  nodi=3435
+  3570  2647  106.47011   41   91   21.00000  152.93521   628%   313 1030s
+[HEARTBEAT] t=1030.9s  chiamate=408  tagli=432  nodi=3660
+  3730  2724   84.05329   49   82   21.00000  152.93521   628%   307 1043s
+[HEARTBEAT] t=1043.8s  chiamate=409  tagli=433  nodi=3807
+  3880  2882   78.40991   52   28   21.00000  146.57650   598%   302 1053s
+[HEARTBEAT] t=1053.2s  chiamate=412  tagli=436  nodi=3890
+  4126  2985   99.83671   47   79   21.00000  146.57650   598%   290 1065s
+[HEARTBEAT] t=1065.1s  chiamate=418  tagli=442  nodi=4153
+  4345  3110 infeasible   82        21.00000  146.35974   597%   281 1078s
+[HEARTBEAT] t=1078.3s  chiamate=424  tagli=448  nodi=4379
+  4590  3240   53.47465   43   35   21.00000  143.70515   584%   274 1090s
+[HEARTBEAT] t=1090.8s  chiamate=430  tagli=454  nodi=4597
+  4842  3385  109.53448   40   81   21.00000  143.70515   584%   266 1106s
+[HEARTBEAT] t=1106.7s  chiamate=438  tagli=462  nodi=4881
+  5088  3676   74.42857   51   79   21.00000  143.70515   584%   261 1121s
+[HEARTBEAT] t=1121.9s  chiamate=443  tagli=467  nodi=5222
+  5511  3787   32.00000  116    7   21.00000  143.70515   584%   247 1137s
+[HEARTBEAT] t=1137.9s  chiamate=451  tagli=475  nodi=5520
+  5787  3747   89.82813   47   74   21.00000  143.70515   584%   243 1147s
+[HEARTBEAT] t=1147.5s  chiamate=457  tagli=481  nodi=5788
+  5847  4001   70.53659   55   70   21.00000  143.70515   584%   243 1163s
+[HEARTBEAT] t=1163.4s  chiamate=469  tagli=493  nodi=5913
+[HEARTBEAT] t=1176.4s  chiamate=472  tagli=496  nodi=6134
+  6134  4165   26.00000  131    -   21.00000  143.70515   584%   238 1176s
+  6490  4503   99.36663   46   84   21.00000  143.70515   584%   231 1192s
+[HEARTBEAT] t=1192.6s  chiamate=479  tagli=503  nodi=6523
+  6967  4954  124.83140   41  139   21.00000  143.70515   584%   222 1208s
+[HEARTBEAT] t=1209.0s  chiamate=490  tagli=514  nodi=7026
+  7409  5294   78.64000   55   45   21.00000  143.70515   584%   214 1225s
+[HEARTBEAT] t=1225.1s  chiamate=494  tagli=518  nodi=7426
+  7867  5690 infeasible   69        21.00000  135.63646   546%   208 1243s
+[HEARTBEAT] t=1243.1s  chiamate=503  tagli=527  nodi=7900
+  8294  6206   68.00000   47   52   21.00000  135.63646   546%   204 1262s
+[HEARTBEAT] t=1262.1s  chiamate=511  tagli=535  nodi=8305
+  8862  6557   88.60102   46   76   21.00000  135.63646   546%   196 1280s
+[HEARTBEAT] t=1280.3s  chiamate=518  tagli=542  nodi=8893
+  9274  7020  119.45069   39  162   21.00000  135.63646   546%   194 1298s
+[HEARTBEAT] t=1298.1s  chiamate=524  tagli=548  nodi=9333
+  9811  7158   90.08519   46   69   21.00000  135.63646   546%   189 1316s
+[HEARTBEAT] t=1316.2s  chiamate=530  tagli=554  nodi=9882
+[HEARTBEAT] t=1329.1s  chiamate=531  tagli=555  nodi=9915
+  9915  7514   84.55446   50   48   21.00000  135.63646   546%   190 1329s
+ 10049  7520   83.62119   44   98   21.00000  133.60883   536%   189 1330s
+[HEARTBEAT] t=1351.3s  chiamate=545  tagli=569  nodi=10325
+ 10325  7864   45.00000   93    -   21.00000  133.35641   535%   186 1351s
+ 10746  8052   29.00000   84   13   21.00000  133.35641   535%   185 1371s
+[HEARTBEAT] t=1371.5s  chiamate=553  tagli=577  nodi=10769
+[HEARTBEAT] t=1386.1s  chiamate=556  tagli=580  nodi=10929
+ 10929  8274  116.10479   46  104   21.00000  133.35641   535%   185 1386s
+ 11185  8831  113.80245   47  118   21.00000  133.35641   535%   183 1412s
+[HEARTBEAT] t=1412.6s  chiamate=573  tagli=597  nodi=11453
+ 11818  9015   59.00000   74   28   21.00000  132.82336   532%   178 1435s
+[HEARTBEAT] t=1435.2s  chiamate=580  tagli=604  nodi=11828
+ 12039  9720   72.85517   43   90   21.00000  132.82336   532%   178 1459s
+[HEARTBEAT] t=1459.1s  chiamate=583  tagli=607  nodi=12074
+ 12311  9736   85.38895   57   89   21.00000  132.82336   532%   176 1460s
+ 12900 10072   48.00000   63   10   21.00000  130.98604   524%   172 1483s
+[HEARTBEAT] t=1483.6s  chiamate=592  tagli=616  nodi=12907
+ 13251 10104  114.12126   37   89   21.00000  130.98243   524%   172 1486s
+ 13288 10451   46.00000   71    4   21.00000  130.98243   524%   172 1509s
+[HEARTBEAT] t=1509.5s  chiamate=601  tagli=625  nodi=13293
+ 13420 10461  117.35000   43   98   21.00000  130.98243   524%   172 1510s
+ 13714 10972   67.32985   57   77   21.00000  130.98243   524%   172 1536s
+[HEARTBEAT] t=1536.1s  chiamate=606  tagli=630  nodi=13741
+ 14363 11404   52.41593   53   47   21.00000  129.27211   516%   169 1566s
+[HEARTBEAT] t=1566.0s  chiamate=621  tagli=645  nodi=14384
+ 14835 11467   50.74476   60   40   21.00000  128.89791   514%   168 1570s
+[HEARTBEAT] t=1586.6s  chiamate=637  tagli=661  nodi=14875
+ 14875 11478   91.76190   53   61   21.00000  128.89791   514%   168 1586s
+ 14890 11778   91.24653   54  157   21.00000  128.89791   514%   168 1610s
+[HEARTBEAT] t=1610.8s  chiamate=648  tagli=672  nodi=14909
+ 15288 12233  105.02344   50  109   21.00000  128.89791   514%   168 1639s
+[HEARTBEAT] t=1639.9s  chiamate=659  tagli=683  nodi=15342
+ 15875 12851   53.07250   72  114   21.00000  128.58730   512%   167 1671s
+[HEARTBEAT] t=1671.1s  chiamate=670  tagli=694  nodi=15934
+ 16734 13692   80.64286   49   47   21.00000  127.11000   505%   164 1715s
+[HEARTBEAT] t=1715.9s  chiamate=688  tagli=712  nodi=16775
+ 17607 14501   96.96858   42   97   21.00000  126.37677   502%   164 1759s
+[HEARTBEAT] t=1760.0s  chiamate=706  tagli=730  nodi=17630
+ 17816 14536   24.00000   84    -   21.00000  126.37677   502%   164 1761s
+[HEARTBEAT] t=1765.2s  chiamate=722  tagli=746  nodi=18030
+ 18034 14573  117.59380   45  100   21.00000  126.37677   502%   163 1765s
+ 18651 15690   64.00000   47   54   21.00000  125.90076   500%   162 1811s
+[HEARTBEAT] t=1811.2s  chiamate=737  tagli=761  nodi=18668
+[HEARTBEAT] t=1816.3s  chiamate=753  tagli=777  nodi=19404
+ 19991 16563  113.13043   51  124   21.00000  125.01667   495%   158 1863s
+[HEARTBEAT] t=1863.5s  chiamate=761  tagli=785  nodi=20027
+[HEARTBEAT] t=1868.6s  chiamate=776  tagli=800  nodi=20573
+ 21035 17510   94.57237   60  123   21.00000  124.78448   494%   157 1915s
+[HEARTBEAT] t=1915.6s  chiamate=786  tagli=810  nodi=21080
+[HEARTBEAT] t=1920.6s  chiamate=804  tagli=828  nodi=21914
+ 22125 18010   91.54000   47   61   21.00000  123.95543   490%   156 1964s
+[HEARTBEAT] t=1964.7s  chiamate=806  tagli=830  nodi=22156
+ 22164 18016  123.58925   45  118   21.00000  123.95543   490%   156 1965s
+ 22671 19014  104.29403   50   95   21.00000  123.37500   488%   156 2016s
+[HEARTBEAT] t=2016.8s  chiamate=820  tagli=844  nodi=22702
+ 23275 19073   63.32179   44   45   21.00000  123.27925   487%   155 2020s
+[HEARTBEAT] t=2021.9s  chiamate=840  tagli=864  nodi=23549
+ 23897 20210   74.78744   51  172   21.00000  122.80274   485%   155 2074s
+[HEARTBEAT] t=2074.4s  chiamate=848  tagli=872  nodi=23918
+ 24027 20221   94.72919   46   75   21.00000  122.80274   485%   154 2075s
+[HEARTBEAT] t=2079.6s  chiamate=868  tagli=892  nodi=24942
+ 25308 21208   96.68874   43   92   21.00000  121.86727   480%   153 2131s
+[HEARTBEAT] t=2131.3s  chiamate=876  tagli=900  nodi=25335
+[HEARTBEAT] t=2136.6s  chiamate=895  tagli=919  nodi=26105
+ 26464 22406   69.36791   64   85   21.00000  121.21709   477%   150 2194s
+[HEARTBEAT] t=2194.9s  chiamate=902  tagli=926  nodi=26485
+ 26676 22439   67.00000   51   32   21.00000  121.21709   477%   150 2196s
+ 27055 22489   75.50495   56   22   21.00000  121.21709   477%   150 2200s
+[HEARTBEAT] t=2200.1s  chiamate=920  tagli=944  nodi=27060
+[HEARTBEAT] t=2205.3s  chiamate=940  tagli=964  nodi=27572
+ 27811 22586   94.63525   44   84   21.00000  120.50735   474%   149 2206s
+ 27935 23707   29.00000  102   21   21.00000  120.50735   474%   149 2258s
+[HEARTBEAT] t=2258.2s  chiamate=949  tagli=973  nodi=28060
+ 28436 23728   22.00000   76    5   21.00000  120.50735   474%   148 2260s
+[HEARTBEAT] t=2263.3s  chiamate=965  tagli=989  nodi=28752
+ 29101 23774   91.23315   44   87   21.00000  120.30000   473%   147 2265s
+ 29357 24942 infeasible   73        21.00000  120.19820   472%   147 2314s
+[HEARTBEAT] t=2314.8s  chiamate=979  tagli=1003  nodi=29411
+[HEARTBEAT] t=2320.1s  chiamate=996  tagli=1020  nodi=29978
+[HEARTBEAT] t=2376.7s  chiamate=1009  tagli=1033  nodi=30812
+ 30812 26030   28.00000   49    -   21.00000  119.70332   470%   145 2376s
+[HEARTBEAT] t=2381.8s  chiamate=1028  tagli=1052  nodi=31559
+ 32127 27231   51.67516   50   68   21.00000  118.90450   466%   145 2435s
+[HEARTBEAT] t=2435.8s  chiamate=1042  tagli=1066  nodi=32159
+[HEARTBEAT] t=2440.9s  chiamate=1059  tagli=1083  nodi=32786
+[HEARTBEAT] t=2446.2s  chiamate=1079  tagli=1103  nodi=33546
+[HEARTBEAT] t=2497.4s  chiamate=1082  tagli=1106  nodi=33623
+ 33623 28711   27.00000   64    -   21.00000  118.41860   464%   144 2497s
+ 34095 28765   56.00000   40   48   21.00000  118.41860   464%   143 2501s
+[HEARTBEAT] t=2502.4s  chiamate=1099  tagli=1123  nodi=34413
+[HEARTBEAT] t=2507.5s  chiamate=1117  tagli=1141  nodi=35188
+ 35334 29907   35.03571   75    9   21.00000  117.77576   461%   142 2558s
+[HEARTBEAT] t=2558.2s  chiamate=1121  tagli=1145  nodi=35336
+[HEARTBEAT] t=2563.5s  chiamate=1138  tagli=1162  nodi=36084
+ 36349 30016   36.92135   67    5   21.00000  117.68316   460%   141 2565s
+ 36719 30962   73.33585   53   87   21.00000  117.26266   458%   141 2614s
+[HEARTBEAT] t=2614.2s  chiamate=1156  tagli=1180  nodi=36786
+ 36901 30973   94.52304   47  102   21.00000  117.26266   458%   141 2615s
+[HEARTBEAT] t=2619.2s  chiamate=1174  tagli=1198  nodi=37548
+ 37869 32061   44.00000   71    6   21.00000  117.26266   458%   141 2666s
+[HEARTBEAT] t=2667.0s  chiamate=1183  tagli=1207  nodi=37870
+ 38933 32189   88.75880   44   71   21.00000  117.26266   458%   140 2671s
+[HEARTBEAT] t=2672.3s  chiamate=1199  tagli=1223  nodi=38961
+ 39232 33479   26.35294   89   22   21.00000  117.26266   458%   140 2719s
+[HEARTBEAT] t=2719.7s  chiamate=1206  tagli=1230  nodi=39266
+[HEARTBEAT] t=2724.8s  chiamate=1224  tagli=1248  nodi=40092
+ 40121 33558   23.00000   96   32   21.00000  117.26266   458%   138 2725s
+[HEARTBEAT] t=2730.0s  chiamate=1240  tagli=1264  nodi=40910
+ 40916 33648  111.10540   46  148   21.00000  116.05585   453%   138 2730s
+ 40949 34358   77.39127   44   87   21.00000  115.98229   452%   138 2775s
+[HEARTBEAT] t=2775.1s  chiamate=1241  tagli=1265  nodi=40976
+[HEARTBEAT] t=2780.4s  chiamate=1259  tagli=1283  nodi=41630
+ 41844 35272   79.86247   51   65   21.00000  115.81233   451%   137 2825s
+[HEARTBEAT] t=2825.5s  chiamate=1265  tagli=1289  nodi=41871
+ 42422 35336   39.50000   50    4   21.00000  115.81233   451%   137 2830s
+[HEARTBEAT] t=2830.7s  chiamate=1282  tagli=1306  nodi=42423
+ 43040 36411   78.19565   43  104   21.00000  115.65414   451%   137 2878s
+[HEARTBEAT] t=2879.0s  chiamate=1298  tagli=1322  nodi=43063
+ 43435 36456  107.46762   45  103   21.00000  115.65414   451%   137 2881s
+[HEARTBEAT] t=2884.2s  chiamate=1317  tagli=1341  nodi=43893
+ 44343 37476   58.73333   59   40   21.00000  115.36456   449%   136 2934s
+[HEARTBEAT] t=2934.7s  chiamate=1328  tagli=1352  nodi=44407
+ 44509 37487   44.24112   55   27   21.00000  115.36456   449%   136 2935s
+[HEARTBEAT] t=2939.8s  chiamate=1345  tagli=1369  nodi=45078
+ 45122 37543   72.27273   45  112   21.00000  115.12009   448%   136 2940s
+ 45568 38397   75.13619   55   68   21.00000  115.00302   448%   136 2989s
+[HEARTBEAT] t=2989.5s  chiamate=1358  tagli=1382  nodi=45585
+ 45726 38426   99.84470   41  121   21.00000  114.99594   448%   136 2991s
+[HEARTBEAT] t=2994.8s  chiamate=1375  tagli=1399  nodi=46083
+[HEARTBEAT] t=2999.8s  chiamate=1392  tagli=1416  nodi=46673
+ 46996 39656   59.70401   51   41   21.00000  114.75000   446%   135 3048s
+[HEARTBEAT] t=3049.0s  chiamate=1400  tagli=1424  nodi=47022
+ 47668 39729   53.00000   39   38   21.00000  114.75000   446%   134 3054s
+[HEARTBEAT] t=3054.2s  chiamate=1417  tagli=1441  nodi=47693
+ 47881 39756  100.44186   43   76   21.00000  114.75000   446%   135 3055s
+ 48302 40613   77.92306   52  118   21.00000  114.52381   445%   134 3104s
+[HEARTBEAT] t=3104.8s  chiamate=1431  tagli=1455  nodi=48306
+ 48362 40624  112.48399   44  118   21.00000  114.52381   445%   134 3105s
+[HEARTBEAT] t=3109.8s  chiamate=1448  tagli=1472  nodi=48784
+[HEARTBEAT] t=3115.2s  chiamate=1467  tagli=1491  nodi=49356
+ 49448 41586   54.00758   73   68   21.00000  114.07453   443%   134 3162s
+[HEARTBEAT] t=3162.9s  chiamate=1471  tagli=1495  nodi=49460
+ 49821 41646   94.53968   47   86   21.00000  114.07453   443%   134 3165s
+[HEARTBEAT] t=3168.1s  chiamate=1489  tagli=1513  nodi=50206
+ 50572 42751  100.14590   49  114   21.00000  113.77685   442%   134 3216s
+[HEARTBEAT] t=3216.0s  chiamate=1500  tagli=1524  nodi=50644
+[HEARTBEAT] t=3221.1s  chiamate=1518  tagli=1542  nodi=51365
+ 51868 43816   54.91886   60   26   21.00000  113.65610   441%   134 3269s
+[HEARTBEAT] t=3269.4s  chiamate=1528  tagli=1552  nodi=51897
+ 52084 43829   75.96214   58   79   21.00000  113.65610   441%   134 3270s
+[HEARTBEAT] t=3274.5s  chiamate=1546  tagli=1570  nodi=52705
+ 53098 44673 infeasible  124        21.00000  113.28073   439%   134 3318s
+[HEARTBEAT] t=3318.3s  chiamate=1557  tagli=1581  nodi=53128
+[HEARTBEAT] t=3323.6s  chiamate=1576  tagli=1600  nodi=53707
+ 54105 45957   60.20972   48   55   21.00000  113.28073   439%   134 3368s
+[HEARTBEAT] t=3369.0s  chiamate=1586  tagli=1610  nodi=54131
+ 54470 45975   65.29689   68   34   21.00000  113.28073   439%   134 3370s
+[HEARTBEAT] t=3374.1s  chiamate=1601  tagli=1625  nodi=55518
+ 55572 46760   22.00000  229   11   21.00000  112.84058   437%   133 3416s
+[HEARTBEAT] t=3416.9s  chiamate=1604  tagli=1628  nodi=55661
+[HEARTBEAT] t=3477.3s  chiamate=1622  tagli=1646  nodi=56484
+ 56484 47657   85.24601   42  120   21.00000  112.64679   436%   132 3477s
+[HEARTBEAT] t=3482.5s  chiamate=1637  tagli=1661  nodi=57001
+[HEARTBEAT] t=3487.7s  chiamate=1652  tagli=1676  nodi=57404
+ 57553 48594   36.52874   62   24   21.00000  112.62886   436%   132 3532s
+[HEARTBEAT] t=3532.3s  chiamate=1654  tagli=1678  nodi=57578
+ 58109 48648   83.65854   50  104   21.00000  112.55172   436%   132 3536s
+[HEARTBEAT] t=3537.3s  chiamate=1670  tagli=1694  nodi=58170
+[HEARTBEAT] t=3583.6s  chiamate=1682  tagli=1706  nodi=58711
+ 58711 49468   26.00000   67    -   21.00000  112.22500   434%   131 3583s
+ 59073 49489   28.00000   73    -   21.00000  112.21201   434%   131 3585s
+ 59740 49690   49.19403   58   29   21.00000  112.14000   434%   131 3600s
+[HEARTBEAT] t=3600.1s  chiamate=1704  tagli=1728  nodi=59752
+
+Cutting planes:
+  Lift-and-project: 3
+  Clique: 798
+  MIR: 17
+  Flow cover: 1
+  Zero half: 32
+  Relax-and-lift: 1
+
+Explored 59964 nodes (7869720 simplex iterations) in 3601.81 seconds (2893.77 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 5: 21 19 15 ... 1
+
+Time limit reached
+Best objective 2.100000000000e+01, best bound 1.121400000000e+02, gap 434.0000%
+
+User-callback calls 242270, time in user-callback 481.81 sec
+
+--- RISULTATI FINALI ---
+Status Gurobi: 9  (2 = OPTIMAL, 9 = TIME_LIMIT)
+Flusso Ottimo v*: 21.0
+MIP Gap: 4.34
+Tempo Totale Esecuzione: 3601.8364 s
+Tagli Benders iniettati: 1733
+Chiamate totali alla callback (soluzioni intere candidate): 1708
+Nodi B&B esplorati: 59964
+
+
